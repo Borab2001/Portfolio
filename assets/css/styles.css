@@ -925,6 +925,9 @@ section:has(.section-wave-2) {
     outline: none;
 }
 
+.swiper-wrapper {
+    align-items: center;
+}
 /*==================== PROJECT IN MIND ====================*/
 .project{
     text-align: center;

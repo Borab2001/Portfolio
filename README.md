@@ -1,7 +1,7 @@
-# Portfolio
+# Personal Website
 
 👋 Hey ! I'm Bora Balos
 
-🎓 French engineering student @ISEPParis and @UniversityOfSydney
+🎓 French Engineering Student @ISEPParis and @UniversityOfSydney
 
-👀 Personal website url: https://borabalos.com/ 
+👀 Website URL: https://borabalos.com/ 

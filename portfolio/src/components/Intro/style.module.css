@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 1.75rem;
+    font-size: max(2vw, 1.5rem);
     text-decoration: none;
     cursor: pointer;
     padding: 0.5rem;

@@ -1,13 +1,5 @@
-.backgroundImage {
-    width: 100%;
+.intro {
     height: 140vh;
-    position: absolute;
-    top: 0;
-    filter: brightness(90%);
-}
-
-.backgroundImage img {
-    object-fit: cover;
 }
 
 .introContainer {
@@ -21,7 +13,17 @@
 .introContainer h1 {
     z-index: 3;
     color: #fff;
-    font-size: 7vw;
+    font-size: max(7vw, 48px);
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+
+.introContainer h2 {
+    z-index: 3;
+    color: #fff;
+    font-size: max(2vw, 18px);
+    font-weight: 300;
+    margin-bottom: 7vw;
     text-transform: uppercase;
 }
 
@@ -42,7 +44,6 @@
     font-size: 1.75rem;
     text-decoration: none;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
     padding: 0.5rem;
 }
 

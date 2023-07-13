@@ -29,23 +29,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.25rem;
     z-index: 3;
 }
 
 .introContainer .socials a {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1.75rem;
-    height: 1.75rem;
-    margin: 0 0.5rem;
     color: #fff;
     font-size: 1.75rem;
     text-decoration: none;
     cursor: pointer;
+    transition: all 300ms ease-in-out;
+    padding: 0.5rem;
 }
 
-.introContainer div a:hover {
-    color: #f1f1f1; /* Update the hover color as desired */
+.introContainer div a::after {
+    content: '';
+    display: block;
+    margin: 5px auto 0;
+    height: 2px;
+    width: 0px;
+    background-color: #fff;
+    transition: width .25s ease-out;
+}
+
+.introContainer div a:hover:after {
+    width: 100%;
 }

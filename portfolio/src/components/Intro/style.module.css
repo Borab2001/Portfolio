@@ -1,0 +1,51 @@
+.backgroundImage {
+    width: 100%;
+    height: 140vh;
+    position: absolute;
+    top: 0;
+    filter: brightness(90%);
+}
+
+.backgroundImage img {
+    object-fit: cover;
+}
+
+.introContainer {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introContainer h1 {
+    z-index: 3;
+    color: #fff;
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+.introContainer .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    z-index: 3;
+}
+
+.introContainer .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0 0.5rem;
+    color: #fff;
+    font-size: 1.75rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.introContainer div a:hover {
+    color: #f1f1f1; /* Update the hover color as desired */
+}

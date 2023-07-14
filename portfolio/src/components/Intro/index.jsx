@@ -34,8 +34,10 @@ export default function index() {
     return (
         <div className={styles.intro}>
             <div className={styles.introContainer}>
-                <h1 data-scroll data-scroll-speed="0.3">Bora Balos</h1>
-                <h2 data-scroll data-scroll-speed="0.3">🇫🇷 Engineering Student</h2>
+                <div className={styles.introHeaders}>
+                    <h1 data-scroll data-scroll-speed="0.3">Bora Balos</h1>
+                    <h2 data-scroll data-scroll-speed="0.3">🇫🇷 Engineering Student</h2>
+                </div>
                 <div className={styles.socials}>
                     <Link href="https://www.linkedin.com/in/bora-balos/">
                         <FiLinkedin />

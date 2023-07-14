@@ -44,5 +44,44 @@
 }
 
 .project:hover .projectCategory {
-        transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+.projectImage {
+    display: none;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectImage img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .project {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .project:hover {
+        opacity: 1;
+    }
+    
+    .project:hover .projectContent {
+        transform: none;
+    }
+    
+    .project:hover .projectCategory {
+        transform: none;
+    }
+
+    .projectContent {
+        max-width: 100%;
+    }
+
+    .projectImage {
+        display: block;
+    }
 }

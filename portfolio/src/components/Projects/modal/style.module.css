@@ -4,8 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
+    z-index: 5;
     overflow: hidden;
+    pointer-events: none;
+    transform-origin: center;
 }
 
 .modalSlider {
@@ -21,6 +24,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .modal {
+        display: none;
+    }
 }
 
 .modal img {

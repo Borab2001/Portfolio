@@ -58,7 +58,7 @@ export default function index() {
             <div className={styles.projectsBody}>
                 {
                     projects.map((project, index) => {
-                        return <Project key={index} index={index} title={project.title} subtitle={project.subtitle} href={project.href} setModal={setModal} />
+                        return <Project key={index} index={index} title={project.title} subtitle={project.subtitle} setModal={setModal} />
                     })
                 }
             </div>

@@ -38,16 +38,16 @@ export default function Index() {
                     <h2 data-scroll data-scroll-speed="0.3">🇫🇷 Engineering Student</h2>
                 </div>
                 <div className={styles.socials}>
-                    <Link href="https://www.linkedin.com/in/bora-balos/">
+                    <Link href="https://www.linkedin.com/in/bora-balos/" title="LinkedIn">
                         <FiLinkedin />
                     </Link>
-                    <Link href="https://github.com/Borab2001">
+                    <Link href="https://github.com/Borab2001" title="GitHub">
                         <FiGithub />
                     </Link>
-                    <Link href="https://twitter.com/borab0302">
+                    <Link href="https://twitter.com/borab0302" title="Twitter">
                         <FiTwitter />
                     </Link>
-                    <Link href="https://codepen.io/borab2001">
+                    <Link href="https://codepen.io/borab2001" title="Codepen">
                         <FiCodepen />
                     </Link>
                 </div>

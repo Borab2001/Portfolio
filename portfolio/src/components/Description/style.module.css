@@ -1,46 +1,60 @@
 .description {
     position: relative;
     z-index: 1;
-    font-size: max(2vw, 1.5rem);
     color: #fff;
-    /* text-transform: uppercase; */
-    margin-left: 10vw;
+    margin: 0 10vw;
     padding: 0 1rem;
     margin-bottom: 15vw;
 }
+
+.description h2 {
+    margin: 4rem 0 2rem;
+    line-height: 1.65em;
+    display: block;
+    font-size: max(2vw, 1.5rem);
+    font-weight: 500;
+}
+
+.description p {
+    margin: 0 0 1.5rem;
+    line-height: 1.45em;
+    display: block;
+    font-size: max(1.75vw, 1.25rem);
+    font-weight: 300;
+    padding-left: 4rem;
+}
+
+.description a {
+    text-decoration: none;
+    color: #fff;
+    width:fit-content;
+    cursor: pointer;
+    display: inline;
+    position: relative
+}
+
+.description p a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.25s ease-out;
+}
+  
+.description p a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
 @media screen and (max-width: 767px) {
     .description {
         margin-left: 0;
         margin-top: 20vw;
     }
-}
-
-.description p {
-    margin: 0 0 1rem;
-    display: block;
-}
-
-.description p a {
-    text-decoration: none;
-    color: #fff;
-    width:fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.description p a::after {
-    content: '';
-    display: block;
-    margin: 5px auto 0;
-    height: 2px;
-    width: 0px;
-    background-color: #fff;
-    transition: width .25s ease-out;
-}
-
-.description p a:hover:after {
-    width: 100%;
+    .description p {
+        padding-left: 1.75rem;
+    }
 }

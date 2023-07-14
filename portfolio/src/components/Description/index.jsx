@@ -1,4 +1,5 @@
 import styles from './style.module.css';
+import { HiOutlineArrowDown } from "react-icons/hi";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -20,13 +21,18 @@ export default function index() {
     return (
         <div className={styles.description}>
             <AnimatedText>
-                    <p>
-                        Engineering Student
-                        <a href='https://www.isep.fr/'> @ISEP</a>
+                    <h2>
+                        <span>Engineering Student </span>
+                        <a href='https://www.isep.fr/'>@ISEP</a>
                         <span> 🇫🇷 &amp; </span>
                         <a href='https://www.sydney.edu.au/'>@SydneyUni</a>
                         <span> 🇦🇺</span>
-                    </p>
+                    </h2>
+            </AnimatedText>
+            <AnimatedText>
+                <h2>
+                    My Interests
+                </h2>
             </AnimatedText>
             <AnimatedText>
                 <p>
@@ -35,7 +41,47 @@ export default function index() {
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Working on ambitious and diverse projects
+                    Making beat on FL Studio
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Sports (played high-level of football)
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <h2>
+                    My Activities
+                </h2>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Food distribution for people in need at Paris City Hall
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Creation Pole in an association helping international students
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <h2>
+                    My Work
+                </h2>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Like working on ambitious and diverse projects
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Currently working on Maison Anaé's fully automatized e-commerce web app with admin dashboard
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Here are some of my projects :
                 </p>
             </AnimatedText>
         </div>
@@ -63,6 +109,6 @@ function AnimatedText({children}) {
     }, []);
     
     return (
-        <p ref={text}>{children}</p>
+        <div ref={text}>{children}</div>
     )
 }

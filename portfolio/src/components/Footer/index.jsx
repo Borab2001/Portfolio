@@ -1,6 +1,6 @@
 import styles from './style.module.css';
 
-export default function index() {
+export default function Index() {
     const currentYear = new Date().getFullYear();
 
     return (

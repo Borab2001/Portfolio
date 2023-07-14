@@ -5,18 +5,18 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 
-export default function index() {
-    const phrases = [
-        // `Engineering Student ${<a href='https://www.isep.fr/'>@ISEP 🇫🇷</a>} & ${<a href='https://www.sydney.edu.au/'>@SydneyUni 🇦🇺</a>}`,
-        // "Passionate about front-end & design",
-        // "Working on ambitious and diverse projects"
-        "Engineering Student ",
-        <a href='https://www.isep.fr/'>@ISEP 🇫🇷</a>,
-        " & ",
-        <a href='https://www.sydney.edu.au/'>@SydneyUni 🇦🇺</a>,
-        "Passionate about front-end & design",
-        "Working on ambitious and diverse projects"
-    ];
+export default function Index() {
+    // const phrases = [
+    // `Engineering Student ${<a href='https://www.isep.fr/'>@ISEP 🇫🇷</a>} & ${<a href='https://www.sydney.edu.au/'>@SydneyUni 🇦🇺</a>}`,
+    // "Passionate about front-end & design",
+    // "Working on ambitious and diverse projects"
+    //     "Engineering Student ",
+    //     <a href='https://www.isep.fr/'>@ISEP 🇫🇷</a>,
+    //     " & ",
+    //     <a href='https://www.sydney.edu.au/'>@SydneyUni 🇦🇺</a>,
+    //     "Passionate about front-end & design",
+    //     "Working on ambitious and diverse projects"
+    // ];
 
     return (
         <div className={styles.description}>
@@ -24,9 +24,9 @@ export default function index() {
                     <h2>
                         <span>Engineering Student </span>
                         <a href='https://www.isep.fr/'>@ISEP</a>
-                        <span> 🇫🇷 &amp; </span>
+                        <span> &#x1F1EB;&#x1F1F7; &amp; </span>
                         <a href='https://www.sydney.edu.au/'>@SydneyUni</a>
-                        <span> 🇦🇺</span>
+                        <span> &#x1F1E6;&#x1F1FA;</span>
                     </h2>
             </AnimatedText>
             <AnimatedText>
@@ -81,7 +81,7 @@ export default function index() {
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Currently working on Maison Anaé's fully automatized e-commerce web app with admin dashboard
+                    Currently working on Maison Ana&eacute;&rsquo;s fully automatized e-commerce web app with admin dashboard
                 </p>
             </AnimatedText>
             <AnimatedText>

@@ -1,10 +1,10 @@
 import styles from "./style.module.css";
 import { useState } from 'react';
 
-import Project from './project';
-import Modal from './modal';
+import Project from './project/Index';
+import Modal from './modal/Index';
 
-export default function index() {
+export default function Index() {
 
     const projects = [
         {

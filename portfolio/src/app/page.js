@@ -3,10 +3,10 @@
 import { useEffect } from 'react';
 import styles from './page.module.css';
 
-import Intro from '../components/Intro';
-import Description from '../components/Description';
-import Projects from '../components/Projects';
-import Footer from '../components/Footer';
+import Intro from '../components/Intro/Index';
+import Description from '../components/Description/Index';
+import Projects from '../components/Projects/Index';
+import Footer from '../components/Footer/Index';
 
 
 export default function Home() {

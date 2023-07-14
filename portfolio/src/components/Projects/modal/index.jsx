@@ -14,7 +14,7 @@ const scaleAnimation = {
     closed: {scale: 0, x: "0%", y: "0%", transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
 }
 
-export default function index({modal, projects}) {
+export default function Index({modal, projects}) {
 
     const { active, index } = modal;
     const modalContainer = useRef(null);

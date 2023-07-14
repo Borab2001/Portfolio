@@ -6,7 +6,7 @@
     /* text-transform: uppercase; */
     margin-left: 10vw;
     padding: 0 1rem;
-    margin-bottom: 100vw;
+    margin-bottom: 15vw;
 }
 @media screen and (max-width: 767px) {
     .description {

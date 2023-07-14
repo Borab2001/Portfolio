@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./style.module.css";
 import { FiLinkedin, FiGithub, FiTwitter, FiCodepen } from "react-icons/fi";
 import Link from "next/link";

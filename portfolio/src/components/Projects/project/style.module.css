@@ -16,7 +16,7 @@
 }
 
 .projectContent h2 {
-    font-size: 60px;
+    font-size: max(4vw, 42px);
     font-weight: 400;
     margin-top: 0;
 }

@@ -2,21 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 100vh; */
     position: relative;
+    overflow-x: hidden;
 }
 
 .projectsBody {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-@media screen and (max-width: 767px) {
-    .projectsBody {
-        width: 100%;
-        padding: 0 1rem;
-    }
 }

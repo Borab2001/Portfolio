@@ -91,7 +91,7 @@ export default function Index() {
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Here are some of my projects :
+                    Here are some of my projects:
                 </p>
             </AnimatedText>
         </div>

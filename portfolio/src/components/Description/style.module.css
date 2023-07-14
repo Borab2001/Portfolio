@@ -52,8 +52,7 @@
 
 @media screen and (max-width: 767px) {
     .description {
-        margin-left: 0;
-        margin-top: 20vw;
+        margin: 20vw 0 15vw;
     }
     .description p {
         padding-left: 1.75rem;

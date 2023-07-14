@@ -6,6 +6,7 @@ import styles from './page.module.css';
 import Intro from '../components/Intro';
 import Description from '../components/Description';
 import Projects from '../components/Projects';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Intro />
       <Description />
       <Projects />
+      <Footer />
     </main>
   )
 }

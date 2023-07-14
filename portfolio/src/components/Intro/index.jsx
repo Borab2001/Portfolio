@@ -1,11 +1,12 @@
 import Image from "next/image";
 import styles from "./style.module.css";
+import { FiLinkedin, FiGithub, FiTwitter, FiCodepen } from "react-icons/fi";
 import Link from "next/link";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-import { FiLinkedin, FiGithub, FiTwitter, FiCodepen } from "react-icons/fi";
 import { useLayoutEffect, useRef } from "react";
+
 
 export default function index() {
 

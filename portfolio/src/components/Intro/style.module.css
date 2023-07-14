@@ -1,5 +1,5 @@
 .intro {
-    height: 140vh;
+    height: 80vh;
 }
 
 .introContainer {
@@ -8,6 +8,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .intro {
+        height: 60vh;
+    }
 }
 
 .introContainer h1 {

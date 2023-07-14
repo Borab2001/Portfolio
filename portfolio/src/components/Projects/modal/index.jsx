@@ -39,7 +39,7 @@ export default function index({modal, projects}) {
                                 <Link href={href}>
                                     <Image 
                                         src={`/images/${src}`}
-                                        width={300}
+                                        width={350}
                                         height={0}
                                         alt={`${title} Image`}
                                     />

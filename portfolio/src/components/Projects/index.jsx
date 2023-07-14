@@ -9,42 +9,42 @@ export default function index() {
     const projects = [
         {
           title: "Curious",
-          subtitle: "Knowledge portal powered with ChatGPT built in Next.js, React, TailwindCSS, Python (FastAPI), PostgreSQL, Redis, LangChain, Docker & Docker Compose",
+          subtitle: "Knowledge portal powered with ChatGPT built with Next.js, React, TailwindCSS, Python (FastAPI), PostgreSQL, Redis, LangChain, Docker & Docker Compose",
           src: "curious.webp",
           href: "https://verycurious.xyz/",
           color: "#706D63"
         },
         {
           title: "Link",
-          subtitle: "Knowledge portal powered with ChatGPT built in Next.js, React, TailwindCSS, Python (FastAPI), PostgreSQL, Redis, LangChain, Docker & Docker Compose",
-          src: "",
+          subtitle: "Full stack real-time messaging app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma, MongoDB & Pusher",
+          src: "link.webp",
           href: "/",
           color: "#4F46E5"
         },
         {
           title: "Foodify",
-          subtitle: "Knowledge portal powered with ChatGPT built in Next.js, React, TailwindCSS, Python (FastAPI), PostgreSQL, Redis, LangChain, Docker & Docker Compose",
+          subtitle: "Full stack multi-functional recipe app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma & MongoDB",
           src: "foodify.webp",
           href: "https://foodifyapp.vercel.app/",
           color: "#4CD264"
         },
         {
           title: "Cinephile",
-          subtitle: "Knowledge portal powered with ChatGPT built in Next.js, React, TailwindCSS, Python (FastAPI), PostgreSQL, Redis, LangChain, Docker & Docker Compose",
+          subtitle: "Full Stack Movie Streaming app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma & MongoDB",
           src: "cinephile.webp",
           href: "https://cinephileapp.vercel.app/",
           color: "#000000"
         },
         {
           title: "Cypheme",
-          subtitle: "Knowledge portal powered with ChatGPT built in Next.js, React, TailwindCSS, Python (FastAPI), PostgreSQL, Redis, LangChain, Docker & Docker Compose",
+          subtitle: "Cypheme Anti-Counterfeit Technologies website which included visual rebranding, administrative automation, code optimization, cross-platform compatibility & numerous other landing pages.",
           src: "cypheme.webp",
           href: "https://cypheme.com/",
           color: "#8C8C8C"
         },
         {
           title: "Groupe BNSB",
-          subtitle: "Knowledge portal powered with ChatGPT built in Next.js, React, TailwindCSS, Python (FastAPI), PostgreSQL, Redis, LangChain, Docker & Docker Compose",
+          subtitle: "Landing page of design & sourcing group built with html, css & js (New version in progress, building with React.js)",
           src: "groupebnsb.webp",
           href: "https://groupe-bnsb.com/",
           color: "#EFE8D3"

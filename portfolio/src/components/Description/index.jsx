@@ -41,12 +41,12 @@ export default function index() {
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Making beat on FL Studio
+                    Sports (played high-level of football)
                 </p>
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Sports (played high-level of football)
+                    Making beats on FL Studio
                 </p>
             </AnimatedText>
             <AnimatedText>
@@ -65,6 +65,11 @@ export default function index() {
                 </p>
             </AnimatedText>
             <AnimatedText>
+                <p>
+                    Member of a job service association for students
+                </p>
+            </AnimatedText>
+            <AnimatedText>
                 <h2>
                     My Work
                 </h2>
@@ -77,6 +82,11 @@ export default function index() {
             <AnimatedText>
                 <p>
                     Currently working on Maison Anaé's fully automatized e-commerce web app with admin dashboard
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Ex-front-end engineer intern at Cypheme Anti-Counterfeit Technologies
                 </p>
             </AnimatedText>
             <AnimatedText>

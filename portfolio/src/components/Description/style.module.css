@@ -1,7 +1,6 @@
 .description {
     position: relative;
     z-index: 1;
-    color: #fff;
     margin: 0 10vw;
     padding: 0 1rem;
     margin-bottom: 15vw;
@@ -13,6 +12,7 @@
     display: block;
     font-size: max(2vw, 1.5rem);
     font-weight: 500;
+    color: #fff;
 }
 
 .description p {
@@ -22,6 +22,7 @@
     font-size: max(1.75vw, 1.25rem);
     font-weight: 300;
     padding-left: 4rem;
+    color: #eaeaea;
 }
 
 .description a {

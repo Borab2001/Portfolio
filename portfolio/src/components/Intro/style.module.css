@@ -1,0 +1,83 @@
+.intro {
+    height: 80vh;
+}
+
+.introContainer {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .intro {
+        height: 70vh;
+    }
+    .introContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .introContainer .socials {
+        margin-bottom: 8vw;
+    }
+}
+
+.introHeaders {
+    text-align: center;
+}
+
+.introHeaders h1 {
+    z-index: 3;
+    color: #fff;
+    font-size: max(7vw, 48px);
+    margin-top: 4rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.introHeaders h2 {
+    z-index: 3;
+    color: #fff;
+    font-size: max(2vw, 18px);
+    font-weight: 300;
+    margin-bottom: 7vw;
+    text-transform: uppercase;
+}
+
+.introContainer .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    z-index: 3;
+}
+
+.introContainer .socials a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: max(2vw, 1.5rem);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.introContainer div a::after {
+    content: '';
+    display: block;
+    margin: 5px auto 0;
+    height: 2px;
+    width: 0px;
+    background-color: #fff;
+    transition: width .25s ease-out;
+}
+
+.introContainer div a:hover:after {
+    width: 100%;
+}

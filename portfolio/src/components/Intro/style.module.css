@@ -7,14 +7,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    height: 100%;
 }
 
 @media screen and (max-width: 767px) {
     .intro {
-        height: 70vh;
+        height: 65vh;
     }
-    .introContainer {
+    /* .introContainer {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -23,6 +24,12 @@
     }
     .introContainer .socials {
         margin-bottom: 8vw;
+    } */
+    .introContainer .socials {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50px;
+        margin-top: 2rem;
     }
 }
 
@@ -76,6 +83,7 @@
     width: 0px;
     background-color: #fff;
     transition: width .25s ease-out;
+    border-radius: 30px;
 }
 
 .introContainer div a:hover:after {

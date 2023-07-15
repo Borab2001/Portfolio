@@ -36,7 +36,7 @@ export default function Index() {
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Passionate about front-end &amp; design
+                    Passionate about creating &amp; designing
                 </p>
             </AnimatedText>
             <AnimatedText>

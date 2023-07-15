@@ -31,10 +31,10 @@
     width:fit-content;
     cursor: pointer;
     display: inline;
-    position: relative
+    position: relative;
 }
 
-.description p a:after {
+.description a:after {
     content: '';
     position: absolute;
     left: 50%;
@@ -43,9 +43,10 @@
     height: 2px;
     background-color: #fff;
     transition: all 0.25s ease-out;
+    border-radius: 30px;
 }
   
-.description p a:hover:after {
+.description a:hover:after {
     width: 100%;
     left: 0;
 }

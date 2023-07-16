@@ -91,6 +91,14 @@ export default function Index() {
             </AnimatedText>
             <AnimatedText>
                 <p>
+                    Ex-front-end engineer intern at Cypheme Anti-Counterfeit Technologies
+                </p>
+            </AnimatedText>
+                <p>
+                    Worked on a carbon footprint calculator for the startup Tickarbone
+                </p>
+            <AnimatedText>
+                <p>
                     Here are some of my projects:
                 </p>
             </AnimatedText>

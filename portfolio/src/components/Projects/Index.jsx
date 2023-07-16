@@ -44,7 +44,7 @@ export default function Index() {
         },
         {
           title: "Groupe BNSB",
-          subtitle: "Landing page of design & sourcing group built with html, css & js (New version in progress, building with React.js).",
+          subtitle: "Landing page of design & sourcing group built with HTML, CSS & JS (New version in progress, building with Next.js, React.js...).",
           src: "groupebnsb.webp",
           href: "https://groupe-bnsb.com/",
           color: "#EFE8D3"

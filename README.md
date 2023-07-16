@@ -1,9 +1,9 @@
-# Personal Website
+# Portfolio Website
 
 👋 Hey ! I'm Bora Balos
 
-🎓 French Engineering Student @ISEPParis and @UniversityOfSydney
+🎓 French Engineering Student @ISEPParis & @UniversityOfSydney
 
-👀 Website URL: https://borabalos.com/ 
+👀 Website URL: https://www.borabalos.com/ 
 
 🧑🏻‍💻 Tech Stack used: Next.js, React.js, GSAP & FramerMotion

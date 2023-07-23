@@ -2,7 +2,7 @@
 
 👋 Hey ! I'm Bora Balos
 
-🎓 French Engineering Student @ISEPParis & @UniversityOfSydney
+🎓 French Engineering Student @ISEP 🇫🇷 & @SydneyUni 🇦🇺
 
 👀 Website URL: https://www.borabalos.com/ 
 

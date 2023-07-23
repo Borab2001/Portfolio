@@ -18,7 +18,7 @@ export default function Index() {
           title: "Link",
           subtitle: "Full stack real-time messaging app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma, MongoDB & Pusher.",
           src: "link.webp",
-          href: "/",
+          href: "https://link-bb.vercel.app/",
           color: "#4F46E5"
         },
         {

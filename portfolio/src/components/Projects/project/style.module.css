@@ -35,10 +35,6 @@
     transition: all 0.2s ease-out;
 }
 
-.project:not(:hover) {
-    opacity: 0.4;
-}
-
 .project:hover .projectContent {
     transform: translateX(-10px);
 }
@@ -66,10 +62,6 @@
     }
 
     .project:hover {
-        opacity: 1;
-    }
-
-    .project:not(:hover) {
         opacity: 1;
     }
     

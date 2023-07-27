@@ -15,3 +15,13 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.projectsBody:hover > :not(:hover){
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 767px) {
+    .projectsBody:hover > :not(:hover){
+        opacity: 1;
+    }
+}

@@ -6,7 +6,7 @@
     justify-content: center;
     position: fixed;
     z-index: 99;
-    background-color: rgb(45, 45, 45);
+    background-color: #000;
 }
 
 .intro svg{
@@ -18,7 +18,7 @@
 }
 
 .intro svg path {
-    fill: rgb(45, 45, 45);
+    fill: #000;
 }
 
 .intro p{

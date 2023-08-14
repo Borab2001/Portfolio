@@ -8,6 +8,7 @@ body {
     /* background-color: #151418; */
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Poppins', sans-serif;
+    cursor: wait;
 }
 
 *::selection {

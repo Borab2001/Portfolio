@@ -1,9 +1,9 @@
 .intro {
-    height: 80vh;
+    height: 110vh;
 }
 
 .introContainer {
-    margin-top: 30vh;
+    padding-top: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 767px) {
     .intro {
-        height: 65vh;
+        height: 95vh;
     }
     /* .introContainer {
         height: 100%;

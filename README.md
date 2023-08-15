@@ -6,4 +6,4 @@
 
 👀 Website URL: https://www.borabalos.com/ 
 
-🧑🏻‍💻 Tech Stack used: Next.js, React.js, GSAP & FramerMotion
+🧑🏻‍💻 Tech Stack used: Next.js, React.js, GSAP, FramerMotion & LocomotiveScroll

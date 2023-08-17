@@ -23,8 +23,8 @@ export default function Home() {
 				setTimeout(() => {
 					setIsLoading(false);
 					document.body.style.cursor = 'default';
-					window.scrollTo(0, 0);
-				}, 2000);
+					window.scrollTo(0,0);
+				}, 2000)
 			}
 		)();
 	}, []);
@@ -36,11 +36,13 @@ export default function Home() {
 					isLoading && <Preloader />
 				}
 			</AnimatePresence>
-
-			<Intro />
-			<Description />
-			<Projects />
-			<Footer />
+			
+			<div className={styles.body}>
+				<Intro />
+				<Description />
+				<Projects />
+				<Footer />
+			</div>
 		</main>
 	);
 }

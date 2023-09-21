@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .modal {
+    .modalContainer {
         display: none;
     }
 }
@@ -36,7 +36,7 @@
     height: auto;
 }
 
-/* .cursor,
+.cursor,
 .cursorLabel {
     width: 80px;
     height: 80px;
@@ -53,4 +53,4 @@
 
 .cursorLabel {
     background-color: transparent;
-} */
+}

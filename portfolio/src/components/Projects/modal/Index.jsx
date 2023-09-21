@@ -19,6 +19,7 @@ export default function Index({modal, projects}) {
     const modalContainer = useRef(null);
     const cursor = useRef(null);
     const cursorLabel = useRef(null);
+    const activeProjectHref = projects[modal.index]?.href;
 
     useEffect(() => {
         let xMoveContainer = gsap.quickTo(modalContainer.current, "left", {duration: 0.8, ease: "power3"})
@@ -64,9 +65,8 @@ export default function Index({modal, projects}) {
             window.removeEventListener("click", handleClick);
         }
 
-    }, [projects, modal.index])
+    }, [projects, modal.index, activeProjectHref])
 
-    const activeProjectHref = projects[modal.index]?.href;
 
     return (
         <>

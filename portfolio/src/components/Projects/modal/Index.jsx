@@ -90,9 +90,9 @@ export default function Index({modal, projects}) {
                         })
                     }
                 </div>
-                <motion.a ref={cursor} href={activeProjectHref} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "closed"} className={styles.cursor}>
+                <motion.div ref={cursor} href={activeProjectHref} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "closed"} className={styles.cursor}>
                     <motion.div ref={cursorLabel} variants={scaleAnimation} initial={"initial"} animate={active ? "open" : "closed"} className={styles.cursorLabel}>View</motion.div>
-                </motion.a>
+                </motion.div>
             </motion.div>
         </>
     )

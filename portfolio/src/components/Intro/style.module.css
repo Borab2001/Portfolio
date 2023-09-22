@@ -3,7 +3,7 @@
 }
 
 .introContainer {
-    padding-top: 30vh;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,6 +35,7 @@
 
 .introHeaders {
     text-align: center;
+    padding-top: 25vh;
 }
 
 .introHeaders h1 {

@@ -11,16 +11,19 @@ export default function Index({index, title, subtitle, setModal, color, href, sr
                 <p>{subtitle}</p>
             </div>
             <p className={styles.projectCategory}>Design &amp; Development</p>            
-            <div style={{backgroundColor: color}} className={styles.projectImage}>
-                <Link href={href}>
+            <Link href={href} style={{backgroundColor: color}} className={styles.projectImage}>
+                <div>
                     <Image 
                         src={`/images/${src}`}
                         width={767}
                         height={0}
                         alt={`${title} Image`}
                     />
-                </Link>
-            </div>
+                </div>
+                <div className={styles.overlay}>
+                    <span>View</span>
+                </div>
+            </Link>
         </div>
     )
 }

@@ -1,14 +1,9 @@
-"use client";
-
 import './globals.css';
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
-import Hotjar from '@hotjar/browser';
-import { useEffect } from 'react';
+import HotjarTracking from '@/components/HotjarTracking';
 
 const inter = Inter({ subsets: ['latin'] });
-const siteId = 3741456; // Hotjar site ID
-const hotjarVersion = 6; // Hotjar version
 
 export const metadata = {
   title: 'Bora Balos | Portfolio website',
@@ -22,10 +17,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    Hotjar.init(siteId, hotjarVersion); // Initializing Hotjar
-  }, []);
-
   return (
     <html lang="en">
       <head>
@@ -39,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {children}
         <Analytics />
+        <HotjarTracking siteId={3741456} hotjarVersion={6} />
       </body>
     </html>
   );

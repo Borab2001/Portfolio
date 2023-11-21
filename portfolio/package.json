@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hotjar/browser": "^1.0.9",
     "@vercel/analytics": "^1.0.1",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",

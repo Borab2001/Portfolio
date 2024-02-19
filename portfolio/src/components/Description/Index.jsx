@@ -21,13 +21,20 @@ export default function Index() {
     return (
         <div className={styles.description}>
             <AnimatedText>
-                    <h2>
-                        <span>Engineering Student </span>
-                        <a href='https://www.isep.fr/'>@ISEP</a>
-                        <span> &#x1F1EB;&#x1F1F7; &amp; </span>
-                        <a href='https://www.sydney.edu.au/'>@SydneyUni</a>
-                        <span> &#x1F1E6;&#x1F1FA;</span>
-                    </h2>
+                <h2>
+                    <span>CS Student </span>
+                    <a href='https://www.isep.fr/'>@ISEP</a>
+                    <span> &#x1F1EB;&#x1F1F7; &amp; </span>
+                    <a href='https://www.sydney.edu.au/'>@SydneyUni</a>
+                    <span> &#x1F1E6;&#x1F1FA;</span>
+                </h2>
+            </AnimatedText>
+            <AnimatedText>
+                <h2>
+                    <span> Intern at </span> 
+                    <a href='https://www.capgemini.com/'>Capgemini</a>
+                    <span> &#x2660; &#x1F1EB;&#x1F1F7;</span>
+                </h2>
             </AnimatedText>
             <AnimatedText>
                 <h2>

@@ -36,7 +36,9 @@ export default function Intro() {
             <div className={styles.introContainer}>
                 <div className={styles.introHeaders}>
                     <h1 data-scroll data-scroll-speed="0.3">Bora Balos</h1>
-                    <h2 data-scroll data-scroll-speed="0.3">🇫🇷 CS Student - Capgemini Intern</h2>
+                    <h2 data-scroll data-scroll-speed="0.3">
+                        🇫🇷 CS Student
+                    </h2>
                 </div>
                 <div className={styles.socials}>
                     <Link href="https://www.linkedin.com/in/bora-balos/" title="LinkedIn">

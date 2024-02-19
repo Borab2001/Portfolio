@@ -1,5 +1,6 @@
 import styles from "./style.module.css";
-import { FiLinkedin, FiGithub, FiTwitter, FiCodepen } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiCodepen } from "react-icons/fi";
+import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 
 import gsap from "gsap";
@@ -7,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 
 
-export default function Index() {
+export default function Intro() {
 
     const backgroundImage = useRef(null);
     const introImage = useRef(null);
@@ -35,7 +36,7 @@ export default function Index() {
             <div className={styles.introContainer}>
                 <div className={styles.introHeaders}>
                     <h1 data-scroll data-scroll-speed="0.3">Bora Balos</h1>
-                    <h2 data-scroll data-scroll-speed="0.3">🇫🇷 Engineering Student</h2>
+                    <h2 data-scroll data-scroll-speed="0.3">🇫🇷 CS Student - Capgemini Intern</h2>
                 </div>
                 <div className={styles.socials}>
                     <Link href="https://www.linkedin.com/in/bora-balos/" title="LinkedIn">
@@ -44,8 +45,8 @@ export default function Index() {
                     <Link href="https://github.com/Borab2001" title="GitHub">
                         <FiGithub />
                     </Link>
-                    <Link href="https://twitter.com/borab0302" title="Twitter">
-                        <FiTwitter />
+                    <Link href="https://twitter.com/borab2001" title="X">
+                        <BsTwitterX />
                     </Link>
                     <Link href="https://codepen.io/borab2001" title="Codepen">
                         <FiCodepen />

@@ -15,18 +15,18 @@ export default function Index() {
           color: "#706D63"
         },
         {
-          title: "Link",
-          subtitle: "Full stack real-time messaging app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma, MongoDB & Pusher.",
-          src: "link.webp",
-          href: "https://link-bb.vercel.app/",
-          color: "#4F46E5"
-        },
-        {
           title: "Foodify",
           subtitle: "Full stack multi-functional recipe app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma & MongoDB.",
           src: "foodify.webp",
           href: "https://foodifyapp.vercel.app/",
           color: "#4CD264"
+        },
+        {
+          title: "Link",
+          subtitle: "Full stack real-time messaging app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma, MongoDB & Pusher.",
+          src: "link.webp",
+          href: "https://link-bb.vercel.app/",
+          color: "#4F46E5"
         },
         {
           title: "Cinephile",

@@ -9,9 +9,9 @@ export default function Index() {
     const projects = [
         {
           title: "Curious",
-          subtitle: "Knowledge portal powered with ChatGPT built with Next.js, React, TailwindCSS, Python (FastAPI), PostgreSQL, Redis, LangChain, Docker & Docker Compose.",
+          subtitle: "A social knowledge portal powered with ChatGPT built with Next.js, React, TypeScript, TailwindCSS, Firebase & LangChain.",
           src: "curious.webp",
-          href: "https://verycurious.xyz/",
+          href: "https://curious-gpt.vercel.app/",
           color: "#706D63"
         },
         {

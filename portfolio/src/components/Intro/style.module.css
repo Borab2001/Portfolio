@@ -27,7 +27,7 @@
     } */
 
     .introHeaders {
-        padding-top: 20vh;
+        padding-top: 20vh !important;
     }
 
     .introContainer .socials {

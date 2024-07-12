@@ -1,7 +1,9 @@
 import styles from "./style.module.css";
 import { FiLinkedin, FiGithub, FiCodepen } from "react-icons/fi";
 import { BsTwitterX } from "react-icons/bs";
+
 import Link from "next/link";
+import Image from "next/image";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -35,6 +37,15 @@ export default function Intro() {
         <div className={styles.intro}>
             <div className={styles.introContainer}>
                 <div className={styles.introHeaders}>
+                    <Image 
+                        src="/android-chrome-512x512.png"
+                        width={96}
+                        height={96}
+                        alt="Profile Image"
+                        className={styles.profileImage}
+                        data-scroll 
+                        data-scroll-speed="0.3"
+                    />
                     <h1 data-scroll data-scroll-speed="0.3">Bora Balos</h1>
                     <h2 data-scroll data-scroll-speed="0.3">
                         🇫🇷 CS Student

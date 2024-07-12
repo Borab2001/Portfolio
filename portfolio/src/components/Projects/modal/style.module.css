@@ -9,6 +9,7 @@
     overflow: hidden;
     pointer-events: none;
     transform-origin: center;
+    border-radius: 0.5vw;
 }
 
 .modalSlider {

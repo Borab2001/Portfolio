@@ -44,9 +44,9 @@ export default function Index() {
         },
         {
           title: "Groupe BNSB",
-          subtitle: "Website of Groupe BNSB - Design & Sourcing office built with HTML, CSS & JS (New version built with Next.js, React.js, FramerMotion, GSAP & LenisScroll coming soon).",
+          subtitle: "Website of Groupe BNSB - Design & Sourcing office, currently in build with Next.js, React.js, FramerMotion and LenisScroll (Old version build with HTML, CSS & JS available on groupe-bnsb.com).",
           src: "groupebnsb.webp",
-          href: "https://groupe-bnsb.com/",
+          href: "https://groupe-bnsb.vercel.app/",
           color: "#ECEFF3"
         }
     ]

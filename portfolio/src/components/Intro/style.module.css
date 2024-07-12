@@ -30,11 +30,6 @@
         padding-top: 20vh;
     }
 
-    .introHeaders .profileImage {
-        width: 72px;
-        height: 72px;
-    }
-
     .introContainer .socials {
         position: -webkit-sticky;
         position: sticky;
@@ -45,13 +40,15 @@
 
 .introHeaders {
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 12vh;
 }
 
 .introHeaders .profileImage {
     border-radius: 50%;
     margin-top: 4rem;
     margin-bottom: 0;
+    width: max(8vw, 80px);
+    height: max(8vw, 80px);
 }
 
 .introHeaders h1 {

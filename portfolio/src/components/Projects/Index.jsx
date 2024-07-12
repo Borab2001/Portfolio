@@ -12,7 +12,7 @@ export default function Index() {
           subtitle: "A social knowledge portal powered with ChatGPT built with Next.js, React, TypeScript, TailwindCSS, Firebase & LangChain.",
           src: "curious.webp",
           href: "https://curious-gpt.vercel.app/",
-          color: "#706D63"
+          color: "#4F46E5",
         },
         {
           title: "Foodify",
@@ -26,28 +26,28 @@ export default function Index() {
           subtitle: "Full stack real-time messaging app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma, MongoDB & Pusher.",
           src: "link.webp",
           href: "https://link-bb.vercel.app/",
-          color: "#4F46E5"
+          color: "#1B171C"
         },
         {
           title: "Cinephile",
           subtitle: "Full Stack Movie Streaming app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma & MongoDB.",
           src: "cinephile.webp",
           href: "https://cinephileapp.vercel.app/",
-          color: "#000000"
+          color: "#390C6F"
         },
         {
           title: "Cypheme",
           subtitle: "Cypheme Anti-Counterfeit Technologies website which included visual rebranding, administrative automation, code optimization, cross-platform compatibility & numerous other landing pages.",
           src: "cypheme.webp",
           href: "https://cypheme.com/",
-          color: "#8C8C8C"
+          color: "#F0EFF9"
         },
         {
           title: "Groupe BNSB",
           subtitle: "Website of Groupe BNSB - Design & Sourcing office built with HTML, CSS & JS (New version built with Next.js, React.js, FramerMotion, GSAP & LenisScroll coming soon).",
           src: "groupebnsb.webp",
           href: "https://groupe-bnsb.com/",
-          color: "#EFE8D3"
+          color: "#ECEFF3"
         }
     ]
 

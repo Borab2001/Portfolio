@@ -3,18 +3,21 @@
 }
 
 .introContainer {
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
+    padding: 5vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    height: 100%;
+    /* justify-content: start; */
+    justify-content: center;
+    /* height: 100%; */
+    height: calc(100% - 20vh);
 }
 
 @media screen and (max-width: 767px) {
-    .intro {
+    /* .intro {
         height: 95vh;
-    }
+    } */
     /* .introContainer {
         height: 100%;
         display: flex;
@@ -26,9 +29,9 @@
         margin-bottom: 8vw;
     } */
 
-    .introHeaders {
+    /* .introHeaders {
         padding-top: 20vh !important;
-    }
+    } */
 
     .introContainer .socials {
         position: -webkit-sticky;
@@ -40,7 +43,7 @@
 
 .introHeaders {
     text-align: center;
-    padding-top: 12vh;
+    /* padding-top: 12vh; */
 }
 
 .introHeaders .profileImage {

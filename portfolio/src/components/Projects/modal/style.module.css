@@ -35,6 +35,7 @@
 
 .modal img {
     height: auto;
+    border-radius: 0.35vw;
 }
 
 .cursor,

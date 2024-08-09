@@ -54,7 +54,7 @@ export default function Index() {
 			subtitle: "Website of Aila Consulting, currently in build with Next.js, TypeScript, TailwindCSS and FramerMotion.",
 			src: "ailaconsulting.webp",
 			href: "https://ailaconsulting.vercel.app/",
-			color: "#FFFFFF"
+			color: "#F0F8FF"
         }
     ]
 

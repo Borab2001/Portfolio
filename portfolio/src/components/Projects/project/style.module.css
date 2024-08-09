@@ -45,7 +45,7 @@
 
 .projectImage {
     display: none;
-    padding: 2rem;
+    padding: 5vw;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -55,6 +55,7 @@
 .projectImage img {
     width: 100%;
     height: auto;
+    border-radius: 0.65vw;
 }
 
 .projectImage .overlay {

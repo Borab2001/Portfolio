@@ -16,7 +16,7 @@ export default function Index() {
         },
         {
 			title: "Foodify",
-			subtitle: "Full stack multi-functional recipe app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma & MongoDB.",
+			subtitle: "Full stack multi-functional recipe app built with Next.js, React.js, TailwindCSS, NextAuth, Prisma & MongoDB with mockups on Figma.",
 			src: "foodify.webp",
 			href: "https://foodifyapp.vercel.app/",
 			color: "#4CD264"

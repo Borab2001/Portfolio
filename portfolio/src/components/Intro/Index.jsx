@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import { FiLinkedin, FiGithub, FiCodepen } from "react-icons/fi";
+import { FiCodepen, FiFigma, FiGithub, FiLinkedin  } from "react-icons/fi";
 import { BsTwitterX } from "react-icons/bs";
 
 import Link from "next/link";
@@ -48,7 +48,7 @@ export default function Intro() {
                     />
                     <h1 data-scroll data-scroll-speed="0.3">Bora Balos</h1>
                     <h2 data-scroll data-scroll-speed="0.3">
-                        🇫🇷 CS Student
+                        🇫🇷 Software Engineer
                     </h2>
                 </div>
                 <div className={styles.socials}>
@@ -61,8 +61,11 @@ export default function Intro() {
                     <Link href="https://twitter.com/borab2001" title="X">
                         <BsTwitterX />
                     </Link>
-                    <Link href="https://codepen.io/borab2001" title="Codepen">
+                    {/* <Link href="https://codepen.io/borab2001" title="Codepen">
                         <FiCodepen />
+                    </Link> */}
+                    <Link href="https://www.figma.com/@borab2001" title="Figma">
+                        <FiFigma />
                     </Link>
                 </div>
             </div>

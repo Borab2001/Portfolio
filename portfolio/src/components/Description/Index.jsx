@@ -22,7 +22,7 @@ export default function Index() {
         <div className={styles.description}>
             <AnimatedText>
                 <h2>
-                    <span>CS Student </span>
+                    <span>MS in Computer Science </span>
                     <a href='https://www.isep.fr/'>@ISEP</a>
                     <span> &#x1F1EB;&#x1F1F7; &amp; </span>
                     <a href='https://www.sydney.edu.au/'>@SydneyUni</a>
@@ -31,7 +31,7 @@ export default function Index() {
             </AnimatedText>
             <AnimatedText>
                 <h2>
-                    <span> Intern at </span> 
+                    <span>Intern at </span> 
                     <a href='https://www.capgemini.com/'>Capgemini</a>
                     <span> &#x2660; &#x1F1EB;&#x1F1F7;</span>
                 </h2>

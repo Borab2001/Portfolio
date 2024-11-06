@@ -7,6 +7,20 @@ import Modal from './modal/Index';
 export default function Index() {
 
     const projects = [
+		{
+			title: "Aila Consulting",
+			subtitle: "Website of Aila Consulting, currently in build with Next.js, TypeScript, TailwindCSS, React Email, Resend & FramerMotion.",
+			src: "ailaconsulting.webp",
+			href: "https://ailaconsulting.vercel.app/",
+			color: "#191919"
+		},
+		{
+			title: "Groupe BNSB",
+			subtitle: "Website of Groupe BNSB - Design & Sourcing office, currently in build with Next.js, TypeScript, TailwindCSS FramerMotion LenisScroll, React Email & Resend (Old version build with HTML, CSS & JS available on groupe-bnsb.com).",
+			src: "groupebnsb.webp",
+			href: "https://groupe-bnsb.vercel.app/",
+			color: "#ECEFF3"
+        },
         {
 			title: "Curious",
 			subtitle: "A social knowledge portal powered with ChatGPT built with Next.js, React, TypeScript, TailwindCSS, Firebase & LangChain.",
@@ -42,20 +56,6 @@ export default function Index() {
 			href: "https://cypheme.com/",
 			color: "#F0EFF9"
         },
-        {
-			title: "Groupe BNSB",
-			subtitle: "Website of Groupe BNSB - Design & Sourcing office, currently in build with Next.js, TypeScript, TailwindCSS FramerMotion LenisScroll, React Email & Resend (Old version build with HTML, CSS & JS available on groupe-bnsb.com).",
-			src: "groupebnsb.webp",
-			href: "https://groupe-bnsb.vercel.app/",
-			color: "#ECEFF3"
-        },
-        {
-			title: "Aila Consulting",
-			subtitle: "Website of Aila Consulting, currently in build with Next.js, TypeScript, TailwindCSS, React Email, Resend & FramerMotion.",
-			src: "ailaconsulting.webp",
-			href: "https://ailaconsulting.vercel.app/",
-			color: "#191919"
-        }
     ]
 
     const [modal, setModal] = useState({active: false, index: 0})

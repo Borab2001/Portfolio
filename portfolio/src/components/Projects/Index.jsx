@@ -44,17 +44,17 @@ export default function Index() {
         },
         {
 			title: "Groupe BNSB",
-			subtitle: "Website of Groupe BNSB - Design & Sourcing office, currently in build with Next.js, TypeScript, TailwindCSS FramerMotion and LenisScroll (Old version build with HTML, CSS & JS available on groupe-bnsb.com).",
+			subtitle: "Website of Groupe BNSB - Design & Sourcing office, currently in build with Next.js, TypeScript, TailwindCSS FramerMotion LenisScroll, React Email & Resend (Old version build with HTML, CSS & JS available on groupe-bnsb.com).",
 			src: "groupebnsb.webp",
 			href: "https://groupe-bnsb.vercel.app/",
 			color: "#ECEFF3"
         },
         {
 			title: "Aila Consulting",
-			subtitle: "Website of Aila Consulting, currently in build with Next.js, TypeScript, TailwindCSS and FramerMotion.",
+			subtitle: "Website of Aila Consulting, currently in build with Next.js, TypeScript, TailwindCSS, React Email, Resend & FramerMotion.",
 			src: "ailaconsulting.webp",
 			href: "https://ailaconsulting.vercel.app/",
-			color: "#F0F8FF"
+			color: "#191919"
         }
     ]
 

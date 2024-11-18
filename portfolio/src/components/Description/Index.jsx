@@ -22,7 +22,7 @@ export default function Index() {
         <div className={styles.description}>
             <AnimatedText>
                 <h2>
-                    <span>Master's Graduate in Computer Science</span>
+                    <span>Master&#39;s Graduate in Computer Science</span>
                 </h2>
             </AnimatedText>
             <AnimatedText>

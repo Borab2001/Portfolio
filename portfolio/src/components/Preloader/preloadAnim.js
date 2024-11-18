@@ -8,7 +8,7 @@ export const slideUp = {
     }
 }
 
-export const ipad = {
+export const opacity = {
     initial: {
         opacity: 0
     },

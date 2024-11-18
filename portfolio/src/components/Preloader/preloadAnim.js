@@ -12,8 +12,8 @@ export const opacity = {
     initial: {
         opacity: 0
     },
-    exit: {
+    enter: {
         opacity: 1,
         transition: {duration: 0.2, delay: 0.2}
-    }
+    },
 }

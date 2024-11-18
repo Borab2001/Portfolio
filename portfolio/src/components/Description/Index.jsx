@@ -22,44 +22,95 @@ export default function Index() {
         <div className={styles.description}>
             <AnimatedText>
                 <h2>
-                    <span>MS in Computer Science </span>
-                    <a href='https://www.isep.fr/'>@ISEP</a>
-                    <span> &#x1F1EB;&#x1F1F7; &amp; </span>
-                    <a href='https://www.sydney.edu.au/'>@SydneyUni</a>
-                    <span> &#x1F1E6;&#x1F1FA;</span>
+                    <span>Master's Graduate in Computer Science</span>
                 </h2>
             </AnimatedText>
             <AnimatedText>
+                <p>
+                    {/* <a href='https://www.isep.fr/'>ISEP Paris</a> */}
+                    <span>ISEP Paris &#x1F1EB;&#x1F1F7;</span>
+                    <span> and </span>
+                    {/* <a href='https://www.sydney.edu.au/'>University of Sydney</a> */}
+                    <span>University of Sydney &#x1F1E6;&#x1F1FA;</span>
+                </p>
+            </AnimatedText>
+            <AnimatedText>
                 <h2>
-                    <span>Intern at </span> 
+                    Internships
+                </h2>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    <span>Software Engineer at </span> 
                     <a href='https://www.capgemini.com/'>Capgemini</a>
-                    <span> &#x2660; &#x1F1EB;&#x1F1F7;</span>
-                </h2>
+                    <i> ~ Experts in Digital Transformation and Consulting</i>
+                    {/* <span> &#x2660; &#x1F1EB;&#x1F1F7;</span> */}
+                </p>
             </AnimatedText>
+            <AnimatedText>
+                <p>
+                    <span>Frontend Engineer at </span> 
+                    <a href='https://www.cypheme.com/'>Cypheme</a>
+                    <i> ~ AI-Powered Anti Counterfeit Solutions</i>
+                    {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
+                </p>
+            </AnimatedText>
+
             <AnimatedText>
                 <h2>
-                    My Interests
+                    Freelance Software Engineer
                 </h2>
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Passionate about creating &amp; designing
+                    {/* <span>Software Engineer & Designer ~ </span>  */}
+                    <a href='https://ailaconsulting.vercel.app/'>Aila Consulting</a>
+                    <i> ~ Experts in Administrative Processes and Linguistic Services</i>
+                    {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
                 </p>
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Sports (played high-level of football)
+                    {/* <span>Software Engineer & Designer ~ </span>  */}
+                    <a href='https://groupe-bnsb.com/'>Groupe BNSB</a>
+                    <i> ~ Design and Sourcing Office in Fashion</i>
                 </p>
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Making beats on FL Studio
+                    {/* <span>Software Engineer & Designer ~ </span>  */}
+                    <a href='https://groupe-bnsb.com/'>Maison Anaé</a>
+                    <i> ~ Upcoming eco-friendly fashion brand by Groupe BNSB</i>
                 </p>
             </AnimatedText>
+            <AnimatedText>
+                <p>
+                    {/* <span>Frontend Engineer at </span>  */}
+                    <a href='https://www.cypheme.com/'>Cypheme</a>
+                    <i> ~ AI-Powered Anti Counterfeit Solutions</i>
+                    {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
+                </p>
+            </AnimatedText>
+
             <AnimatedText>
                 <h2>
-                    My Activities
+                    About me
                 </h2>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Passionate about creating and designing
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    10+ years of experience in football
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
+                    Crafting some music on FL Studio
+                </p>
             </AnimatedText>
             <AnimatedText>
                 <p>
@@ -68,43 +119,18 @@ export default function Index() {
             </AnimatedText>
             <AnimatedText>
                 <p>
-                    Creation Pole in an association helping international students
+                    Part of an association welcoming international students
                 </p>
             </AnimatedText>
-            <AnimatedText>
+            {/* <AnimatedText>
                 <p>
                     Member of a job service association for students
                 </p>
-            </AnimatedText>
+            </AnimatedText> */}
             <AnimatedText>
                 <h2>
-                    My Work
+                    Here are some of my projects
                 </h2>
-            </AnimatedText>
-            <AnimatedText>
-                <p>
-                    Like working on ambitious and diverse projects
-                </p>
-            </AnimatedText>
-            <AnimatedText>
-                <p>
-                    Currently working on Maison Ana&eacute;&rsquo;s fully automatized e-commerce web app with admin dashboard
-                </p>
-            </AnimatedText>
-            <AnimatedText>
-                <p>
-                    Ex-front-end engineer intern at Cypheme Anti-Counterfeit Technologies
-                </p>
-            </AnimatedText>
-            <AnimatedText>
-                <p>
-                    Worked on a carbon footprint calculator for the startup Tickarbone
-                </p>
-            </AnimatedText>
-            <AnimatedText>
-                <p>
-                    Here are some of my projects:
-                </p>
             </AnimatedText>
         </div>
     )

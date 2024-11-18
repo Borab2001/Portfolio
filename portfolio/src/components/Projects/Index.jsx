@@ -16,9 +16,9 @@ export default function Index() {
 		},
 		{
 			title: "Groupe BNSB",
-			subtitle: "Website of Groupe BNSB - Design & Sourcing office, currently in build with Next.js, TypeScript, TailwindCSS FramerMotion LenisScroll, React Email & Resend (Old version build with HTML, CSS & JS available on groupe-bnsb.com).",
+			subtitle: "Website of Groupe BNSB - Design & Sourcing office, currently in build with Next.js, TypeScript, TailwindCSS FramerMotion LenisScroll, React Email & Resend.",
 			src: "groupebnsb.webp",
-			href: "https://groupe-bnsb.vercel.app/",
+			href: "https://groupe-bnsb.com/",
 			color: "#ECEFF3"
         },
         {

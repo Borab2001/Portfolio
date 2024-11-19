@@ -66,7 +66,7 @@ export default function Index() {
             <AnimatedText>
                 <p>
                     {/* <span>Software Engineer & Designer ~ </span>  */}
-                    <a href='https://ailaconsulting.vercel.app/'>Aila Consulting</a>
+                    <a href='https://ailaconsulting.com/'>Aila Consulting</a>
                     <span className={styles.descriptionText}> ~ Experts in Administrative Processes and Linguistic Services</span>
                     {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
                 </p>

@@ -22,14 +22,17 @@ export default function Index() {
         <div className={styles.description}>
             <AnimatedText>
                 <h2>
-                    <span>Master&#39;s Graduate in Computer Science</span>
+                    <span>Master&#39;s in Computer Science</span>
                 </h2>
             </AnimatedText>
             <AnimatedText>
                 <p>
                     {/* <a href='https://www.isep.fr/'>ISEP Paris</a> */}
                     <span>ISEP Paris &#x1F1EB;&#x1F1F7;</span>
-                    <span> and </span>
+                </p>
+            </AnimatedText>
+            <AnimatedText>
+                <p>
                     {/* <a href='https://www.sydney.edu.au/'>University of Sydney</a> */}
                     <span>University of Sydney &#x1F1E6;&#x1F1FA;</span>
                 </p>
@@ -43,15 +46,14 @@ export default function Index() {
                 <p>
                     <span>Software Engineer at </span> 
                     <a href='https://www.capgemini.com/'>Capgemini</a>
-                    <i> ~ Experts in Digital Transformation and Consulting</i>
-                    {/* <span> &#x2660; &#x1F1EB;&#x1F1F7;</span> */}
+                    <span className={styles.descriptionText}> ~ Experts in Digital Transformation and Consulting</span>
                 </p>
             </AnimatedText>
             <AnimatedText>
                 <p>
                     <span>Frontend Engineer at </span> 
                     <a href='https://www.cypheme.com/'>Cypheme</a>
-                    <i> ~ AI-Powered Anti Counterfeit Solutions</i>
+                    <span className={styles.descriptionText}> ~ AI-Powered Anti Counterfeit Solutions</span>
                     {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
                 </p>
             </AnimatedText>
@@ -65,7 +67,7 @@ export default function Index() {
                 <p>
                     {/* <span>Software Engineer & Designer ~ </span>  */}
                     <a href='https://ailaconsulting.vercel.app/'>Aila Consulting</a>
-                    <i> ~ Experts in Administrative Processes and Linguistic Services</i>
+                    <span className={styles.descriptionText}> ~ Experts in Administrative Processes and Linguistic Services</span>
                     {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
                 </p>
             </AnimatedText>
@@ -73,21 +75,21 @@ export default function Index() {
                 <p>
                     {/* <span>Software Engineer & Designer ~ </span>  */}
                     <a href='https://groupe-bnsb.com/'>Groupe BNSB</a>
-                    <i> ~ Design and Sourcing Office in Fashion</i>
+                    <span className={styles.descriptionText}> ~ Design and Sourcing Office in Fashion</span>
                 </p>
             </AnimatedText>
             <AnimatedText>
                 <p>
                     {/* <span>Software Engineer & Designer ~ </span>  */}
                     <a href='https://groupe-bnsb.com/'>Maison Anaé</a>
-                    <i> ~ Upcoming eco-friendly fashion brand by Groupe BNSB</i>
+                    <span className={styles.descriptionText}> ~ Upcoming eco-friendly fashion brand by Groupe BNSB</span>
                 </p>
             </AnimatedText>
             <AnimatedText>
                 <p>
                     {/* <span>Frontend Engineer at </span>  */}
                     <a href='https://www.cypheme.com/'>Cypheme</a>
-                    <i> ~ AI-Powered Anti Counterfeit Solutions</i>
+                    <span className={styles.descriptionText}> ~ AI-Powered Anti Counterfeit Solutions</span>
                     {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
                 </p>
             </AnimatedText>
@@ -157,6 +159,8 @@ function AnimatedText({children}) {
     }, []);
     
     return (
-        <div ref={text}>{children}</div>
+        <div className={styles.animatedText} ref={text}>
+            {children}
+        </div>
     )
 }

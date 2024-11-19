@@ -6,6 +6,10 @@
     margin-bottom: 15vw;
 }
 
+.animatedText {
+    margin-bottom: 2rem;
+}
+
 .description h2 {
     margin: 4rem 0 2rem;
     line-height: 1.65em;
@@ -32,6 +36,15 @@
     cursor: pointer;
     display: inline;
     position: relative;
+}
+
+.descriptionText {
+    margin: 0 0 1.5rem;
+    line-height: 1.45em;
+    display: block;
+    font-size: max(1.5vw, 1rem);
+    font-weight: 300;
+    color: #666667;
 }
 
 .description a:after {

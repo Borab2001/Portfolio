@@ -53,7 +53,7 @@ export default function Index() {
                 <p>
                     <span>Frontend Engineer at </span> 
                     <a href='https://www.cypheme.com/'>Cypheme</a>
-                    <span className={styles.descriptionText}> ~ AI-Powered Anti Counterfeit Solutions</span>
+                    <span className={styles.descriptionText}> ~ AI-Powered Anti Counterfeit Startup based in <a href='https://stationf.co/'>Station F</a></span>
                     {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
                 </p>
             </AnimatedText>
@@ -89,7 +89,7 @@ export default function Index() {
                 <p>
                     {/* <span>Frontend Engineer at </span>  */}
                     <a href='https://www.cypheme.com/'>Cypheme</a>
-                    <span className={styles.descriptionText}> ~ AI-Powered Anti Counterfeit Solutions</span>
+                    <span className={styles.descriptionText}> ~ AI-Powered Anti Counterfeit Startup based in <a href='https://stationf.co/'>Station F</a></span>
                     {/* <span> &#x1F1EB;&#x1F1F7;</span> */}
                 </p>
             </AnimatedText>

@@ -72,3 +72,8 @@
         padding-left: 1.75rem;
     }
 }
+@media screen and (max-width: 480px) {
+    .description p {
+        padding-left: 0;
+    }
+}

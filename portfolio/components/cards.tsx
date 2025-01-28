@@ -20,7 +20,7 @@ const Cards = () => {
     return (
         <div>
             {projects.map((project, index) => {
-                return <Card key={index} {...project} />
+                return <Card key={index} index={index} {...project} />
             })}
         </div>
     );

@@ -1,4 +1,4 @@
-import { motion, useTransform } from "motion/react";
+import { motion, useTransform, useMotionValue } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ interface CardProps {
     alt: string;
     link: string;
     index: number;
-    progress: any;
+    progress: number;
     range: number[];
     targetScale: number;
 }
@@ -25,7 +25,8 @@ const Card: React.FC<CardProps> = ({
     targetScale
 }) => {
 
-    const cardScale = useTransform(progress, range, [1, targetScale]);
+    const progressValue = useMotionValue(progress);
+    const cardScale = useTransform(progressValue, range, [1, targetScale]);
 
     return (
         <div className="h-screen p-4 sm:p-8 md:p-20 flex items-center justify-center sticky top-0">

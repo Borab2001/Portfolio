@@ -1,7 +1,9 @@
-import { useEffect, useRef } from "react";
+"use client";
+
+import { useRef } from "react";
 import Card from "./ui/card";
 
-import { motion, useScroll } from "motion/react";
+import { useScroll } from "motion/react";
 
 
 const Cards = () => {
@@ -28,14 +30,12 @@ const Cards = () => {
         offset: ['start start', 'end end']
     });
 
-    useEffect(() => {
-        scrollYProgress.on("change", e => console.log(scrollYProgress));
-    })
-
     return (
         <div ref={container}>
             {projects.map((project, index) => {
-                return <Card key={index} index={index} {...project} />
+                const targetScale = 1 - ((projects.length - index) * 0.05);
+
+                return <Card key={index} index={index} {...project} progress={scrollYProgress} range={[index * 0.25, 1]} targetScale={targetScale} />
             })}
         </div>
     );

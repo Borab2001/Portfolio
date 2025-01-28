@@ -6,12 +6,14 @@ const Cards = () => {
             title: 'Aila Consulting',
             description: 'Description 1',
             src: '/images/ailaconsulting.webp',
+            alt: 'Aila Project image',
             link: '/'
         },
         {
             title: 'Groupe BNSB',
             description: 'Description 2',
             src: '/images/groupebnsb.webp',
+            alt: 'BNSB Project image',
             link: '/'
         },
     ]

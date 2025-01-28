@@ -5,6 +5,7 @@ interface CardProps {
     title: string;
     description: string;
     src: string;
+    alt: string;
     link: string;
 }
 
@@ -15,21 +16,22 @@ const Card: React.FC<CardProps> = ({
     link
 }) => {
     return (
-        <div className="h-screen p-8 sm:p-20 flex items-center justify-center sticky top-0">
-            <div className="relative -top-[10%] w-full max-w-5xl h-auto aspect-video p-4 dark:bg-zinc-900 border dark:border-zinc-700 rounded-xl grid grid-cols-2">
-                <div className="cols-span-1">
-                    <div>
-                        <h2 className="text-2xl">{title}</h2>
-                        <p>{description}</p>
+        <div className="h-screen p-4 sm:p-8 md:p-20 flex items-center justify-center sticky top-0">
+            
+            <div className="relative -top-[10%] w-full max-w-5xl h-auto aspect-video p-2 sm:p-4 dark:bg-zinc-900 border dark:border-zinc-700 rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div className="cols-span-1 flex flex-col justify-between gap-4 order-2 lg:order-1">
+                    <div className="flex flex-col gap-2">
+                        <h2 className="text-xl md:text-3xl">{title}</h2>
+                        <p className="text-sm md:text-base">{description}</p>
                     </div>
                     <Link href={link} target="blank">View Project</Link>
                 </div>
                 <Image 
                     src={src} 
-                    alt="" 
-                    className="cols-span-1"
+                    alt=""
                     width={500}
-                    height={500}    
+                    height={500}
+                    className="cols-span-1 order-1 lg:order-2 w-full rounded-md pointer-events-none"    
                 />
             </div>
         </div>

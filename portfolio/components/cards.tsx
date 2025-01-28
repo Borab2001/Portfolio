@@ -1,4 +1,8 @@
+import { useEffect, useRef } from "react";
 import Card from "./ui/card";
+
+import { motion, useScroll } from "motion/react";
+
 
 const Cards = () => {
     const projects = [
@@ -16,9 +20,20 @@ const Cards = () => {
             alt: 'BNSB Project image',
             link: '/'
         },
-    ]
+    ];
+
+    const container = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ['start start', 'end end']
+    });
+
+    useEffect(() => {
+        scrollYProgress.on("change", e => console.log(scrollYProgress));
+    })
+
     return (
-        <div>
+        <div ref={container}>
             {projects.map((project, index) => {
                 return <Card key={index} index={index} {...project} />
             })}

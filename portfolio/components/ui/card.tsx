@@ -1,6 +1,13 @@
-const Card = () => {
+const Card = ({
+    title,
+    description,
+    src,
+    link
+}) => {
     return (
-        <div></div>
+        <div>
+            <p>{title}</p>
+        </div>
     );
 }
  

@@ -1,3 +1,4 @@
+import BentoGrid from "@/components/bento-grid";
 import Cards from "@/components/cards";
 import Hero from "@/components/hero";
 import Paragraph from "@/components/paragraph";
@@ -12,6 +13,7 @@ export default function Home() {
 			<Hero />
 			<Cards />
 			<Paragraph value={paragraph} />
+			<BentoGrid />
 		</main>
     );
 }

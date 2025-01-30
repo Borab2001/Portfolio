@@ -120,13 +120,13 @@ export default function TiltedCard({
                 <motion.img
                     src={imageSrc}
                     alt={altText}
-                    className="object-cover will-change-transform [transform:translateZ(0)]"
+                    className="object-cover will-change-transform [transform:translateZ(0)] select-none pointer-events-none"
                     style={{
                         width: 280,
                         height: 280,
                     }}
                 />
-                <div className="w-full pt-4 flex flex-col gap-2">
+                <div className="w-full pt-4 flex flex-col gap-2 select-none pointer-events-none">
                     <h2 className="text-2xl text-black font-semibold">Photo Title</h2>
                     <p className="text-base text-zinc-600">Date</p>
                 </div>

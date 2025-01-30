@@ -15,25 +15,20 @@ export default function Home() {
 			<Cards />
 			<Paragraph value={paragraph} />
 			<BentoGrid />
-			<div className="p-64">
+			<div className="py-64 max-w-5xl mx-auto">
 				<TiltedCard
 					imageSrc="/images/map.webp"
 					altText=""
 					captionText=""
-					containerHeight="300px"
-					containerWidth="300px"
-					imageHeight="300px"
-					imageWidth="300px"
+					containerHeight="402px"
+					containerWidth="312px"
+					imageHeight="402px"
+					imageWidth="312px"
 					rotateAmplitude={12}
 					scaleOnHover={1.2}
 					showMobileWarning={false}
 					showTooltip={false}
-					displayOverlayContent={true}
-					// overlayContent={
-					// 	<p className="bg-white rounded-full p-2">
-					// 		Coucou les congolais
-					// 	</p>
-					// }
+					displayOverlayContent={false}
 				/>
 			</div>
 		</main>

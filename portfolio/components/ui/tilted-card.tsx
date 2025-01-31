@@ -1,4 +1,5 @@
 "use client";
+import { Kalam } from "next/font/google";
 
 import { ReactElement, useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
@@ -18,6 +19,12 @@ interface TiltedCardProps {
     overlayContent?: React.ReactNode;
     displayOverlayContent?: boolean;
 }
+
+const kalamFont = Kalam({
+    // variable: "--font-kalam",
+    subsets: ["latin"],
+    weight: "400",
+});
 
 const springValues = {
     damping: 30,
@@ -126,7 +133,7 @@ export default function TiltedCard({
                         height: 280,
                     }}
                 />
-                <div className="w-full pt-4 flex flex-col gap-2 select-none pointer-events-none">
+                <div className={`w-full pt-4 flex flex-col gap-2 select-none pointer-events-none ${kalamFont.className}`}>
                     <h2 className="text-2xl text-black font-semibold">Photo Title</h2>
                     <p className="text-base text-zinc-600">Date</p>
                 </div>

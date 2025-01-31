@@ -15,9 +15,37 @@ export default function Home() {
 			<Cards />
 			<Paragraph value={paragraph} />
 			<BentoGrid />
-			<div className="py-64 max-w-5xl mx-auto">
+			<div className="py-64 max-w-5xl mx-auto flex flex-row gap-4">
 				<TiltedCard
-					imageSrc="/images/map.webp"
+					imageSrc="/images/sydney1.webp"
+					altText=""
+					captionText=""
+					containerHeight="402px"
+					containerWidth="312px"
+					imageHeight="402px"
+					imageWidth="312px"
+					rotateAmplitude={12}
+					scaleOnHover={1.2}
+					showMobileWarning={false}
+					showTooltip={false}
+					displayOverlayContent={false}
+				/>
+				<TiltedCard
+					imageSrc="/images/sydney2.webp"
+					altText=""
+					captionText=""
+					containerHeight="402px"
+					containerWidth="312px"
+					imageHeight="402px"
+					imageWidth="312px"
+					rotateAmplitude={12}
+					scaleOnHover={1.2}
+					showMobileWarning={false}
+					showTooltip={false}
+					displayOverlayContent={false}
+				/>
+				<TiltedCard
+					imageSrc="/images/sydney1.webp"
 					altText=""
 					captionText=""
 					containerHeight="402px"

@@ -19,6 +19,8 @@ export default function Home() {
 				<TiltedCard
 					imageSrc="/images/sydney1.webp"
 					altText=""
+					imageTitle="North Sydney"
+					imageDate="Aug 2023 at 8:17PM"
 					captionText=""
 					containerHeight="402px"
 					containerWidth="312px"
@@ -33,6 +35,8 @@ export default function Home() {
 				<TiltedCard
 					imageSrc="/images/sydney2.webp"
 					altText=""
+					imageTitle="Sydney Opera House"
+					imageDate="Dec 2023 at 5:52AM"
 					captionText=""
 					containerHeight="402px"
 					containerWidth="312px"
@@ -47,6 +51,8 @@ export default function Home() {
 				<TiltedCard
 					imageSrc="/images/sydney1.webp"
 					altText=""
+					imageTitle="North Sydney"
+					imageDate="Aug 2023 at 8:17PM"
 					captionText=""
 					containerHeight="402px"
 					containerWidth="312px"

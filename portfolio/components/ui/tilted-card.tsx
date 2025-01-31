@@ -6,7 +6,9 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 
 interface TiltedCardProps {
     imageSrc: string;
-    altText?: string;
+    altText: string;
+    imageTitle: string;
+    imageDate: string;
     captionText?: string;
     containerHeight?: string;
     containerWidth?: string;
@@ -34,7 +36,9 @@ const springValues = {
 
 export default function TiltedCard({
     imageSrc,
-    altText = "Tilted card image",
+    altText,
+    imageTitle,
+    imageDate,
     captionText = "",
     containerHeight = "300px",
     containerWidth = "100%",
@@ -115,7 +119,7 @@ export default function TiltedCard({
             )}
 
             <motion.div
-                className="relative [transform-style:preserve-3d] bg-white p-4 flex flex-col items-center justify-start"
+                className="relative [transform-style:preserve-3d] bg-white p-4 flex flex-col items-center justify-start shadow-md"
                 style={{
                     width: imageWidth,
                     height: imageHeight,
@@ -134,8 +138,8 @@ export default function TiltedCard({
                     }}
                 />
                 <div className={`w-full pt-4 flex flex-col gap-2 select-none pointer-events-none ${kalamFont.className}`}>
-                    <h2 className="text-2xl text-black font-semibold">Photo Title</h2>
-                    <p className="text-base text-zinc-600">Date</p>
+                    <h2 className="text-2xl text-black font-semibold">{imageTitle}</h2>
+                    <p className="text-base text-zinc-600">{imageDate}</p>
                 </div>
 
                 {displayOverlayContent && overlayContent && (

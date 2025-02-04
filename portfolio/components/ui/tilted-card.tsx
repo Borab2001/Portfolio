@@ -65,6 +65,7 @@ export default function TiltedCard({
     });
 
     const [lastY, setLastY] = useState<number>(0);
+    const [isHovered, setIsHovered] = useState<boolean>(false);
 
     function handleMouse(e: React.MouseEvent<HTMLElement>): void {
         if (!ref.current) return;
@@ -90,6 +91,7 @@ export default function TiltedCard({
     function handleMouseEnter(): void {
         scale.set(scaleOnHover);
         opacity.set(1);
+        setIsHovered(true);
     }
 
     function handleMouseLeave(): void {
@@ -98,12 +100,13 @@ export default function TiltedCard({
         rotateX.set(0);
         rotateY.set(0);
         rotateFigcaption.set(0);
+        setIsHovered(false);
     }
 
     return (
         <figure
             ref={ref}
-            className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center"
+            className={`relative w-full h-full [perspective:800px] flex flex-col items-center justify-center ${isHovered ? 'z-10' : 'z-0'}`}
             style={{
                 height: containerHeight,
                 width: containerWidth,

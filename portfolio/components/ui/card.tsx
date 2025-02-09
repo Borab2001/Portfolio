@@ -1,6 +1,6 @@
 import { motion, useTransform, MotionValue } from "motion/react";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 interface CardProps {
     title: string;
@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({
     title,
     description,
     src,
-    link,
+    // link,
     index,
     progress,
     range,

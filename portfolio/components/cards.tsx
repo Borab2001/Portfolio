@@ -10,7 +10,7 @@ const Cards = () => {
     const projects = [
         {
             title: 'Aila Consulting',
-            description: 'Description 1',
+            description: 'Freelance software engineer & designer for website currently in build with Next.js, TypeScript, TailwindCSS, React Email, Resend & FramerMotion.',
             src: '/images/ailaconsulting.webp',
             alt: 'Aila Project image',
             link: '/'

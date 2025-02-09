@@ -1,5 +1,6 @@
 import BentoGrid from "@/components/bento-grid";
 import Cards from "@/components/cards";
+import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Paragraph from "@/components/paragraph";
 import TiltedCard from "@/components/ui/tilted-card";
@@ -65,6 +66,7 @@ export default function Home() {
 					displayOverlayContent={false}
 				/>
 			</div>
+			<Experience />
 		</main>
     );
 }

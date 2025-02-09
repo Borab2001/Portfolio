@@ -20,7 +20,7 @@ const Hero = () => {
         
             <div className="flex flex-row gap-4 md:gap-6 pt-4">
                 <button className="flex flex-row items-center justify-center gap-1 pl-4 pr-3 py-2 text-base md:text-lg font-medium bg-black dark:bg-white text-white dark:text-black rounded-full">
-                    View my work 
+                    Get to know me
                     <ArrowDown className="w-5 h-5" />
                 </button>
                 <button className="text-base md:text-lg font-medium text-black dark:text-white">

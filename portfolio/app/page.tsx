@@ -15,7 +15,6 @@ export default function Home() {
 			<Hero />
 			<Cards />
 			<Paragraph value={paragraph} />
-			<BentoGrid />
 			<div className="py-64 max-w-5xl mx-auto flex flex-row gap-4">
 				<TiltedCard
 					imageSrc="/images/sydney1.webp"
@@ -67,6 +66,7 @@ export default function Home() {
 				/>
 			</div>
 			<Experience />
+			<BentoGrid />
 		</main>
     );
 }

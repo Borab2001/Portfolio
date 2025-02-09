@@ -10,7 +10,7 @@ const Cards = () => {
     const projects = [
         {
             title: 'Aila Consulting',
-            description: 'Freelance software engineer & designer for website currently in build with Next.js, TypeScript, TailwindCSS, React Email, Resend & FramerMotion.',
+            description: 'Freelance software engineer & designer',
             src: '/images/ailaconsulting.webp',
             alt: 'Aila Project image',
             link: '/'
@@ -22,6 +22,48 @@ const Cards = () => {
             alt: 'BNSB Project image',
             link: '/'
         },
+        {
+            title: 'Foodify',
+            description: '/',
+            src: '/images/foodify.webp',
+            alt: '/',
+            link: '/'
+        },
+        {
+            title: 'Curious',
+            description: '/',
+            src: '/images/curious.webp',
+            alt: '/',
+            link: '/'
+        },
+        // {
+        //     title: 'AusVision',
+        //     description: '/',
+        //     src: '/images/curious.webp',
+        //     alt: '/',
+        //     link: '/'
+        // },
+        // {
+        //     title: 'Flowfinity',
+        //     description: '/',
+        //     src: '/images/curious.webp',
+        //     alt: '/',
+        //     link: '/'
+        // },
+        // {
+        //     title: 'Yarn',
+        //     description: '/',
+        //     src: '/',
+        //     alt: '/',
+        //     link: '/'
+        // },
+        // {
+        //     title: 'Reveal',
+        //     description: '/',
+        //     src: '/',
+        //     alt: '/',
+        //     link: '/'
+        // },
     ];
 
     const container = useRef(null);

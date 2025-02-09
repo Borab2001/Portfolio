@@ -122,7 +122,7 @@ export default function TiltedCard({
             )}
 
             <motion.div
-                className="relative [transform-style:preserve-3d] bg-white p-4 flex flex-col items-center justify-start shadow-md"
+                className="relative [transform-style:preserve-3d] bg-white p-4 flex flex-col items-center justify-start shadow-2xl"
                 style={{
                     width: imageWidth,
                     height: imageHeight,

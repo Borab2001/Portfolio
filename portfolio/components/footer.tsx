@@ -17,13 +17,13 @@ const Footer = () => {
             link: '/',
         },
         {
-            name: 'Twitter',
+            name: 'X',
             link: '/',
         },
     ]
 
     return (
-        <footer className="flex flex-col sm:flex-row justify-between items-center gap-4 p-4 max-w-4xl mx-auto">
+        <footer className="w-full p-8 flex flex-col sm:flex-row justify-between items-center gap-4 max-w-4xl mx-auto">
             <p className="text-sm order-2 sm:order-1">&#169; {currentYear} Bora Balos. All Rights Reserved.</p>
             <div className="flex flex-row gap-4 items-center order-1 sm:order-2">
                 {socials.map((social, index) => (

@@ -66,7 +66,7 @@ export default function Home() {
 				/>
 			</div>
 			<Experience />
-			<BentoGrid />
+			{/* <BentoGrid /> */}
 		</main>
     );
 }

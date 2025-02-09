@@ -33,13 +33,13 @@ const Experience = () => {
             <div className="flex flex-col">
                 {experiences.map((experience, index) => (
                     <div 
-                        className="flex flex-row justify-between items-start border-b border-zinc-300 dark:border-zinc-700 py-8"
+                        className="flex flex-row gap-2 justify-between items-start border-b border-zinc-300 dark:border-zinc-700 py-8"
                         key={index}
                     >
-                        <h3 className="text-2xl font-medium">{experience.title}</h3>
+                        <h3 className="text-lg md:text-2xl font-medium">{experience.title}</h3>
                         <div className="flex flex-col gap-6 items-end">
-                            <p className="text-2xl font-medium">{experience.company}</p>
-                            <p className="text-lg font-normal text-zinc-600 dark:text-zinc-400">{experience.date}</p>
+                            <p className="text-lg md:text-2xl font-medium text-right">{experience.company}</p>
+                            <p className="text-sm md:text-lg font-normal text-zinc-600 dark:text-zinc-400 text-right">{experience.date}</p>
                         </div>
                     </div>
                 ))}

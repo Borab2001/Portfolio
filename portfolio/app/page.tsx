@@ -15,7 +15,7 @@ export default function Home() {
 			<Hero />
 			<Cards />
 			<Paragraph value={paragraph} />
-			<div className="py-64 max-w-5xl mx-auto flex flex-row gap-4">
+			<div className="w-screen py-64 max-w-5xl mx-auto flex flex-row gap-4 overflow-scroll">
 				<TiltedCard
 					imageSrc="/images/sydney1.webp"
 					altText=""

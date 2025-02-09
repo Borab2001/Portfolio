@@ -26,9 +26,9 @@ const Paragraph: React.FC<ParagraphProps> = ({
 
     return (
         <div ref={parentRef} className="relative h-[300vh]">
-            <div className="sticky top-0 w-full flex items-center justify-center h-screen p-4 md:p-24">
+            <div className="sticky top-0 w-full max-w-6xl mx-auto flex items-center justify-center h-screen p-4 md:p-24">
                 <p
-                    className="flex flex-wrap justify-center gap-y-2 gap-x-1 md:gap-y-6 md:gap-x-3 text-xl md:text-5xl tracking-tight text-muted-foreground"
+                    className="flex flex-wrap justify-center gap-y-2 gap-x-1 md:gap-y-6 md:gap-x-3 text-xl md:text-3xl tracking-tight text-muted-foreground"
                 >
                     {words.map((word, index) => {
                         const start = index / words.length;

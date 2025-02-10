@@ -11,13 +11,13 @@ const Experience = () => {
             title: 'Software Engineer',
             company: 'Cedrus Solutions',
             date: 'Feb 2025 - Present',
-            description: ''
+            description: 'Test description 1'
         },
         {
             title: 'Freelance Software Engineer',
             company: 'Aila Consulting',
             date: 'Aug 2024 - Present',
-            description: ''
+            description: 'Test description 2'
         },
         {
             title: 'Freelance Software Engineer',

@@ -3,15 +3,17 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 
+
 const Experience = () => {
 
     const [open, setOpen] = useState<number | null>(null);
     const experiences = [
         {
-            title: 'Software Engineer',
+            title: 'Frontend Engineer',
             company: 'Cedrus Solutions',
             date: 'Feb 2025 - Present',
-            description: 'Test description 1'
+            description: 'SaaS platform for assessing energy consumption and decarbonization strategies in real estate.',
+            stack: 'Next.js, TypeScript, Docker, Tailwind, Shadcn, NextAuth, AWS'
         },
         {
             title: 'Freelance Software Engineer',
@@ -67,10 +69,13 @@ const Experience = () => {
                                 initial={{ height: 0, opacity: 0 }}
                                 animate={{ height: open === index ? 'auto' : 0, opacity: open === index ? 1 : 0 }}
                                 transition={{ duration: 0.4 }}
-                                className="w-full overflow-hidden"
+                                className="w-full overflow-hidden flex flex-col gap-2"
                             >
                                 {/* CONTENT HERE */}
                                 <p className="text-sm md:text-lg font-normal text-zinc-600 dark:text-zinc-400">{experience.description}</p>
+                                <p className='text-sm md:text-lg font-normal italic text-zinc-600 dark:text-zinc-400 mb-8'>
+                                    {experience.stack}
+                                </p>
                         </motion.div>
                     </div>
                 ))}

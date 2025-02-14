@@ -19,25 +19,25 @@ const Experience = () => {
             title: 'Freelance Software Engineer',
             company: 'Aila Consulting',
             date: 'Aug 2024 - Present',
-            description: 'Test description 2'
+            description: 'Emerging startup in visa solutions, work permits and translations.'
         },
         {
             title: 'Freelance Software Engineer',
             company: 'Groupe BNSB',
             date: 'Feb 2022 - Present',
-            description: ''
+            description: 'Emerging consulting startup in fashion industry.'
         },
         {
             title: 'Software Engineer Intern',
             company: 'Capgemini',
             date: 'Feb 2024 - Aug 2024',
-            description: ''
+            description: 'Leader in engineering solutions and digital transformation.'
         },
         {
             title: 'Frontend Engineer Intern',
             company: 'Cypheme',
             date: 'Jul 2022 - Jan 2023',
-            description: ''
+            description: 'AI anti-counterfeit startup based in Station F.'
         },
     ];
 

@@ -17,7 +17,7 @@ const Word: React.FC<WordProps> = ({
 
     return (
         <span className="relative">
-            <span className="absolute opacity-10">{children}</span>
+            <span className="absolute opacity-30">{children}</span>
             <motion.span
                 style={{ opacity }}
             >

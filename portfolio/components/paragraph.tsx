@@ -17,7 +17,8 @@ const Paragraph: React.FC<ParagraphProps> = ({
 
     const { scrollYProgress } = useScroll({
         target: parentRef,
-        offset: ['start start', 'end end']
+        offset: ['start end', 'end start']
+        // offset: ['start 80%', 'end 30%']
     });
 
     const stickyProgress = useTransform(scrollYProgress, [0.1, 0.9], [0, 1]);
@@ -25,8 +26,10 @@ const Paragraph: React.FC<ParagraphProps> = ({
     const words = value.split(" ");
 
     return (
-        <div ref={parentRef} className="relative h-[300vh]">
-            <div className="sticky top-0 w-full max-w-6xl mx-auto flex items-center justify-center h-screen p-4 md:p-24">
+        // <div ref={parentRef} className="relative h-[300vh]">
+        //     <div className="sticky top-0 w-full max-w-6xl mx-auto flex items-center justify-center h-screen p-4 md:p-24">
+        <div ref={parentRef} className="relative h-auto mt-48">
+            <div className="w-full max-w-6xl mx-auto flex items-center justify-center h-auto p-4 md:p-24">
                 <p
                     className="flex flex-wrap justify-center gap-y-2 gap-x-1 md:gap-y-6 md:gap-x-3 text-xl md:text-3xl tracking-tight text-muted-foreground"
                 >

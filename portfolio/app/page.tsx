@@ -3,19 +3,20 @@ import Cards from "@/components/cards";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Paragraph from "@/components/paragraph";
-import TiltedCard from "@/components/ui/tilted-card";
+import PolaroidStack from "@/components/polaroid";
+// import TiltedCard from "@/components/ui/tilted-card";
 
 
 export default function Home() {
 
 	const paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
+	
     return (
 		<main className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
 			<Hero />
 			<Cards />
 			<Paragraph value={paragraph} />
-			<div className="w-screen py-24 mb-24 mx-auto flex flex-row items-center justify-center gap-4 overflow-scroll">
+			{/* <div className="w-screen py-24 mb-24 mx-auto flex flex-row items-center justify-center gap-4 overflow-scroll">
 				<TiltedCard
 					imageSrc="/images/sydney1.webp"
 					altText=""
@@ -64,7 +65,8 @@ export default function Home() {
 					showTooltip={false}
 					displayOverlayContent={false}
 				/>
-			</div>
+			</div> */}
+			<PolaroidStack />
 			<Experience />
 			{/* <BentoGrid /> */}
 		</main>

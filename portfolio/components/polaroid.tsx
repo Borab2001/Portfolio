@@ -84,13 +84,13 @@ const polaroidData: PolaroidItem[] = [
 		title: "North Sydney",
 		date: "Aug 2023 at 8:17PM",
 		src: "/images/sydney1.webp",
-		alt: "Stunning night view of North Sydney skyline with harbor",
+		alt: "Stunning morning view of North Sydney oceanfront",
 	},
 	{
 		title: "Opera House",
 		date: "Aug 2023 at 2:45PM",
 		src: "/images/sydney2.webp",
-		alt: "Iconic Sydney Opera House during a sunny day",
+		alt: "Sydney Opera House during ,night",
 	},
 	{
 		title: "Bondi Beach",
@@ -108,8 +108,8 @@ const polaroidData: PolaroidItem[] = [
 
 export default function PolaroidStack() {
 	return (
-		<div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-		<Polaroid items={polaroidData} />
+		<div className="min-h-screen flex items-center justify-center p-4">
+			<Polaroid items={polaroidData} />
 		</div>
 	)
 }

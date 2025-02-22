@@ -6,11 +6,11 @@ const Footer = () => {
     const socials = [
         {
             name: 'GitHub',
-            link: '/',
+            link: 'https://github.com/Borab2001',
         },
         {
             name: 'LinkedIn',
-            link: '/',
+            link: 'https://www.linkedin.com/in/bora-balos/',
         },
         {
             name: 'Resume',
@@ -18,7 +18,7 @@ const Footer = () => {
         },
         {
             name: 'X',
-            link: '/',
+            link: 'https://x.com/borab2001',
         },
     ]
 

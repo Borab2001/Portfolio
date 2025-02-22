@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ScrollProvider from "@/lib/scroll-provider";
 import Footer from "@/components/footer";
+import SplashCursor from "@/components/splash-cursor";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -79,6 +80,9 @@ export default function RootLayout({
 					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 				>
 					{children}
+					<div className="absolute -z-10">
+						<SplashCursor />
+					</div>
 					<Footer />
 				</body>
 			</ScrollProvider>

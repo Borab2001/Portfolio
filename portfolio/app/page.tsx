@@ -16,7 +16,7 @@ export default function Home() {
 			<Cards />
 			<Paragraph value={paragraph} />
 			<div className="w-screen py-24 mb-24 mx-auto flex flex-row items-center justify-center gap-4 overflow-scroll">
-				<TiltedCard
+				{/* <TiltedCard
 					imageSrc="/images/sydney1.webp"
 					altText=""
 					imageTitle="North Sydney"
@@ -31,7 +31,7 @@ export default function Home() {
 					showMobileWarning={false}
 					showTooltip={false}
 					displayOverlayContent={false}
-				/>
+				/> */}
 				<TiltedCard
 					imageSrc="/images/sydney2.webp"
 					altText=""
@@ -43,12 +43,12 @@ export default function Home() {
 					imageHeight="402px"
 					imageWidth="312px"
 					rotateAmplitude={12}
-					scaleOnHover={1.2}
+					scaleOnHover={1.0}
 					showMobileWarning={false}
 					showTooltip={false}
 					displayOverlayContent={false}
 				/>
-				<TiltedCard
+				{/* <TiltedCard
 					imageSrc="/images/sydney1.webp"
 					altText=""
 					imageTitle="North Sydney"
@@ -63,7 +63,7 @@ export default function Home() {
 					showMobileWarning={false}
 					showTooltip={false}
 					displayOverlayContent={false}
-				/>
+				/> */}
 			</div>
 			<Experience />
 			{/* <BentoGrid /> */}

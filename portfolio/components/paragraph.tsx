@@ -29,7 +29,7 @@ const Paragraph: React.FC<ParagraphProps> = ({
         // <div ref={parentRef} className="relative h-[300vh]">
         //     <div className="sticky top-0 w-full max-w-6xl mx-auto flex items-center justify-center h-screen p-4 md:p-24">
         <div ref={parentRef} className="relative h-auto mt-48">
-            <div className="w-full max-w-6xl mx-auto flex items-center justify-center h-auto p-4 md:p-24">
+            <div className="w-full max-w-6xl mx-auto flex items-center justify-center h-auto px-4 pt-4 md:px-24 md:pt-24">
                 <p
                     className="flex flex-wrap justify-center gap-y-2 gap-x-1 md:gap-y-6 md:gap-x-3 text-xl md:text-3xl tracking-tight text-muted-foreground"
                 >

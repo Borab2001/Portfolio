@@ -1,9 +1,10 @@
 // import BentoGrid from "@/components/bento-grid";
 import Cards from "@/components/cards";
+import Carousel from "@/components/carousel";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Paragraph from "@/components/paragraph";
-import TiltedCard from "@/components/ui/tilted-card";
+// import TiltedCard from "@/components/ui/tilted-card";
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
 			<Hero />
 			<Cards />
 			<Paragraph value={paragraph} />
-			<div className="w-screen py-24 mb-24 mx-auto flex flex-row items-center justify-center gap-4 overflow-scroll">
+			{/* <div className="w-screen py-24 mb-24 mx-auto flex flex-row items-center justify-center gap-4 overflow-scroll"> */}
 				{/* <TiltedCard
 					imageSrc="/images/sydney1.webp"
 					altText=""
@@ -32,7 +33,7 @@ export default function Home() {
 					showTooltip={false}
 					displayOverlayContent={false}
 				/> */}
-				<TiltedCard
+				{/* <TiltedCard
 					imageSrc="/images/sydney2.webp"
 					altText=""
 					imageTitle="Sydney Opera House"
@@ -47,7 +48,7 @@ export default function Home() {
 					showMobileWarning={false}
 					showTooltip={false}
 					displayOverlayContent={false}
-				/>
+				/> */}
 				{/* <TiltedCard
 					imageSrc="/images/sydney1.webp"
 					altText=""
@@ -64,7 +65,8 @@ export default function Home() {
 					showTooltip={false}
 					displayOverlayContent={false}
 				/> */}
-			</div>
+			{/* </div> */}
+			<Carousel />
 			<Experience />
 			{/* <BentoGrid /> */}
 		</main>

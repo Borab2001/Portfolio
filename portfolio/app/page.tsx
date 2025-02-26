@@ -4,6 +4,7 @@ import Carousel from "@/components/carousel";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Paragraph from "@/components/paragraph";
+import Stack from "@/components/polaroid-stack";
 // import TiltedCard from "@/components/ui/tilted-card";
 
 
@@ -66,7 +67,8 @@ export default function Home() {
 					displayOverlayContent={false}
 				/> */}
 			{/* </div> */}
-			<Carousel />
+			{/* <Carousel /> */}
+			<Stack />
 			<Experience />
 			{/* <BentoGrid /> */}
 		</main>

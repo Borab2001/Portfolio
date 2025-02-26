@@ -1,9 +1,9 @@
-// import BentoGrid from "@/components/bento-grid";
 import Cards from "@/components/cards";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Paragraph from "@/components/paragraph";
-import Stack from "@/components/polaroid-stack";
+import PolaroidStack from "@/components/polaroid-stack";
+// import BentoGrid from "@/components/bento-grid";
 
 
 export default function Home() {

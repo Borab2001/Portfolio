@@ -80,7 +80,7 @@ export default function PolaroidStack({
         cardsData.length
         ? cardsData
         : [
-            { id: 1, imageSrc: "/images/sydney2.webp", altText: "Opera House at night", imageTitle: "Sydney Opera House", imageDate: "Dec 2023 at 5:52AM" },
+            { id: 1, imageSrc: "/images/sydney2.webp", altText: "Opera House at night", imageTitle: "Sydney", imageDate: "Dec 2023 at 5:52AM" },
             { id: 2, imageSrc: "/images/sydney2.webp", altText: "Opera House at ", imageTitle: "Sydney Opera House", imageDate: "Dec 2023 at 5:52AM" },
             { id: 3, imageSrc: "/images/sydney2.webp", altText: "Opera House", imageTitle: "Sydney Opera House", imageDate: "Dec 2023 at 5:52AM" },
             { id: 4, imageSrc: "/images/sydney2.webp", altText: "Opera", imageTitle: "Sydney Opera House", imageDate: "Dec 2023 at 5:52AM" }
@@ -98,59 +98,61 @@ export default function PolaroidStack({
     };
 
     return (
-        <div
-            className="relative"
-            style={{
-                width: cardDimensions.width,
-                height: cardDimensions.height,
-                perspective: 600,
-            }}
-        >
-            {cards.map((card, index) => {
-                const randomRotate = randomRotation
-                ? Math.random() * 10 - 5 // Random degree between -5 and 5
-                : 0;
+        <div className="w-full h-auto pt-10 pb-72 flex items-center justify-center ">
+            <div
+                className="relative"
+                style={{
+                    width: cardDimensions.width,
+                    height: cardDimensions.height,
+                    perspective: 600,
+                }}
+            >
+                {cards.map((card, index) => {
+                    const randomRotate = randomRotation
+                    ? Math.random() * 10 - 5 // Random degree between -5 and 5
+                    : 0;
 
-                return (
-                    <CardRotate
-                        key={card.id}
-                        onSendToBack={() => sendToBack(card.id)}
-                        sensitivity={sensitivity}
-                    >
-                        <motion.div
-                            className="overflow-hidden bg-white p-4 flex flex-col items-center justify-start"
-                            onClick={() => sendToBackOnClick && sendToBack(card.id)}
-                            animate={{
-                                rotateZ: (cards.length - index - 1) * 4 + randomRotate,
-                                scale: 1 + index * 0.06 - cards.length * 0.06,
-                                transformOrigin: "90% 90%",
-                            }}
-                            initial={false}
-                            transition={{
-                                type: "spring",
-                                stiffness: animationConfig.stiffness,
-                                damping: animationConfig.damping,
-                            }}
-                            style={{
-                                width: cardDimensions.width,
-                                height: cardDimensions.height,
-                            }}
+                    return (
+                        <CardRotate
+                            key={card.id}
+                            onSendToBack={() => sendToBack(card.id)}
+                            sensitivity={sensitivity}
                         >
-                            <Image
-                                width={280}
-                                height={280}
-                                src={card.imageSrc}
-                                alt={card.altText}
-                                className="w-[288px] h-[288px] object-cover select-none pointer-events-none"
-                            />
-                            <div className={`w-full pt-4 flex flex-col gap-2 select-none pointer-events-none ${kalamFont.className}`}>
-                                <h2 className="text-2xl text-black font-semibold">{card.imageTitle}</h2>
-                                <p className="text-base text-zinc-600">{card.imageDate}</p>
-                            </div>
-                        </motion.div>
-                    </CardRotate>
-                );
-            })}
+                            <motion.div
+                                className="overflow-hidden bg-white p-4 flex flex-col items-center justify-start"
+                                onClick={() => sendToBackOnClick && sendToBack(card.id)}
+                                animate={{
+                                    rotateZ: (cards.length - index - 1) * 4 + randomRotate,
+                                    scale: 1 + index * 0.06 - cards.length * 0.06,
+                                    transformOrigin: "90% 90%",
+                                }}
+                                initial={false}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: animationConfig.stiffness,
+                                    damping: animationConfig.damping,
+                                }}
+                                style={{
+                                    width: cardDimensions.width,
+                                    height: cardDimensions.height,
+                                }}
+                            >
+                                <Image
+                                    width={280}
+                                    height={280}
+                                    src={card.imageSrc}
+                                    alt={card.altText}
+                                    className="w-[288px] h-[288px] object-cover select-none pointer-events-none"
+                                />
+                                <div className={`w-full pt-4 flex flex-col gap-2 select-none pointer-events-none ${kalamFont.className}`}>
+                                    <h2 className="text-2xl text-black font-semibold">{card.imageTitle}</h2>
+                                    <p className="text-base text-zinc-600">{card.imageDate}</p>
+                                </div>
+                            </motion.div>
+                        </CardRotate>
+                    );
+                })}
+            </div>
         </div>
     );
 }

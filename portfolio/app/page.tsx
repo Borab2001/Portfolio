@@ -1,11 +1,9 @@
 // import BentoGrid from "@/components/bento-grid";
 import Cards from "@/components/cards";
-// import Carousel from "@/components/carousel";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Paragraph from "@/components/paragraph";
 import Stack from "@/components/polaroid-stack";
-// import TiltedCard from "@/components/ui/tilted-card";
 
 
 export default function Home() {
@@ -17,58 +15,7 @@ export default function Home() {
 			<Hero />
 			<Cards />
 			<Paragraph value={paragraph} />
-			{/* <div className="w-screen py-24 mb-24 mx-auto flex flex-row items-center justify-center gap-4 overflow-scroll"> */}
-				{/* <TiltedCard
-					imageSrc="/images/sydney1.webp"
-					altText=""
-					imageTitle="North Sydney"
-					imageDate="Aug 2023 at 8:17PM"
-					captionText=""
-					containerHeight="402px"
-					containerWidth="312px"
-					imageHeight="402px"
-					imageWidth="312px"
-					rotateAmplitude={12}
-					scaleOnHover={1.2}
-					showMobileWarning={false}
-					showTooltip={false}
-					displayOverlayContent={false}
-				/> */}
-				{/* <TiltedCard
-					imageSrc="/images/sydney2.webp"
-					altText=""
-					imageTitle="Sydney Opera House"
-					imageDate="Dec 2023 at 5:52AM"
-					captionText=""
-					containerHeight="402px"
-					containerWidth="312px"
-					imageHeight="402px"
-					imageWidth="312px"
-					rotateAmplitude={12}
-					scaleOnHover={1.0}
-					showMobileWarning={false}
-					showTooltip={false}
-					displayOverlayContent={false}
-				/> */}
-				{/* <TiltedCard
-					imageSrc="/images/sydney1.webp"
-					altText=""
-					imageTitle="North Sydney"
-					imageDate="Aug 2023 at 8:17PM"
-					captionText=""
-					containerHeight="402px"
-					containerWidth="312px"
-					imageHeight="402px"
-					imageWidth="312px"
-					rotateAmplitude={12}
-					scaleOnHover={1.2}
-					showMobileWarning={false}
-					showTooltip={false}
-					displayOverlayContent={false}
-				/> */}
-			{/* </div> */}
-			{/* <Carousel /> */}
-			<Stack />
+			<PolaroidStack />
 			<Experience />
 			{/* <BentoGrid /> */}
 		</main>

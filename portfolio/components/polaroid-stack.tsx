@@ -59,7 +59,7 @@ interface CardData {
     imageDate: string;
 }
 
-interface StackProps {
+interface PolaroidStackProps {
     randomRotation?: boolean;
     sensitivity?: number;
     cardDimensions?: { width: number; height: number };
@@ -68,14 +68,14 @@ interface StackProps {
     animationConfig?: { stiffness: number; damping: number };
 }
 
-export default function Stack({
+export default function PolaroidStack({
     randomRotation = false,
     sensitivity = 200,
     cardDimensions = { width: 320, height: 400 },
     cardsData = [],
     animationConfig = { stiffness: 260, damping: 20 },
     sendToBackOnClick = false
-}: StackProps) {
+}: PolaroidStackProps) {
     const [cards, setCards] = useState(
         cardsData.length
         ? cardsData

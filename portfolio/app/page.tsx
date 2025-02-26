@@ -1,6 +1,6 @@
 // import BentoGrid from "@/components/bento-grid";
 import Cards from "@/components/cards";
-import Carousel from "@/components/carousel";
+// import Carousel from "@/components/carousel";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Paragraph from "@/components/paragraph";

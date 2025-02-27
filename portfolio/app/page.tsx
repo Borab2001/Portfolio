@@ -8,7 +8,7 @@ import PolaroidStack from "@/components/polaroid-stack";
 
 export default function Home() {	
     return (
-		<main className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
+		<main className="backdrop-blur-lg flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
 			<Hero />
 			<Cards />
 			<Paragraph />

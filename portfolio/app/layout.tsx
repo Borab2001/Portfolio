@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ScrollProvider from "@/lib/scroll-provider";
-import Footer from "@/components/footer";
 import SplashCursor from "@/components/splash-cursor";
 
 const geistSans = Geist({
@@ -83,7 +82,6 @@ export default function RootLayout({
 					<div className="absolute -z-10">
 						<SplashCursor />
 					</div>
-					<Footer />
 				</body>
 			</ScrollProvider>
 		</html>

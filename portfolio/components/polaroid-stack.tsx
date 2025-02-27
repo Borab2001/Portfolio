@@ -80,10 +80,33 @@ export default function PolaroidStack({
         cardsData.length
         ? cardsData
         : [
-            { id: 1, imageSrc: "/images/sydney2.webp", altText: "Opera House at night", imageTitle: "Sydney", imageDate: "Dec 2023 at 5:52AM" },
-            { id: 2, imageSrc: "/images/sydney2.webp", altText: "Opera House at ", imageTitle: "Sydney Opera House", imageDate: "Dec 2023 at 5:52AM" },
-            { id: 3, imageSrc: "/images/sydney2.webp", altText: "Opera House", imageTitle: "Sydney Opera House", imageDate: "Dec 2023 at 5:52AM" },
-            { id: 4, imageSrc: "/images/sydney2.webp", altText: "Opera", imageTitle: "Sydney Opera House", imageDate: "Dec 2023 at 5:52AM" }
+            { 
+                id: 1,
+                imageSrc: "/images/sydney1.webp",
+                altText: "Sunrise viewed from Sydney Harbour Bridge",
+                imageTitle: "Harbour Bridge Sunrise",
+                imageDate: "Dec 2023 at 5:52AM"
+            },
+            { 
+                id: 2,
+                imageSrc: "/images/sydney2.webp",
+                altText: "Opera House view from Sydney Cove",
+                imageTitle: "Sydney Opera House",
+                imageDate: "Dec 2023 at 9:06PM"
+            },
+            {
+                id: 3,
+                imageSrc: "/images/sydney3.webp",
+                altText: "Women's World Cup Final in Sydney at ANZ Stadium",
+                imageTitle: "Women's World Cup Final",
+                imageDate: "Aug 2023 at 7:39PM"
+            },
+            {
+                id: 4, imageSrc: "/images/sydney4.webp",
+                altText: "To change",
+                imageTitle: "Title",
+                imageDate: "Month 2023 at 0:00AM"
+            }
         ]
     );
 

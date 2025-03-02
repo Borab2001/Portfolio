@@ -210,7 +210,7 @@ export default function PolaroidStack({
     };
 
     return (
-        <div className="w-full h-auto pt-10 pb-72 flex items-center justify-center ">
+        <div className="w-full h-auto pt-10 pb-72 flex items-center justify-center overflow-hidden">
             <div
                 className="relative"
                 style={{

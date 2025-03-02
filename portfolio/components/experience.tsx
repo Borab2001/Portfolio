@@ -12,32 +12,36 @@ const Experience = () => {
             title: 'Frontend Engineer',
             company: 'Cedrus Solutions',
             date: 'Feb 2025 - Present',
-            description: 'SaaS platform for assessing energy consumption and decarbonization strategies in real estate.',
-            stack: 'Next.js, TypeScript, Docker, Tailwind, Shadcn, NextAuth, AWS'
+            description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
+            stack: 'NextJS, TypeScript, Docker, Tailwind, Shadcn, NextAuth, Git, AWS, i18n, Figma'
         },
         {
             title: 'Freelance Software Engineer',
             company: 'Aila Consulting',
             date: 'Aug 2024 - Present',
-            description: 'Emerging startup in visa solutions, work permits and translations.'
+            description: 'Emerging startup in visa solutions, work permits and translations.',
+            stack: 'NextJS, TypeScript, Tailwind, Shadcn, React-Email, Resend, Motion, Git, i18n, Figma, Vercel'
         },
         {
             title: 'Freelance Software Engineer',
             company: 'Groupe BNSB',
             date: 'Feb 2022 - Present',
-            description: 'Emerging consulting startup in fashion industry.'
+            description: 'Emerging consulting startup in textile and fashion industry.',
+            stack: 'NextJS, TypeScript, Tailwind, Shadcn, MongoDB, Clerk, Stripe, React-Email, Resend, Motion, Git, Figma, Vercel'
         },
         {
             title: 'Software Engineer Intern',
             company: 'Capgemini',
             date: 'Feb 2024 - Aug 2024',
-            description: 'Leader in engineering solutions and digital transformation.'
+            description: 'Leader in engineering solutions and digital transformation.',
+            stack: 'ReactJS, ReactNative, TypeScript, NestJS, Swift, SwiftUI, Jest, Nx, Git, Jira, Figma'
         },
         {
             title: 'Frontend Engineer Intern',
             company: 'Cypheme',
             date: 'Jul 2022 - Jan 2023',
-            description: 'AI anti-counterfeit startup based in Station F.'
+            description: 'AI anti-counterfeit startup based in Station F.',
+            stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma'
         },
     ];
 

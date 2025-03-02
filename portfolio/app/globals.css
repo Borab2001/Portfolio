@@ -26,3 +26,28 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+*::selection {
+  background-color: #f1f1f1;
+  color: #0a0a0a;
+}
+
+*::-moz-selection {
+  background-color: #f1f1f1;
+  color: #0a0a0a;
+}
+
+*::-o-selection {
+  background-color: #f1f1f1;
+  color: #0a0a0a;
+}
+
+*::-ms-selection {
+  background-color: #f1f1f1;
+  color: #0a0a0a;
+}
+
+*::-webkit-selection {
+  background-color: #f1f1f1;
+  color: #0a0a0a;
+}

@@ -82,31 +82,122 @@ export default function PolaroidStack({
         : [
             { 
                 id: 1,
-                imageSrc: "/images/sydney1.webp",
+                imageSrc: "/images/milsons_point_sunrise.webp",
                 altText: "Sunrise viewed from Sydney Harbour Bridge",
-                imageTitle: "Harbour Bridge Sunrise",
+                imageTitle: "Milsons Point Sunrise",
                 imageDate: "Dec 2023 at 5:52AM"
             },
             { 
                 id: 2,
-                imageSrc: "/images/sydney2.webp",
-                altText: "Opera House view from Sydney Cove",
-                imageTitle: "Sydney Opera House",
-                imageDate: "Dec 2023 at 9:06PM"
+                imageSrc: "/images/opera_night.webp",
+                altText: "Sydney Opera House view by night",
+                imageTitle: "Opera House #1",
+                imageDate: "Aug 2023 at 8:17PM"
             },
             {
                 id: 3,
-                imageSrc: "/images/sydney3.webp",
+                imageSrc: "/images/opera_sunrise.webp",
+                altText: "Sydney Opera House view during sunrise",
+                imageTitle: "Opera House #2",
+                imageDate: "Dec 2023 at 5:51AM"
+            },
+            {
+                id: 4,
+                imageSrc: "/images/wc_final.webp",
                 altText: "Women's World Cup Final in Sydney at ANZ Stadium",
                 imageTitle: "Women's World Cup Final",
                 imageDate: "Aug 2023 at 7:39PM"
             },
             {
-                id: 4, imageSrc: "/images/sydney4.webp",
-                altText: "To change",
-                imageTitle: "Title",
-                imageDate: "Month 2023 at 0:00AM"
-            }
+                id: 5, imageSrc: "/images/barangaroo.webp",
+                altText: "Barangaroo in Darling Harbour",
+                imageTitle: "Barangaroo",
+                imageDate: "Sep 2023 at 6:13PM"
+            },
+            {
+                id: 6, imageSrc: "/images/bondi_beach.webp",
+                altText: "Bondi Beach in Sydney",
+                imageTitle: "Bondi Beach",
+                imageDate: "Aug 2023 at 3:25PM"
+            },
+            {
+                id: 7, imageSrc: "/images/botanic_garden.webp",
+                altText: "Royal Botanic Garden in Sydney",
+                imageTitle: "Royal Botanic Garden",
+                imageDate: "Jul 2023 at 3:48AM"
+            },
+            {
+                id: 8, imageSrc: "/images/bronte_beach.webp",
+                altText: "Sunrise in Bronte Beach in Sydney",
+                imageTitle: "Bronte Beach",
+                imageDate: "Dec 2023 at 5:40AM"
+            },
+            {
+                id: 9, imageSrc: "/images/coogee_beach.webp",
+                altText: "Coogee Beach in Sydney",
+                imageTitle: "Coogee Beach",
+                imageDate: "Sep 2023 at 3:25PM"
+            },
+            {
+                id: 10, imageSrc: "/images/coogee_walk.webp",
+                altText: "Coogee to Bondi Walk, Tamarama Beach",
+                imageTitle: "Coogee Walk",
+                imageDate: "Sep 2023 at 4:25PM"
+            },
+            {
+                id: 11, imageSrc: "/images/harbour_bridge.webp",
+                altText: "Sydney Harbour Bridge",
+                imageTitle: "Harbour Bridge",
+                imageDate: "Dec 2023 at 5:17AM"
+            },
+            {
+                id: 12, imageSrc: "/images/hyde_park.webp",
+                altText: "Hyde Park in Sydney",
+                imageTitle: "Hyde Park",
+                imageDate: "Dec 2023 at 7:56PM"
+            },
+            {
+                id: 13, imageSrc: "/images/kangaroo.webp",
+                altText: "Kangaroo in Wild Life Sydney Zoo",
+                imageTitle: "Kangaroos",
+                imageDate: "Sep 2023 at 9:46AM"
+            },
+            {
+                id: 14, imageSrc: "/images/koala.webp",
+                altText: "Koalas in Wild Life Sydney Zoo",
+                imageTitle: "Koalas",
+                imageDate: "Sep 2023 at 8:36AM"
+            },
+            {
+                id: 15, imageSrc: "/images/penguin.webp",   
+                altText: "Penguins in Sydney Aquarium, Sea Life",
+                imageTitle: "Penguins",
+                imageDate: "Aug 2023 at 2:38PM"
+            },
+            {
+                id: 16, imageSrc: "/images/quadrangle.webp",
+                altText: "Quadrangle in University of Sydney",
+                imageTitle: "Sydney Uni Quadrangle",
+                imageDate: "Jul 2023 at 11:34AM"
+            },
+            {
+                id: 17, imageSrc: "/images/uni_jacaranda.webp",
+                altText: "Jacaranda tree in University of Sydney",
+                imageTitle: "Jacarandas in Sydney Uni",
+                imageDate: "Nov 2023 at 3:16PM"
+            },
+            {
+                id: 18, imageSrc: "/images/victoria_park_jacaranda.webp",
+                altText: "Jacaranda tree in Victoria Park",
+                imageTitle: "Victoria Park",
+                imageDate: "Oct 2023 at 5:52PM"
+            },
+            {
+                id: 19, imageSrc: "/images/victoria_park.webp",
+                altText: "Victoria Park, University of Sydney's gardens",
+                imageTitle: "Sydney Uni Gardens",
+                imageDate: "Aug 2023 at 3:20PM"
+            },
         ]
     );
 

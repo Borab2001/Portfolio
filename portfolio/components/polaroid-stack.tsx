@@ -233,7 +233,7 @@ export default function PolaroidStack({
                             sensitivity={sensitivity}
                         >
                             <motion.div
-                                className="overflow-hidden bg-white p-4 flex flex-col items-center justify-start"
+                                className={`overflow-hidden bg-white p-4 flex flex-col items-center justify-start ${index !== 0 ? 'pointer-events-none' : ''}`}
                                 onClick={() => sendToBackOnClick && sendToBack(card.id)}
                                 animate={{
                                     rotateZ: (cards.length - index - 1) * 4 + randomRotate,

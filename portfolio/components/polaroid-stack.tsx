@@ -2,10 +2,8 @@
 
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useState } from "react";
-
 import Image from "next/image";
 import { Kalam } from "next/font/google";
-
 
 interface CardRotateProps {
     children: React.ReactNode;
@@ -233,7 +231,7 @@ export default function PolaroidStack({
                             sensitivity={sensitivity}
                         >
                             <motion.div
-                                className={`overflow-hidden bg-white p-4 flex flex-col items-center justify-start ${index !== 0 ? 'pointer-events-none' : ''}`}
+                                className={`overflow-hidden bg-white p-4 flex flex-col items-center justify-start ${index !== cards.length - 1 ? 'pointer-events-none' : ''}`}
                                 onClick={() => sendToBackOnClick && sendToBack(card.id)}
                                 animate={{
                                     rotateZ: (cards.length - index - 1) * 4 + randomRotate,

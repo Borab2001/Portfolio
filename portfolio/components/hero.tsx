@@ -1,5 +1,7 @@
 import { ArrowDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 const Hero = () => {
     return (
@@ -18,14 +20,18 @@ const Hero = () => {
                 A French software engineer crafting clean web with a keen eye for design
             </p>
         
-            <div className="flex flex-row gap-4 md:gap-6 pt-4">
+            <div className="flex flex-row items-center gap-4 md:gap-6 pt-4">
                 <button className="flex flex-row items-center justify-center gap-1 pl-4 pr-3 py-2 text-base md:text-lg font-medium bg-black dark:bg-white text-white dark:text-black rounded-full">
                     Get to know me
                     <ArrowDown className="w-5 h-5" />
                 </button>
-                <button className="text-base md:text-lg font-medium text-black dark:text-white">
+                <Link
+                    href="https://drive.google.com/file/d/1omk69dKs_T3kyRwFkJPx8-skwl9GMfnN/view?usp=sharing"
+                    target="_blank"
+                    className="text-base md:text-lg font-medium text-black dark:text-white"
+                >
                     My Resume
-                </button>
+                </Link>
             </div>
         </div>
     );

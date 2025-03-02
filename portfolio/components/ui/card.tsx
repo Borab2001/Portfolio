@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({
                     <div className="flex flex-col justify-between gap-4">
                         <div className="flex flex-col gap-2.5">
                             <h2 className="text-xl md:text-3xl font-medium">{title}</h2>
-                            <p className="text-sm md:text-base">{description}</p>
+                            <p className="text-xs sm:text-sm md:text-base">{description}</p>
                         </div>
                         {/* TODO: Blurry button following mouse on image hover instead of link */}
                         {/* <Link href={link} target="blank">View Project</Link> */}

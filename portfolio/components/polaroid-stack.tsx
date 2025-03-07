@@ -261,7 +261,7 @@ export default function PolaroidStack({
                 id: 11,
                 imageSrc: "/images/opera_night.webp",
                 altText: "Sydney Opera House view by night",
-                imageTitle: "Opera House #1",
+                imageTitle: "Opera House",
                 imageDate: "Aug 2023 at 8:17PM"
             },
         ]

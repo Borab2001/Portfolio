@@ -46,7 +46,7 @@ const Cards = () => {
         {
             title: 'Flowfinity',
             description: 'Treasury management system for student associations.',
-            src: '/images/curious.webp',
+            src: '/images/flowfinity.webp',
             alt: 'Flowfinity project image',
             link: 'https://www.figma.com/design/7KykoagveciEHeAV6ej6lu/Maquette-%F0%9F%8C%B7?node-id=0-1&t=oheWC3bzA38jtNTX-1'
         },

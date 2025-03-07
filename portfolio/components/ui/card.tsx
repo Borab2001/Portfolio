@@ -50,7 +50,7 @@ const Card: React.FC<CardProps> = ({
                         alt=""
                         width={1000}
                         height={1000}
-                        className="w-full rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-none border border-zinc-200 dark:border-zinc-800"    
+                        className="aspect-[12/7] object-cover object-center w-full rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-none border border-zinc-200 dark:border-zinc-800"    
                     />
                 </div>
             </motion.div>

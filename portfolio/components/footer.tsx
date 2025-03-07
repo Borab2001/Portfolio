@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TextHoverEnter from "./ui/text-hover-enter";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -27,14 +28,25 @@ const Footer = () => {
             <p className="text-sm order-2 sm:order-1">&#169; {currentYear} Bora Balos. All Rights Reserved.</p>
             <div className="flex flex-row gap-4 items-center order-1 sm:order-2">
                 {socials.map((social, index) => (
+                    // <Link 
+                    //     href={social.link} 
+                    //     key={index} 
+                    //     className="text-sm"
+                    //     target="_blank"
+                    // >
+                    //     {social.name}
+                    // </Link>
                     <Link 
                         href={social.link} 
                         key={index} 
                         className="text-sm"
                         target="_blank"
                     >
-                        {social.name}
+                        <TextHoverEnter>
+                            {social.name}
+                        </TextHoverEnter>
                     </Link>
+                    
                 ))}
             </div>
         </footer>

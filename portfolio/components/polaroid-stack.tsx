@@ -318,8 +318,8 @@ export default function PolaroidStack({
                                 }}
                             >
                                 <Image
-                                    width={280}
-                                    height={280}
+                                    width={288}
+                                    height={288}
                                     src={card.imageSrc}
                                     alt={card.altText}
                                     className="w-[288px] h-[288px] object-cover select-none pointer-events-none"

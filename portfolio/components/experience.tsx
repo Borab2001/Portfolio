@@ -56,7 +56,7 @@ const Experience = () => {
         <div className="overflow-x-hidden w-full flex flex-col gap-4 max-w-6xl mx-auto px-4 pb-4 sm:px-8 sm:pb-8 md:px-20 md:pb-20">
             <h2 className="text-3xl font-semibold">Experience</h2>
             <div className="flex flex-col">
-            {experiences.map((experience, index) => (
+                {experiences.map((experience, index) => (
                     <div 
                         className="w-full flex flex-col gap-2 justify-between items-center cursor-pointer border-b border-zinc-300 dark:border-zinc-700 relative"
                         onClick={() => openAccordion(index)}
@@ -81,7 +81,7 @@ const Experience = () => {
                                     <p className="text-sm md:text-lg font-normal text-zinc-600 dark:text-zinc-400 text-right">
                                         {experience.date}
                                     </p>
-                                    {/* Chevron animation outside the content flow */}
+                                    
                                     <motion.div
                                         className="pl-2"
                                         initial={{ opacity: 0 }}

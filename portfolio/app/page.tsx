@@ -1,9 +1,10 @@
 import Hero from "@/components/hero";
 import Cards from "@/components/cards";
 import Paragraph from "@/components/paragraph";
-import PolaroidStack from "@/components/polaroid-stack";
+// import PolaroidStack from "@/components/polaroid-stack";
 import Experience from "@/components/experience";
 import Footer from "@/components/footer";
+import PhotoGallery from "@/components/folder";
 
 
 export default function Home() {	
@@ -12,7 +13,8 @@ export default function Home() {
 			<Hero />
 			<Cards />
 			<Paragraph />
-			<PolaroidStack />
+			{/* <PolaroidStack /> */}
+			<PhotoGallery />
 			<Experience />
 			<Footer />
 		</main>

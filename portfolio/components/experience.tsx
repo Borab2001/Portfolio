@@ -55,7 +55,7 @@ const Experience = () => {
             <div className="flex flex-col">
                 {experiences.map((experience, index) => (
                     <div 
-                        className="w-full flex flex-col gap-2 justify-between items-center cursor-pointer border-b border-zinc-300 dark:border-zinc-700"
+                        className="w-full flex flex-col gap-2 justify-between items-center cursor-pointer border-b border-zinc-300 dark:border-zinc-700 transition-all duration-500 ease-in-out hover:border-white"
                         onClick={() => openAccordion(index)}
                         key={index}
                     >

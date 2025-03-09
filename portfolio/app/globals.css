@@ -9,9 +9,14 @@
   }
 }
 
-:root {
+/* :root {
   --background: #f7f7f7;
   --foreground: #171717;
+} */
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {

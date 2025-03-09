@@ -58,7 +58,7 @@ const Experience = () => {
             <div className="flex flex-col">
                 {experiences.map((experience, index) => (
                     <div 
-                        className="w-full flex flex-col gap-2 justify-between items-center cursor-pointer border-b border-zinc-300 dark:border-zinc-700 relative"
+                        className="w-full flex flex-col gap-2 justify-between items-center cursor-pointer border-b border-zinc-700 relative"
                         onClick={() => openAccordion(index)}
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
@@ -78,7 +78,7 @@ const Experience = () => {
                                     transition={{ duration: 0.3, ease: "easeOut" }}
                                 >
 
-                                    <p className="text-sm md:text-lg font-normal text-zinc-600 dark:text-zinc-400 text-right whitespace-nowrap">
+                                    <p className="text-sm md:text-lg font-normal text-zinc-400 text-right whitespace-nowrap">
                                         {experience.date}
                                     </p>
                                     
@@ -91,7 +91,7 @@ const Experience = () => {
                                         transition={{ duration: 0.3, ease: "easeOut" }}
                                     >
                                         <ChevronDown 
-                                            className="text-zinc-600 dark:text-zinc-400" 
+                                            className="text-zinc-400" 
                                             size={20} 
                                         />
                                     </motion.div>
@@ -107,27 +107,13 @@ const Experience = () => {
                             className="w-full overflow-hidden flex flex-col gap-2"
                         >
                             {/* CONTENT HERE */}
-                            <p className="text-sm md:text-lg font-normal text-zinc-600 dark:text-zinc-400">{experience.description}</p>
-                            <p className='text-sm md:text-lg font-normal italic text-zinc-600 dark:text-zinc-400 mb-8'>
+                            <p className="text-sm md:text-lg font-normal text-zinc-400">{experience.description}</p>
+                            <p className='text-sm md:text-lg font-normal italic text-zinc-400 mb-8'>
                                 {experience.stack}
                             </p>
                         </motion.div>
                     </div>
                 ))}
-
-                {/* ONLY FOR ROW WITHOUT ACCORDION */}
-                {/* {experiences.map((experience, index) => (
-                    <div 
-                        className="flex flex-row gap-2 justify-between items-start border-b border-zinc-300 dark:border-zinc-700 py-8"
-                        key={index}
-                    >
-                        <h3 className="text-lg md:text-2xl font-medium">{experience.title}</h3>
-                        <div className="flex flex-col gap-6 items-end">
-                            <p className="text-lg md:text-2xl font-medium text-right">{experience.company}</p>
-                            <p className="text-sm md:text-lg font-normal text-zinc-600 dark:text-zinc-400 text-right">{experience.date}</p>
-                        </div>
-                    </div>
-                ))} */}
             </div>
         </div>
     );

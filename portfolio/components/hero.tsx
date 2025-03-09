@@ -11,12 +11,12 @@ const Hero = () => {
                     alt="Memoji"
                     width={128}
                     height={128}
-                    className=" h-24 w-24 sm:h-32 sm:w-32 rounded-full shadow-sm shadow-black dark:shadow-white ring-1 ring-white dark:ring-white"
+                    className=" h-24 w-24 sm:h-32 sm:w-32 rounded-full shadow-sm shadow-white ring-1 ring-white"
                 />
-                <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-black dark:text-white text-center">
+                <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-white text-center">
                     Bora Balos
                 </h1>
-                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-muted-foreground max-w-96 md:max-w-lg text-center">
+                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-zinc-400 max-w-96 md:max-w-lg text-center">
                     A French software engineer crafting clean web with a keen eye for design
                 </p>
             </div>

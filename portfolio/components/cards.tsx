@@ -31,7 +31,7 @@ const Cards = () => {
         },
         {
             title: 'Curious',
-            description: "A social content search and visualisation platform using a reasoning engine powered by OpenAI's API",
+            description: "A social content search and visualisation platform using OpenAI's API",
             src: '/images/curious.webp',
             alt: 'Curious project image',
             link: 'https://curious-gpt.vercel.app/'
@@ -45,7 +45,7 @@ const Cards = () => {
         },
         {
             title: 'Flowfinity',
-            description: 'Treasury management system for student associations.',
+            description: 'Treasury management system for student associations',
             src: '/images/flowfinity.webp',
             alt: 'Flowfinity project image',
             link: 'https://www.figma.com/design/7KykoagveciEHeAV6ej6lu/Maquette-%F0%9F%8C%B7?node-id=0-1&t=oheWC3bzA38jtNTX-1'

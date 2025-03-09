@@ -78,7 +78,7 @@ const Experience = () => {
                                     transition={{ duration: 0.3, ease: "easeOut" }}
                                 >
 
-                                    <p className="text-sm md:text-lg font-normal text-zinc-600 dark:text-zinc-400 text-right">
+                                    <p className="text-sm md:text-lg font-normal text-zinc-600 dark:text-zinc-400 text-right whitespace-nowrap">
                                         {experience.date}
                                     </p>
                                     

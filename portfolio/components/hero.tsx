@@ -16,7 +16,7 @@ const Hero = () => {
                 <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-white text-center">
                     Bora Balos
                 </h1>
-                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-zinc-400 max-w-96 md:max-w-lg text-center">
+                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-white max-w-96 md:max-w-lg text-center">
                     A French software engineer crafting clean web with a keen eye for design
                 </p>
             </div>

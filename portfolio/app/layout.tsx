@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 import ScrollProvider from "@/lib/scroll-provider";
 import SplashCursor from "@/components/splash-cursor";
+
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -82,6 +85,7 @@ export default function RootLayout({
 					<div className="absolute -z-10">
 						<SplashCursor />
 					</div>
+					<Analytics />
 				</body>
 			</ScrollProvider>
 		</html>

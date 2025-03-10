@@ -18,6 +18,7 @@ const Card: React.FC<CardProps> = ({
     title,
     description,
     src,
+    alt,
     // link,
     index,
     progress,
@@ -45,7 +46,7 @@ const Card: React.FC<CardProps> = ({
                     </div>
                     <Image 
                         src={src} 
-                        alt=""
+                        alt={alt}
                         width={1000}
                         height={1000}
                         className="aspect-[12/7] object-cover object-center w-full rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-none border border-zinc-800"    

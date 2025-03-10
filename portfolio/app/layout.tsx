@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Bora Balos",
 	description:
-		"Discover the personal website of a French engineering student at ISEP Paris & SydneyUni and gain a deeper understanding of his valuable skills, diverse experiences, and wide-ranging interests. Get to know him and follow his journey as he continues to grow and make an impact in the field of engineering.",
+		"Personal website of a French software engineer and designer from ISEP Paris & University of Sydney. Showcasing projects, professional experiences, and memories from studying abroad in Sydney.",
 	keywords:
-		"engineer, engineering, student, french, cybersecurity, software, it, information technologies, information systems, bora balos, bora, balos, france, australia, isep, sydney, university of sydney, computer science, web technologies",
+		"software engineer, designer, frontend, ux/ui, computer science, study abroad, isep, university of sydney, paris, france, sydney, australia"
 };
 
 export const viewport: Viewport = {

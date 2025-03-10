@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Bora Balos",
 	description:
-		"Personal website of a French software engineer and designer from ISEP Paris & University of Sydney. Showcasing projects, professional experiences, and memories from studying abroad in Sydney.",
+		"Personal website of a French software engineer and designer from ISEP Paris & University of Sydney. Showcasing experiences, projects and memories from Sydney.",
 	keywords:
-		"software engineer, designer, frontend, ux/ui, computer science, study abroad, isep, university of sydney, paris, france, sydney, australia"
+		"software engineer, designer, frontend, ux/ui, computer science, isep, university of sydney, paris, france, australia"
 };
 
 export const viewport: Viewport = {

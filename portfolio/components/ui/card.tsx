@@ -1,13 +1,14 @@
+import { Link as LinkIcon } from "lucide-react";
 import { motion, useTransform, MotionValue } from "motion/react";
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 
 interface CardProps {
     title: string;
     description: string;
     src: string;
     alt: string;
-    link: string;
+    link?: string;
     index: number;
     progress: MotionValue<number>;
     range: number[];
@@ -19,7 +20,7 @@ const Card: React.FC<CardProps> = ({
     description,
     src,
     alt,
-    // link,
+    link,
     index,
     progress,
     range,
@@ -40,7 +41,14 @@ const Card: React.FC<CardProps> = ({
                 >
                     <div className="flex flex-col justify-between gap-4">
                         <div className="flex flex-col gap-2.5">
-                            <h2 className="text-xl md:text-3xl font-medium">{title}</h2>
+                            <div className={`flex flex-row items-center ${link ? 'justify-between gap-2' : "justify-start"}`}>
+                                <h2 className="text-xl md:text-3xl font-medium">{title}</h2>
+                                {link && (
+                                    <Link href={link} target="_blank" rel="noopener noreferrer">
+                                        <LinkIcon className="w-4 h-4 md:w-6 md:h-6" />
+                                    </Link>
+                                )}
+                            </div>
                             <p className="text-xs sm:text-sm md:text-base text-zinc-400">{description}</p>
                         </div>
                     </div>

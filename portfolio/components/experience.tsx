@@ -43,7 +43,7 @@ const Experience = () => {
             title: 'Frontend Engineer Intern',
             company: 'Cypheme',
             date: 'Jul 2022 - Jan 2023',
-            description: 'AI anti-counterfeit startup based in Station F.',
+            description: 'AI anti-counterfeit startup based in Station F. Also working as a freelance.',
             stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma'
         },
     ];

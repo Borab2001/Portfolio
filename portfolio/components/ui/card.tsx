@@ -1,7 +1,9 @@
-import { Link as LinkIcon } from "lucide-react";
 import { motion, useTransform, MotionValue } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+
+import { LinkIcon } from "./link-icon";
+
 
 interface CardProps {
     title: string;
@@ -45,7 +47,7 @@ const Card: React.FC<CardProps> = ({
                                 <h2 className="text-xl md:text-3xl font-medium">{title}</h2>
                                 {link && (
                                     <Link href={link} target="_blank" rel="noopener noreferrer">
-                                        <LinkIcon className="w-4 h-4 md:w-6 md:h-6" />
+                                        <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
                                     </Link>
                                 )}
                             </div>

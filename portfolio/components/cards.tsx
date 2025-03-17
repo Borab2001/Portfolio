@@ -51,6 +51,13 @@ const Cards = () => {
             link: 'https://www.figma.com/design/7KykoagveciEHeAV6ej6lu/Maquette-%F0%9F%8C%B7?node-id=0-1&t=oheWC3bzA38jtNTX-1'
         },
         // {
+        //     title: 'Maestro',
+        //     description: 'Troupe of young French musicians creating unique and interactive performances',
+        //     src: '/images/maestro.webp',
+        //     alt: 'Maestro project image',
+        //     link: 'https://www.figma.com/design/Avq5X2vCWDFz3giIPbEurJ/Maestro?node-id=0-1&t=MArnJkhau6JSWXLw-1'
+        // },
+        // {
         //     title: 'Yarn',
         //     description: '/',
         //     src: '/',

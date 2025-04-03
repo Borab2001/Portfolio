@@ -12,6 +12,7 @@ const Hero = () => {
                     width={128}
                     height={128}
                     className=" h-24 w-24 sm:h-32 sm:w-32 rounded-full shadow-sm shadow-white ring-1 ring-white"
+                    priority
                 />
                 <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-white text-center">
                     Bora Balos

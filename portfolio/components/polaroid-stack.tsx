@@ -323,6 +323,7 @@ export default function PolaroidStack({
                                     src={card.imageSrc}
                                     alt={card.altText}
                                     className="w-[288px] h-[288px] object-cover select-none pointer-events-none"
+                                    loading="lazy"
                                 />
                                 <div className={`w-full pt-4 flex flex-col gap-2 select-none pointer-events-none ${kalamFont.className}`}>
                                     <h2 className="text-2xl text-black font-semibold">{card.imageTitle}</h2>

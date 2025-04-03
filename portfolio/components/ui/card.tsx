@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({
         <div className="h-screen p-4 flex items-center justify-center sticky top-0">
             
             <motion.div 
-                style={{ scale: cardScale, top: `calc(-6% + ${index * 3}vh)` }} 
+                style={{ scale: cardScale, top: `calc(-6% + ${index * 28}px)` }} 
                 className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background dark:bg-background border border-zinc-700 rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4"
             >
                 <div
@@ -57,9 +57,10 @@ const Card: React.FC<CardProps> = ({
                     <Image 
                         src={src} 
                         alt={alt}
-                        width={1000}
-                        height={1000}
-                        className="aspect-[12/7] object-cover object-center w-full rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-none border border-zinc-800"    
+                        width={800}
+                        height={800}
+                        className="aspect-[12/7] object-cover object-center w-full rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-non select-none border border-zinc-800"
+                        loading={index === 0 ? "eager" : "lazy"}
                     />
                 </div>
             </motion.div>

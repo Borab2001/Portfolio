@@ -38,10 +38,17 @@ const Cards = () => {
         },
         {
             title: 'AusVision',
-            description: 'Accessible Navigation App design for 2032 Brisbane Olympic Games',
+            description: 'Accessible navigation app design for 2032 Brisbane Olympic Games',
             src: '/images/ausvision.webp',
             alt: 'AusVision project image',
             link: 'https://www.figma.com/design/o40ZnVFnKsYgeqUWRfGny4/AusVision-%F0%9F%87%A6%F0%9F%87%BA?node-id=1-10549&t=pDOyUD5NSvgl6bio-1'
+        },
+        {
+            title: 'Reveal',
+            description: 'Daily challenge app that helps you connect with friends',
+            src: '/images/reveal.webp',
+            alt: 'Reveal project image',
+            link: 'https://www.figma.com/design/GFKM09zZdy9HGaxM0rEtOz/Reveal?node-id=1-6332&t=x7X6VEMM39UoDvdE-1'
         },
         {
             title: 'Flowfinity',
@@ -52,20 +59,13 @@ const Cards = () => {
         },
         // {
         //     title: 'Maestro',
-        //     description: 'Troupe of young French musicians creating unique and interactive performances',
+        //     description: 'Collective of French pianists and artists',
         //     src: '/images/maestro.webp',
         //     alt: 'Maestro project image',
         //     link: 'https://www.figma.com/design/Avq5X2vCWDFz3giIPbEurJ/Maestro?node-id=0-1&t=MArnJkhau6JSWXLw-1'
         // },
         // {
         //     title: 'Yarn',
-        //     description: '/',
-        //     src: '/',
-        //     alt: '/',
-        //     link: '/'
-        // },
-        // {
-        //     title: 'Reveal',
         //     description: '/',
         //     src: '/',
         //     alt: '/',
@@ -84,7 +84,7 @@ const Cards = () => {
             {projects.map((project, index) => {
                 const targetScale = 1 - ((projects.length - index) * 0.05);
 
-                return <Card key={index} index={index} {...project} progress={scrollYProgress} range={[index * 0.25, 1]} targetScale={targetScale} />
+                return <Card key={index} index={index} {...project} progress={scrollYProgress} range={[index * 0.16, 1]} targetScale={targetScale} />
             })}
         </div>
     );

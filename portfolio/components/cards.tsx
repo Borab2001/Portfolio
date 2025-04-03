@@ -24,21 +24,21 @@ const Cards = () => {
         // },
         {
             title: 'Foodify',
-            description: 'Web and mobile application for recipe search and meal planning',
+            description: 'Web & mobile app for recipe search & meal planning',
             src: '/images/foodify.webp',
             alt: 'Foodify project image',
             link: 'https://foodifyapp.vercel.app/'
         },
         {
             title: 'Curious',
-            description: "A social content search and visualisation platform using OpenAI's API",
+            description: "Content search & visualisation platform using OpenAI's API",
             src: '/images/curious.webp',
             alt: 'Curious project image',
             link: 'https://curious-gpt.vercel.app/'
         },
         {
             title: 'AusVision',
-            description: 'Accessible navigation app design for 2032 Brisbane Olympic Games',
+            description: 'Accessible navigation app for 2032 Brisbane Olympics',
             src: '/images/ausvision.webp',
             alt: 'AusVision project image',
             link: 'https://www.figma.com/design/o40ZnVFnKsYgeqUWRfGny4/AusVision-%F0%9F%87%A6%F0%9F%87%BA?node-id=1-10549&t=pDOyUD5NSvgl6bio-1'

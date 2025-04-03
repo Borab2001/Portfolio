@@ -57,13 +57,13 @@ const Cards = () => {
             alt: 'Flowfinity project image',
             link: 'https://www.figma.com/design/7KykoagveciEHeAV6ej6lu/Maquette-%F0%9F%8C%B7?node-id=0-1&t=oheWC3bzA38jtNTX-1'
         },
-        // {
-        //     title: 'Maestro',
-        //     description: 'Collective of French pianists and artists',
-        //     src: '/images/maestro.webp',
-        //     alt: 'Maestro project image',
-        //     link: 'https://www.figma.com/design/Avq5X2vCWDFz3giIPbEurJ/Maestro?node-id=0-1&t=MArnJkhau6JSWXLw-1'
-        // },
+        {
+            title: 'Maestro',
+            description: 'Collective of French pianists and artists',
+            src: '/images/maestro.webp',
+            alt: 'Maestro project image',
+            link: 'https://www.figma.com/design/Avq5X2vCWDFz3giIPbEurJ/Maestro?node-id=0-1&t=MArnJkhau6JSWXLw-1'
+        },
         // {
         //     title: 'Yarn',
         //     description: '/',

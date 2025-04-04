@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { LinkIcon } from "./link-icon";
+import { FigmaIcon } from "./figma-icon";
 
 
 interface CardProps {
@@ -10,7 +11,9 @@ interface CardProps {
     description: string;
     src: string;
     alt: string;
-    link?: string;
+    link: string;
+    link2?: string;
+    linkType: string;
     index: number;
     progress: MotionValue<number>;
     range: number[];
@@ -23,6 +26,8 @@ const Card: React.FC<CardProps> = ({
     src,
     alt,
     link,
+    link2,
+    linkType,
     index,
     progress,
     range,
@@ -45,11 +50,24 @@ const Card: React.FC<CardProps> = ({
                         <div className="flex flex-col gap-2.5">
                             <div className={`flex flex-row items-center ${link ? 'justify-between gap-2' : "justify-start"}`}>
                                 <h2 className="text-xl md:text-3xl font-medium">{title}</h2>
-                                {link && (
-                                    <Link href={link} target="_blank" rel="noopener noreferrer">
-                                        <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
-                                    </Link>
-                                )}
+                                <div className="flex flex-row items-center gap-2">
+                                    {link && (
+                                        <Link href={link} target="_blank" rel="noopener noreferrer" aria-label={`Link to ${linkType}`}>
+                                            {linkType === 'project' ? (
+                                                <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                            ) : linkType === 'Figma' ? (
+                                                <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                            ) : (
+                                                <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                            )}
+                                        </Link>
+                                    )}
+                                    {link2 && (
+                                        <Link href={link2} target="_blank" rel="noopener noreferrer" aria-label="Link to Figma">
+                                            <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                        </Link>
+                                    )}
+                                </div>
                             </div>
                             <p className="text-xs sm:text-sm md:text-base text-zinc-400">{description}</p>
                         </div>

@@ -22,7 +22,24 @@ export const metadata: Metadata = {
 	description:
 		"Personal website of a French software engineer and designer from ISEP Paris & University of Sydney. Showcasing experiences, projects and memories from Sydney.",
 	keywords:
-		"software engineer, designer, frontend, ux/ui, computer science, isep, university of sydney, paris, france, australia"
+		"software engineer, designer, frontend, ux/ui, computer science, isep, university of sydney, paris, france, australia",
+	openGraph: {
+		title: "Bora Balos",
+		description:
+			"Software engineer & designer based in Paris. Discover my creative journey and memories.",
+		url: "https://www.borabalos.com",
+		siteName: "Bora Balos",
+		locale: "en_US",
+		type: "website",
+		images: [
+			{
+			url: "https://www.borabalos.com/og-image.jpg", // ← on va en parler juste après
+			width: 1200,
+			height: 630,
+			alt: "Bora Balos Portfolio Preview",
+			},
+		],
+	},
 };
 
 export const viewport: Viewport = {

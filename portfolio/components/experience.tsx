@@ -14,7 +14,7 @@ const Experience = () => {
         {
             title: 'Frontend Engineer',
             company: 'Cedrus Solutions',
-            date: 'Feb 2025 - Present',
+            date: 'Feb 2025 - Apr 2025',
             description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
             stack: 'NextJS, TypeScript, Docker, Tailwind, Shadcn, NextAuth, Git, AWS, i18n, Figma'
         },

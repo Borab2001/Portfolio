@@ -12,7 +12,7 @@ const Experience = () => {
 
     const experiences = [
         {
-            title: 'Frontend Engineer',
+            title: 'Frontend Engineer & Designer',
             company: 'Cedrus Solutions',
             date: 'Feb 2025 - Apr 2025',
             description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
@@ -21,14 +21,14 @@ const Experience = () => {
         {
             title: 'Freelance Software Engineer',
             company: 'Aila Consulting',
-            date: 'Aug 2024 - Present',
+            date: 'Aug 2024 - Apr 2025',
             description: 'Emerging startup in visa solutions, work permits and translations.',
             stack: 'NextJS, TypeScript, Tailwind, Shadcn, React-Email, Resend, Motion, Git, i18n, Figma, Vercel'
         },
         {
             title: 'Freelance Software Engineer',
             company: 'Groupe BNSB',
-            date: 'Feb 2022 - Present',
+            date: 'Feb 2022 - Apr 2025',
             description: 'Emerging consulting startup in textile and fashion industry.',
             stack: 'NextJS, TypeScript, Tailwind, Shadcn, MongoDB, Clerk, Stripe, React-Email, Resend, Motion, Git, Figma, Vercel'
         },

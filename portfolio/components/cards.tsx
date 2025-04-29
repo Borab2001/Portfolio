@@ -68,8 +68,9 @@ const Cards = () => {
             description: 'Collective of French pianists and artists',
             src: '/images/maestro.webp',
             alt: 'Maestro project image',
-            link: 'https://www.figma.com/design/Avq5X2vCWDFz3giIPbEurJ/Maestro?node-id=0-1&t=MArnJkhau6JSWXLw-1',
-            linkType: 'Figma'
+            link: 'https://msurprise.vercel.app/',
+            link2: 'https://www.figma.com/design/Avq5X2vCWDFz3giIPbEurJ/Maestro?node-id=0-1&t=MArnJkhau6JSWXLw-1',
+            linkType: 'project'
         },
         // {
         //     title: 'Yarn',

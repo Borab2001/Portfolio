@@ -78,7 +78,7 @@ const Cards = () => {
             src: '/images/vrai-ai.webp',
             alt: 'Vrai AI project image',
             link: 'https://www.vrai-ai.com/',
-            // link2: '',
+            link2: 'https://www.figma.com/design/TmI6RtInV9ejjYUk4ne67Z/Vrai-AI?node-id=23-780&t=6jv7NUPiXfx4TQif-1',
             linkType: 'project'
         },
         // {

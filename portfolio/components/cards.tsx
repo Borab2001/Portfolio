@@ -72,6 +72,15 @@ const Cards = () => {
             link2: 'https://www.figma.com/design/Avq5X2vCWDFz3giIPbEurJ/Maestro?node-id=0-1&t=MArnJkhau6JSWXLw-1',
             linkType: 'project'
         },
+        {
+            title: 'Vrai AI',
+            description: 'AI anti-counterfeit Startup applying for Y Combinator',
+            src: '/images/vrai-ai.webp',
+            alt: 'Vrai AI project image',
+            link: 'https://www.vrai-ai.com/',
+            // link2: '',
+            linkType: 'project'
+        },
         // {
         //     title: 'Yarn',
         //     description: '/',

@@ -12,23 +12,30 @@ const Experience = () => {
 
     const experiences = [
         {
-            title: 'Frontend Engineer & Designer',
+            title: 'Frontend Engineer & UX/UI Designer',
             company: 'Cedrus Solutions',
-            date: 'Feb 2025 - Apr 2025',
+            date: 'Feb 2025 - Aug 2025',
             description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
             stack: 'NextJS, TypeScript, Docker, Tailwind, Shadcn, NextAuth, Git, AWS, i18n, Figma'
         },
         {
-            title: 'Freelance Software Engineer',
+            title: 'Frontend Engineer & Product Designer',
+            company: 'Cypheme',
+            date: 'Jan 2023 - Aug 2025',
+            description: 'AI anti-counterfeit startup based in Station F.',
+            stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma, Webflow'
+        },
+        {
+            title: 'Software Engineer',
             company: 'Aila Consulting',
-            date: 'Aug 2024 - Apr 2025',
+            date: 'Aug 2024 - Aug 2025',
             description: 'Emerging startup in visa solutions, work permits and translations.',
             stack: 'NextJS, TypeScript, Tailwind, Shadcn, React-Email, Resend, Motion, Git, i18n, Figma, Vercel'
         },
         {
-            title: 'Freelance Software Engineer',
+            title: 'Software Engineer',
             company: 'Groupe BNSB',
-            date: 'Feb 2022 - Apr 2025',
+            date: 'Feb 2022 - Aug 2025',
             description: 'Emerging consulting startup in textile and fashion industry.',
             stack: 'NextJS, TypeScript, Tailwind, Shadcn, MongoDB, Clerk, Stripe, React-Email, Resend, Motion, Git, Figma, Vercel'
         },
@@ -43,8 +50,8 @@ const Experience = () => {
             title: 'Frontend Engineer Intern',
             company: 'Cypheme',
             date: 'Jul 2022 - Jan 2023',
-            description: 'AI anti-counterfeit startup based in Station F. Also working as a freelance.',
-            stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma'
+            description: 'AI anti-counterfeit startup based in Station F.',
+            stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma, Webflow'
         },
     ];
 

@@ -5,6 +5,8 @@ import "./globals.css";
 
 import ScrollProvider from "@/lib/scroll-provider";
 import SplashCursor from "@/components/splash-cursor";
+import Footer from "@/components/footer";
+
 
 
 const geistSans = Geist({
@@ -98,10 +100,15 @@ export default function RootLayout({
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 				>
-					{children}
+					<div className="backdrop-blur-lg flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
+						{children}
+						<Footer />
+					</div>
+
 					<div className="absolute -z-10">
 						<SplashCursor />
 					</div>
+					
 					<Analytics />
 				</body>
 			</ScrollProvider>

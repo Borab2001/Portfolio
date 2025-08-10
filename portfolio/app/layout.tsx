@@ -57,44 +57,6 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				{/* <meta charSet={metadata.charset} />
-				<meta
-					httpEquiv={metadata.httpEquiv}
-					content={metadata.content}
-				/>
-				<meta name="viewport" content={metadata.viewport} />
-				<meta name="description" content={metadata.metaDescription} />
-				<meta name="keywords" content={metadata.keywords} />
-				<title>{metadata.title}</title>
-				<link
-					rel="apple-touch-icon"
-					sizes="180x180"
-					href="/apple-touch-icon.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="32x32"
-					href="/favicon-32x32.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="16x16"
-					href="/favicon-16x16.png"
-				/>
-				<link rel="manifest" href="/site.webmanifest" /> */}
-
-
-				{/* <meta charSet="UTF-8" />
-				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-				<meta name="apple-mobile-web-app-title" content="Aila" />
-				<meta name="theme-color" content="#050505" />
-				<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-				<link rel="shortcut icon" href="/favicon.ico" />
-				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-				<link rel="manifest" href="/site.webmanifest" /> */}
 			</head>
 			<ScrollProvider>
 				<body
@@ -108,7 +70,7 @@ export default function RootLayout({
 					<div className="absolute -z-10">
 						<SplashCursor />
 					</div>
-					
+
 					<Analytics />
 				</body>
 			</ScrollProvider>

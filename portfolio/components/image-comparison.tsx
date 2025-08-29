@@ -29,10 +29,13 @@ function ImageComparison() {
         <div className="w-full py-20 lg:py-40">
             <div className="container mx-auto">
                 <div className="flex flex-col gap-4">
-                    <div>
-                        {/* <Badge>Platform</Badge> */}
-                        Badge here
-                    </div>
+                    <ul className="flex flex-wrap gap-1.5">
+                        <li className="flex">
+                            <span className="inline-flex items-center rounded-lg border bg-zinc-50 px-1.5 py-0.5 font-mono text-xs text-muted-foreground dark:bg-zinc-900">
+                                Badge here
+                            </span>
+                        </li>
+                    </ul>
                     <div className="flex gap-2 flex-col">
                         <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular">
                             Something new!

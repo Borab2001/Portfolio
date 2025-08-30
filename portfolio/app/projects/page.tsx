@@ -1,6 +1,7 @@
 
-import Project from '@/components/project';
 import { Project as ProjectTypes } from '@/types/project';
+import Project from '@/components/project';
+import Footer from '@/components/footer';
 
 export default function Projects() {	
     
@@ -55,6 +56,7 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
+            <Footer />
 		</main>
     );
 }

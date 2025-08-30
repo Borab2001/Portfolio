@@ -14,9 +14,9 @@ export default function Project({ project }: ProjectProps) {
         <div className="w-full py-16 border-b border-gray-800 last:border-b-0">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
                 {project.mockupImages.map((group, groupIndex) => (
-                    <div key={groupIndex} className="p-[2vw] flex flex-row justify-center space-x-4 w-full h-auto max-h-[360px] md:h-full md:max-h-none aspect-[4/3] md:aspect-[5/5] lg:aspect-[6/5] bg-[#121212] border border-zinc-700 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
+                    <div key={groupIndex} className="p-[2vw] flex flex-row justify-center space-x-4 w-full h-auto max-h-[360px] md:h-full md:max-h-none aspect-[4/3] md:aspect-[5/5] lg:aspect-[6/5] bg-background border border-zinc-700 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
                         {group.map((image, imageIndex) => (
-                            <div key={imageIndex} className="">
+                            <div key={imageIndex}>
                                 <Image
                                     src={image}
                                     alt={`${project.title} mockup group ${groupIndex + 1} image ${imageIndex + 1}`}
@@ -86,7 +86,7 @@ export default function Project({ project }: ProjectProps) {
                             alt={`Persona ${index + 1}`}
                             width={400}
                             height={600}
-                            className="w-full aspect-[5/3] border border-zinc-700 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
+                            className="w-full aspect-[5/3] bg-background border border-zinc-700 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
                         />
                     ))}
                 </div>

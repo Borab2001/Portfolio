@@ -1,0 +1,59 @@
+
+import Project from '@/components/project';
+import { Project as ProjectTypes } from '@/types/project';
+
+export default function Projects() {	
+    
+    const projects: ProjectTypes[] = [
+        {
+            id: '1',
+            title: '2032 Brisbane Olympics',
+            subtitle: '2023 ~ Sydney Uni',
+            description: [
+                "This project was a concept application for the Brisbane 2032 Olympics, focusing on the integration of navigation and accessibility without technology limitations. Reviews from previous Olympic Games consistently highlighted that many venues lacked accessibility-friendly pathways and facilities, leaving people with physical disabilities facing repeated challenges in reaching and navigating event spaces. Existing navigation apps often provide only limited or generic information, without addressing crucial accessibility features such as ramps, lifts, elevators, or accessible toilets. Our concept aimed to close this gap and create a smoother, more inclusive event experience.",
+                "The solution envisages a navigation platform that combines detailed accessibility data with an immersive AR view mode available on both iPhone and Apple Watch devices. This enables users to visualize accessible routes and facilities in real time, while also benefiting from safety-oriented features such as customizable action buttons, gesture recognition, and a dedicated help function that allows direct contact with staff, emergency services, or personal contacts. By addressing both navigation and accessibility in one integrated system, the app seeks to empower users with greater independence and confidence."
+            ],
+
+            mockupImages: [
+                '/images/projects/ausvision/ausvision-mockup1.svg',
+                '/images/projects/ausvision/ausvision-mockup2.svg',
+                '/images/projects/ausvision/ausvision-mockup3.svg'
+            ],
+            competitorAnalysis: {
+                title: 'Competitor Analysis',
+                description: [
+                    "While Google Maps remains the strongest competitor in navigation, its accessibility features are secondary and lack the detail required for wheelchair users. Other platforms primarily focus on rating accessible venues but rarely provide route-specific guidance.",
+                    "None of the competitors analyzed offer detailed navigation based on physical features like ramps, lifts, or accessible routes, nor do they integrate an AR point-of-view experience. This gap highlights a strong opportunity to create a solution that goes beyond ratings and delivers truly inclusive navigation for people with physical disabilities."
+                ],
+            },
+            personas: {
+                title: 'User Personas',
+                images: [
+                    '/images/projects/ausvision/User Persona 1.svg',
+                    '/images/projects/ausvision/User Persona 2.svg'
+                ]
+            }
+        },
+    ];
+
+    return (
+		<main className="backdrop-blur-lg flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
+            <div className="min-h-dvh w-full p-4 sm:p-8 flex flex-col smooth-height">
+                <div className="flex-1 h-full flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8 py-16">
+                    <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-white text-center">
+                        Projects
+                    </h1>
+                    <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-white max-w-96 md:max-w-lg text-center">
+                        A brief showcase of my work
+                    </p>
+                </div>
+            
+                <div className="divide-y divide-gray-800">
+                    {projects.map((project) => (
+                        <Project key={project.id} project={project} />
+                    ))}
+                </div>
+            </div>
+		</main>
+    );
+}

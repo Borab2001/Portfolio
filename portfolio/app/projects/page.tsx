@@ -14,8 +14,12 @@ export default function Projects() {
                 "This project was a concept application for the Brisbane 2032 Olympics, focusing on the integration of navigation and accessibility without technology limitations. Reviews from previous Olympic Games consistently highlighted that many venues lacked accessibility-friendly pathways and facilities, leaving people with physical disabilities facing repeated challenges in reaching and navigating event spaces. Existing navigation apps often provide only limited or generic information, without addressing crucial accessibility features such as ramps, lifts, elevators, or accessible toilets. Our concept aimed to close this gap and create a smoother, more inclusive event experience.",
                 "The solution envisages a navigation platform that combines detailed accessibility data with an immersive AR view mode available on both iPhone and Apple Watch devices. This enables users to visualize accessible routes and facilities in real time, while also benefiting from safety-oriented features such as customizable action buttons, gesture recognition, and a dedicated help function that allows direct contact with staff, emergency services, or personal contacts. By addressing both navigation and accessibility in one integrated system, the app seeks to empower users with greater independence and confidence."
             ],
-            link: 'https://www.figma.com/design/o40ZnVFnKsYgeqUWRfGny4/AusVision-%F0%9F%87%A6%F0%9F%87%BA?node-id=1-10549&t=pDOyUD5NSvgl6bio-1',
-            linkType: 'Figma',
+            links: {
+                figma: {
+                    url: 'https://www.figma.com/design/o40ZnVFnKsYgeqUWRfGny4/AusVision-%F0%9F%87%A6%F0%9F%87%BA?node-id=1-10549&t=pDOyUD5NSvgl6bio-1',
+                    type: 'Figma'
+                }
+            },
             mockupImages: [
                 ['/images/projects/ausvision/AR Error.svg', '/images/projects/ausvision/AR Error.svg'],
                 ['/images/projects/ausvision/ausvision-mockup2.svg'],

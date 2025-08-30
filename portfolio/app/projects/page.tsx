@@ -34,8 +34,8 @@ export default function Projects() {
             personas: {
                 title: 'User Personas',
                 images: [
-                    '/images/projects/ausvision/User Persona 1.svg',
-                    '/images/projects/ausvision/User Persona 2.svg'
+                    '/images/projects/ausvision/persona_1.webp',
+                    '/images/projects/ausvision/persona_2.webp'
                 ]
             }
         },

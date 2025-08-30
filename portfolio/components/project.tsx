@@ -38,38 +38,13 @@ export default function Project({ project }: ProjectProps) {
                     </div>
 
                     <div className="flex flex-row items-center gap-2">
-                        {project.link && (
-                            <Link href={project.link} className="text-sm" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${project.linkType}`}>
-                                {project.linkType === 'project' ? (
-                                    // <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
-                                    // <div className='text-base'>Project</div>
-                                    <TextHoverEnter>
-                                        {project.linkType}
-                                    </TextHoverEnter>
-                                ) : project.linkType === 'Figma' ? (
-                                    // <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
-                                    // <div className='text-base'>Figma</div>
-                                    <TextHoverEnter>
-                                        {project.linkType}
-                                    </TextHoverEnter>
-                                ) : (
-                                    // <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
-                                    // <div className='text-base'>Project</div>
-                                    <TextHoverEnter>
-                                        {project.linkType}
-                                    </TextHoverEnter>
-                                )}
-                            </Link>
-                        )}
-                        {project.link2 && (
-                            <Link href={project.link2} target="_blank" rel="noopener noreferrer" aria-label="Link to Figma">
-                                {/* <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" /> */}
-                                {/* <div className='text-base'>Figma</div> */}
+                        {project.links && Object.entries(project.links).map(([, link], index) => (
+                            <Link key={index} href={link.url} className="text-sm" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
                                 <TextHoverEnter>
-                                    {project.linkType}
+                                    {link.type}
                                 </TextHoverEnter>
                             </Link>
-                        )}
+                        ))}
                     </div>
                 </div>
                 <div className="col-span-2">

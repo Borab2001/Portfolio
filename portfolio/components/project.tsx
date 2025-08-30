@@ -3,8 +3,6 @@ import Link from 'next/link';
 import { Project as ProjectTypes } from '@/types/project';
 
 import TextHoverEnter from './ui/text-hover-enter';
-// import { LinkIcon } from './ui/link-icon';
-// import { FigmaIcon } from './ui/figma-icon';
 
 interface ProjectProps {
     project: ProjectTypes;
@@ -14,7 +12,7 @@ export default function Project({ project }: ProjectProps) {
     return (
         <div className="w-full py-16 border-b border-gray-800 last:border-b-0">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-                {project.mockupImages.map((group, groupIndex) => (
+                {project.mockupImages?.map((group, groupIndex) => (
                     <div key={groupIndex} className="p-[2vw] flex flex-row justify-center space-x-4 w-full h-auto max-h-[360px] md:h-full md:max-h-none aspect-[4/3] md:aspect-[5/5] lg:aspect-[6/5] bg-[#121212] border border-zinc-700 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
                         {group.map((image, imageIndex) => (
                             <div key={imageIndex} className="">
@@ -38,10 +36,10 @@ export default function Project({ project }: ProjectProps) {
                     </div>
 
                     <div className="flex flex-row items-center gap-2">
-                        {project.links && Object.entries(project.links).map(([, link], index) => (
-                            <Link key={index} href={link.url} className="text-sm" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
+                        {project.links?.map((link, index) => (
+                            <Link key={index} href={link.url} className="text-sm" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.label}`}>
                                 <TextHoverEnter>
-                                    {link.type}
+                                    {link.label}
                                 </TextHoverEnter>
                             </Link>
                         ))}

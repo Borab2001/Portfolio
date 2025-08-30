@@ -3,11 +3,10 @@ export interface Project {
     title: string;
     subtitle: string;
     links: {
-        [key: string]: {
-            url: string;
-            type: string;
-        };
-    };
+        type: string;
+        label: string;
+        url: string;
+    }[];
     description: string[];
     mockupImages: string[][];
     competitorAnalysis?: {

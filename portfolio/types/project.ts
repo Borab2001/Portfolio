@@ -2,9 +2,12 @@ export interface Project {
     id: string;
     title: string;
     subtitle: string;
-    link: string;
-    link2?: string;
-    linkType: string;
+    links: {
+        [key: string]: {
+            url: string;
+            type: string;
+        };
+    };
     description: string[];
     mockupImages: string[][];
     competitorAnalysis?: {

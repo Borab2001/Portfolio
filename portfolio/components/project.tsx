@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Project as ProjectTypes } from '@/types/project';
 
 import TextHoverEnter from './ui/text-hover-enter';
+import { ArrowUpRight } from 'lucide-react';
 
 interface ProjectProps {
     project: ProjectTypes;
@@ -39,7 +40,8 @@ export default function Project({ project }: ProjectProps) {
                         {project.links?.map((link, index) => (
                             <Link key={index} href={link.url} className="text-sm" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
                                 <TextHoverEnter>
-                                    {link.label}
+                                    {link.label} 
+                                    <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
                                 </TextHoverEnter>
                             </Link>
                         ))}

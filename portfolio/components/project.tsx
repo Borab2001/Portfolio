@@ -19,8 +19,8 @@ export default function Project({ project }: ProjectProps) {
                                 <Image
                                     src={image}
                                     alt={`${project.title} mockup group ${groupIndex + 1} image ${imageIndex + 1}`}
-                                    width={160}
-                                    height={320}
+                                    width={1000}
+                                    height={1000}
                                     className="w-full h-full object-contain"
                                 />
                             </div>

@@ -26,7 +26,7 @@ function TextHoverEnter({ children, className }: TextGlitchProps) {
             )}
             initial="initial"
             whileHover="hovered"
-            style={{ lineHeight: 0.9 }}
+            style={{ lineHeight: 1.05 }}
         >
         <div>
             {letters.map((letter, i) => (

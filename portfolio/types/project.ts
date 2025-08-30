@@ -3,7 +3,7 @@ export interface Project {
     title: string;
     subtitle: string;
     description: string[];
-    mockupImages: string[];
+    mockupImages: string[][];
     competitorAnalysis?: {
         title: string;
         description: string[];

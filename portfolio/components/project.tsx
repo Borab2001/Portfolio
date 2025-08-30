@@ -2,8 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Project as ProjectTypes } from '@/types/project';
 
-import { LinkIcon } from './ui/link-icon';
-import { FigmaIcon } from './ui/figma-icon';
+import TextHoverEnter from './ui/text-hover-enter';
+// import { LinkIcon } from './ui/link-icon';
+// import { FigmaIcon } from './ui/figma-icon';
 
 interface ProjectProps {
     project: ProjectTypes;
@@ -38,22 +39,35 @@ export default function Project({ project }: ProjectProps) {
 
                     <div className="flex flex-row items-center gap-2">
                         {project.link && (
-                            <Link href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`Link to ${project.linkType}`}>
+                            <Link href={project.link} className="text-sm" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${project.linkType}`}>
                                 {project.linkType === 'project' ? (
                                     // <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
-                                    <div className='text-base'>Project</div>
+                                    // <div className='text-base'>Project</div>
+                                    <TextHoverEnter>
+                                        {project.linkType}
+                                    </TextHoverEnter>
                                 ) : project.linkType === 'Figma' ? (
                                     // <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
-                                    <div className='text-base'>Figma</div>
+                                    // <div className='text-base'>Figma</div>
+                                    <TextHoverEnter>
+                                        {project.linkType}
+                                    </TextHoverEnter>
                                 ) : (
                                     // <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
-                                    <div className='text-base'>Project</div>
+                                    // <div className='text-base'>Project</div>
+                                    <TextHoverEnter>
+                                        {project.linkType}
+                                    </TextHoverEnter>
                                 )}
                             </Link>
                         )}
                         {project.link2 && (
                             <Link href={project.link2} target="_blank" rel="noopener noreferrer" aria-label="Link to Figma">
-                                <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                {/* <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" /> */}
+                                {/* <div className='text-base'>Figma</div> */}
+                                <TextHoverEnter>
+                                    {project.linkType}
+                                </TextHoverEnter>
                             </Link>
                         )}
                     </div>

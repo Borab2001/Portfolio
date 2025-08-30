@@ -1,5 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Project as ProjectTypes } from '@/types/project';
+
+import { LinkIcon } from './ui/link-icon';
+import { FigmaIcon } from './ui/figma-icon';
 
 interface ProjectProps {
     project: ProjectTypes;
@@ -26,9 +30,30 @@ export default function Project({ project }: ProjectProps) {
                 ))}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10 mb-16">
-                <div className="col-span-1">
-                    <h2 className="text-xl md:text-2xl font-semibold text-white mb-1">{project.title}</h2>
-                    <p className="text-gray-400 text-md">{project.subtitle}</p>
+                <div className="col-span-1 flex flex-col gap-6 items-start">
+                    <div>
+                        <h2 className="text-xl md:text-2xl font-semibold text-white mb-1">{project.title}</h2>
+                        <p className="text-gray-400 text-md">{project.subtitle}</p>
+                    </div>
+
+                    <div className="flex flex-row items-center gap-2">
+                        {project.link && (
+                            <Link href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`Link to ${project.linkType}`}>
+                                {project.linkType === 'project' ? (
+                                    <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                ) : project.linkType === 'Figma' ? (
+                                    <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                ) : (
+                                    <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                )}
+                            </Link>
+                        )}
+                        {project.link2 && (
+                            <Link href={project.link2} target="_blank" rel="noopener noreferrer" aria-label="Link to Figma">
+                                <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                            </Link>
+                        )}
+                    </div>
                 </div>
                 <div className="col-span-2">
                     <div className="space-y-4">

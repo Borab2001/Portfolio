@@ -18,9 +18,9 @@ export default function Projects() {
                 { type: "figma", label: "Figma", url: "https://www.figma.com/design/o40ZnVFnKsYgeqUWRfGny4/AusVision-%F0%9F%87%A6%F0%9F%87%BA?node-id=1-10549&t=pDOyUD5NSvgl6bio-1", },
             ],
             mockupImages: [
-                ['/images/projects/ausvision/AR Error.svg', '/images/projects/ausvision/AR Error.svg'],
-                ['/images/projects/ausvision/ausvision-mockup2.svg'],
-                ['/images/projects/ausvision/ausvision-mockup3.svg']
+                ['/images/projects/ausvision/home_map.webp', '/images/projects/ausvision/home_list.webp'],
+                ['/images/projects/ausvision/ar_view.webp', '/images/projects/ausvision/ar_warning.webp'],
+                ['/images/projects/ausvision/route_view.webp', '/images/projects/ausvision/watch_notify_staff.webp'],
             ],
             competitorAnalysis: {
                 title: 'Competitor Analysis',

@@ -28,25 +28,25 @@ function TextHoverEnter({ children, className }: TextGlitchProps) {
             whileHover="hovered"
             style={{ lineHeight: 1.05 }}
         >
-        <div>
-            {letters.map((letter, i) => (
-                <motion.span
-                    key={i}
-                    className="inline-block"
-                    variants={{
-                        initial: { y: 0 },
-                        hovered: { y: "-100%" },
-                    }}
-                    transition={{
-                        duration: DURATION,
-                        ease: "easeInOut",
-                        delay: STAGGER * i,
-                    }}
-                >
-                    {letter}
-                </motion.span>
-            ))}
-        </div>
+            <div>
+                {letters.map((letter, i) => (
+                    <motion.span
+                        key={i}
+                        className="inline-block"
+                        variants={{
+                            initial: { y: 0 },
+                            hovered: { y: "-100%" },
+                        }}
+                        transition={{
+                            duration: DURATION,
+                            ease: "easeInOut",
+                            delay: STAGGER * i,
+                        }}
+                    >
+                        {letter}
+                    </motion.span>
+                ))}
+            </div>
             <div className="absolute inset-0">
                 {letters.map((letter, i) => (
                     <motion.span

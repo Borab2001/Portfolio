@@ -19,8 +19,10 @@ export default function Projects() {
             ],
             mockupImages: [
                 ['/images/projects/ausvision/home_map.webp', '/images/projects/ausvision/home_list.webp'],
+                ['/images/projects/ausvision/transport_selection.webp', '/images/projects/ausvision/route_view.webp'],
                 ['/images/projects/ausvision/ar_view.webp', '/images/projects/ausvision/ar_warning.webp'],
-                ['/images/projects/ausvision/route_view.webp', '/images/projects/ausvision/watch_notify_staff.webp'],
+                // Apple Watch Images :
+                // '/images/projects/ausvision/watch_notify_staff.webp'
             ],
             competitorAnalysis: {
                 title: 'Competitor Analysis',

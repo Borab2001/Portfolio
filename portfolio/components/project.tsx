@@ -33,18 +33,21 @@ export default function Project({ project }: ProjectProps) {
                 <div className="col-span-1 flex flex-col gap-6 items-start">
                     <div>
                         <h2 className="text-xl md:text-2xl font-semibold text-white mb-1">{project.title}</h2>
-                        <p className="text-gray-400 text-md">{project.subtitle}</p>
+                        <p className="text-gray-400 text-base">{project.subtitle}</p>
                     </div>
 
                     <div className="flex flex-row items-center gap-2">
                         {project.link && (
                             <Link href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`Link to ${project.linkType}`}>
                                 {project.linkType === 'project' ? (
-                                    <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                    // <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                    <div className='text-base'>Project</div>
                                 ) : project.linkType === 'Figma' ? (
-                                    <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                    // <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                    <div className='text-base'>Figma</div>
                                 ) : (
-                                    <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                    // <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                    <div className='text-base'>Project</div>
                                 )}
                             </Link>
                         )}

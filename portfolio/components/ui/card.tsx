@@ -45,7 +45,7 @@ const Card: React.FC<CardProps> = ({
                 className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background dark:bg-background border border-zinc-700 rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4"
             >
                 <div
-                    className="w-full h-full flex flex-col gap-6 p-4 md:p-6 bg-background rounded-lg sm:rounded-xl md:rounded-2xl"
+                    className="w-full h-full flex flex-col gap-6 p-2 sm:p-4 md:p-6 bg-background rounded-lg sm:rounded-xl md:rounded-2xl"
                 >
                     <div className="flex flex-col justify-between gap-4">
                         <div className="flex flex-col gap-2.5">

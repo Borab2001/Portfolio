@@ -5,6 +5,7 @@ import "./globals.css";
 
 import ScrollProvider from "@/lib/scroll-provider";
 import SplashCursor from "@/components/splash-cursor";
+import Navbar from "@/components/ui/nav";
 
 
 const geistSans = Geist({
@@ -98,6 +99,7 @@ export default function RootLayout({
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 				>
+					<Navbar />
 					{children}
 					<div className="absolute -z-10">
 						<SplashCursor />

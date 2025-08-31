@@ -94,7 +94,7 @@ export default function Projects() {
                     /> */}
                 </div>
             
-                <div className="divide-y divide-gray-800">
+                <div className="divide-y divide-zinc-400">
                     {projects.map((project) => (
                         <Project key={project.id} project={project} />
                     ))}

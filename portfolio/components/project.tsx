@@ -33,7 +33,7 @@ export default function Project({ project }: ProjectProps) {
                 <div className="col-span-1 flex flex-col gap-6 items-start">
                     <div>
                         <h2 className="text-xl md:text-2xl font-semibold text-white mb-1">{project.title}</h2>
-                        <p className="text-gray-400 text-base">{project.subtitle}</p>
+                        <p className="text-zinc-400 text-base">{project.subtitle}</p>
                     </div>
 
                     <div className="flex flex-row items-center gap-2">
@@ -50,7 +50,7 @@ export default function Project({ project }: ProjectProps) {
                 <div className="col-span-2">
                     <div className="space-y-4">
                         {project.description.map((paragraph, index) => (
-                            <p key={index} className="text-gray-300 leading-relaxed text-sm">
+                            <p key={index} className="text-zinc-400 leading-relaxed text-sm">
                                 {paragraph}
                             </p>
                         ))}
@@ -67,7 +67,7 @@ export default function Project({ project }: ProjectProps) {
                         <div className="col-span-2">
                             <div className="space-y-4">
                                 {project.competitorAnalysis.description.map((paragraph, index) => (
-                                    <p key={index} className="text-gray-300 text-sm leading-relaxed">
+                                    <p key={index} className="text-zinc-400 text-sm leading-relaxed">
                                         {paragraph}
                                     </p>
                                 ))}

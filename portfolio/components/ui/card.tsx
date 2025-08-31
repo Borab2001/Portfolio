@@ -42,7 +42,7 @@ const Card: React.FC<CardProps> = ({
             <motion.div 
                 // style={{ scale: cardScale, top: `calc(-6% + ${index * 28}px)` }} 
                 style={{ scale: cardScale, top: "0%" }} 
-                className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-zinc-700 rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4"
+                className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-border rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4"
             >
                 <div
                     className="w-full h-full flex flex-col gap-6 p-2 sm:p-4 md:p-6 bg-background rounded-lg sm:rounded-xl md:rounded-2xl"
@@ -50,27 +50,27 @@ const Card: React.FC<CardProps> = ({
                     <div className="flex flex-col justify-between gap-4">
                         <div className="flex flex-col gap-2.5">
                             <div className={`flex flex-row items-center ${link ? 'justify-between gap-2' : "justify-start"}`}>
-                                <h2 className="text-xl md:text-3xl font-medium">{title}</h2>
+                                <h2 className="text-xl md:text-3xl font-medium text-primary">{title}</h2>
                                 <div className="flex flex-row items-center gap-2">
                                     {link && (
                                         <Link href={link} target="_blank" rel="noopener noreferrer" aria-label={`Link to ${linkType}`}>
                                             {linkType === 'project' ? (
-                                                <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                                <LinkIcon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                                             ) : linkType === 'Figma' ? (
-                                                <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                                <FigmaIcon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                                             ) : (
-                                                <LinkIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                                <LinkIcon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                                             )}
                                         </Link>
                                     )}
                                     {link2 && (
                                         <Link href={link2} target="_blank" rel="noopener noreferrer" aria-label="Link to Figma">
-                                            <FigmaIcon className="w-8 h-8 md:w-10 md:h-10" />
+                                            <FigmaIcon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                                         </Link>
                                     )}
                                 </div>
                             </div>
-                            <p className="text-xs sm:text-sm md:text-base text-zinc-400">{description}</p>
+                            <p className="text-xs sm:text-sm md:text-base text-muted">{description}</p>
                         </div>
                     </div>
                     <Image 
@@ -78,7 +78,7 @@ const Card: React.FC<CardProps> = ({
                         alt={alt}
                         width={800}
                         height={800}
-                        className="aspect-[12/7] object-cover object-center w-full rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-non select-none border border-zinc-800"
+                        className="aspect-[12/7] object-cover object-center w-full rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-non select-none border border-border"
                         loading={index === 0 ? "eager" : "lazy"}
                     />
                 </div>

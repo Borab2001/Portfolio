@@ -75,11 +75,11 @@ const Experience = () => {
 
     return (
         <div className="overflow-x-hidden w-full flex flex-col gap-4 max-w-6xl mx-auto px-4 pb-4 sm:px-8 sm:pb-8 md:px-20 md:pb-20">
-            <h2 className="text-3xl font-semibold">Experience</h2>
+            <h2 className="text-3xl text-primary font-semibold">Experience</h2>
             <div className="flex flex-col">
                 {experiences.map((experience, index) => (
                     <div 
-                        className="w-full flex flex-col gap-2 justify-between items-center cursor-pointer border-b border-zinc-700 relative"
+                        className="w-full flex flex-col gap-2 justify-between items-center cursor-pointer border-b border-border-light relative"
                         onClick={() => openAccordion(index)}
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
@@ -89,13 +89,13 @@ const Experience = () => {
                             className="w-full grid grid-cols-2 gap-x-2 justify-between items-start py-8"
                         >
                             <div className="h-full flex flex-col justify-between items-start">
-                                <h3 className="text-lg md:text-2xl font-medium">{experience.title}</h3>
-                                <div className="px-2 py-1 md:px-3 text-sm md:text-lg font-normal bg-background/100 backdrop-blur-md text-white border border-zinc-700 rounded-full">
+                                <h3 className="text-lg md:text-2xl font-medium text-foreground">{experience.title}</h3>
+                                <div className="px-2 py-1 md:px-3 text-sm md:text-lg font-normal bg-background backdrop-blur-md text-secondary border border-border rounded-full">
                                     {experience.type}
                                 </div>
                             </div>
                             <div className="flex flex-col gap-6 items-end">
-                                <p className="text-lg md:text-2xl font-medium text-right">{experience.company}</p>
+                                <p className="text-lg md:text-2xl font-medium text-right text-foreground">{experience.company}</p>
                                 <motion.div 
                                     className='flex flex-row items-center'
                                     animate={{ 
@@ -104,7 +104,7 @@ const Experience = () => {
                                     transition={{ duration: 0.3, ease: "easeOut" }}
                                 >
 
-                                    <p className="text-sm md:text-lg leading-[30px] md:leading-[38px] font-normal text-zinc-400 text-right whitespace-nowrap">
+                                    <p className="text-sm md:text-lg leading-[30px] md:leading-[38px] font-normal text-muted text-right whitespace-nowrap">
                                         {experience.date}
                                     </p>
                                     
@@ -117,7 +117,7 @@ const Experience = () => {
                                         transition={{ duration: 0.3, ease: "easeOut" }}
                                     >
                                         <ChevronDown 
-                                            className="text-zinc-400" 
+                                            className="text-muted" 
                                             size={20} 
                                         />
                                     </motion.div>
@@ -133,8 +133,8 @@ const Experience = () => {
                             className="w-full overflow-hidden flex flex-col gap-2"
                         >
                             {/* CONTENT HERE */}
-                            <p className="text-sm md:text-lg font-normal text-zinc-400">{experience.description}</p>
-                            <p className='text-sm md:text-lg font-normal italic text-zinc-400 mb-8'>
+                            <p className="text-sm md:text-lg font-normal text-muted">{experience.description}</p>
+                            <p className='text-sm md:text-lg font-normal italic text-muted mb-8'>
                                 {experience.stack}
                             </p>
                         </motion.div>

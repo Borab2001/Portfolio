@@ -11,6 +11,21 @@ export default {
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
+				border: {
+					DEFAULT: "var(--border)",
+					light: "var(--light)",
+				},
+				primary: "var(--primary)",
+				secondary: "var(--secondary)",
+				muted: "var(--muted)",
+				subtle: "var(--subtle)",
+				surface: {
+					DEFAULT: "var(--surface)",
+					text: "var(--surface-text)",
+					muted: "var(--surface-muted)",
+				},
+				backdrop: "var(--backdrop)",
+				'muted-foreground': "var(--muted)",
 			},
 			animation: {},
 			keyframes: {},

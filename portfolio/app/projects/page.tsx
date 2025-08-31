@@ -32,13 +32,13 @@ export default function Projects() {
                     "None of the competitors analyzed offer detailed navigation based on physical features like ramps, lifts, or accessible routes, nor do they integrate an AR point-of-view experience. This gap highlights a strong opportunity to create a solution that goes beyond ratings and delivers truly inclusive navigation for people with physical disabilities."
                 ],
             },
-            personas: {
-                title: 'User Personas',
-                images: [
-                    '/images/projects/ausvision/persona_1.webp',
-                    '/images/projects/ausvision/persona_2.webp'
-                ]
-            }
+            // personas: {
+            //     title: 'User Personas',
+            //     images: [
+            //         '/images/projects/ausvision/persona_1.webp',
+            //         '/images/projects/ausvision/persona_2.webp'
+            //     ]
+            // }
         },
     ];
 

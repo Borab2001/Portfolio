@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
-            <div className="bg-background/5 backdrop-blur-2xl border border-white/10 rounded-full p-1 shadow-2xl">
+            <div className="bg-background backdrop-blur-2xl border border-zinc-700 rounded-full p-1 shadow-2xl">
                 <div className="flex items-center space-x-1">
                     {navItems.map((item) => {
                         const isActive = pathname === item.href;
@@ -22,10 +22,10 @@ export default function Navbar() {
                                 key={item.name}
                                 href={item.href}
                                 className={`
-                                        relative px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-out
+                                        w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out
                                     ${isActive 
                                         ? 'text-white bg-white/05 shadow-lg' 
-                                        : 'text-white/70 hover:text-white hover:bg-white/10'
+                                        : 'text-white/70 hover:text-white'
                                     }
                                 `}
                             >

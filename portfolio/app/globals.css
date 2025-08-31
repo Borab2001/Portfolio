@@ -10,13 +10,13 @@
 }
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ffffff;
+  --background: #0a0a0a; /* zinc-900 */
+  --foreground: #ffffff; /* zinc-100 */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0a0a0a; /* zinc-900 */
     --foreground: #f4f4f5; /* zinc-100 */
   }
 }
@@ -28,28 +28,28 @@ body {
 }
 
 *::selection {
-  background-color: #f4f4f5;
-  color: #0a0a0a;
+  background-color: #f4f4f5; /* zinc-100 */
+  color: #0a0a0a; /* zinc-900 */
 }
 
 *::-moz-selection {
-  background-color: #f4f4f5;
-  color: #0a0a0a;
+  background-color: #f4f4f5; /* zinc-100 */
+  color: #0a0a0a; /* zinc-900 */
 }
 
 *::-o-selection {
-  background-color: #f4f4f5;
-  color: #0a0a0a;
+  background-color: #f4f4f5; /* zinc-100 */
+  color: #0a0a0a; /* zinc-900 */
 }
 
 *::-ms-selection {
-  background-color: #f4f4f5;
-  color: #0a0a0a;
+  background-color: #f4f4f5; /* zinc-100 */
+  color: #0a0a0a; /* zinc-900 */
 }
 
 *::-webkit-selection {
-  background-color: #f4f4f5;
-  color: #0a0a0a;
+  background-color: #f4f4f5; /* zinc-100 */
+  color: #0a0a0a; /* zinc-900 */
 }
 
 .smooth-height {

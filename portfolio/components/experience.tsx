@@ -86,9 +86,14 @@ const Experience = () => {
                         key={index}
                     >
                         <div 
-                            className="w-full flex flex-row gap-2 justify-between items-start py-8"
+                            className="w-full grid grid-cols-2 gap-x-2 justify-between items-start py-8"
                         >
-                            <h3 className="text-lg md:text-2xl font-medium">{experience.title}</h3>
+                            <div className="h-full flex flex-col justify-between items-start">
+                                <h3 className="text-lg md:text-2xl font-medium">{experience.title}</h3>
+                                <div className="px-2 py-1 md:px-3 text-sm md:text-lg font-normal bg-background/100 backdrop-blur-md text-white border border-zinc-700 rounded-full">
+                                    {experience.type}
+                                </div>
+                            </div>
                             <div className="flex flex-col gap-6 items-end">
                                 <p className="text-lg md:text-2xl font-medium text-right">{experience.company}</p>
                                 <motion.div 
@@ -99,7 +104,7 @@ const Experience = () => {
                                     transition={{ duration: 0.3, ease: "easeOut" }}
                                 >
 
-                                    <p className="text-sm md:text-lg font-normal text-zinc-400 text-right whitespace-nowrap">
+                                    <p className="text-sm md:text-lg leading-[30px] md:leading-[38px] font-normal text-zinc-400 text-right whitespace-nowrap">
                                         {experience.date}
                                     </p>
                                     

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
+import type { Experience as ExperienceType } from '@/types/experience';
 
 
 const Experience = () => {
@@ -10,14 +11,13 @@ const Experience = () => {
     const [open, setOpen] = useState<number | null>(null);
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-    const experiences = [
+    const experiences: ExperienceType[] = [
         {
             title: 'UX/UI Designer',
             type: 'Freelance',
             company: 'Cedrus Solutions',
             date: 'Feb 2025 - Present',
             description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
-            // stack: 'Figma'
         },
         {
             title: 'Product Designer',

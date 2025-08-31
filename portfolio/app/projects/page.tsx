@@ -40,6 +40,39 @@ export default function Projects() {
             //     ]
             // }
         },
+        {
+            id: '2',
+            title: 'Foodify',
+            subtitle: '2023 ~ Recipe App',
+            description: [
+                "Foodify is a recipe app designed to help users discover and share new recipes easily. The app features a user-friendly interface that allows users to browse through a wide variety of recipes, save their favorites, plan your meals in your calendar, filter with the ingredients in your fridge,and create shopping lists based on the ingredients needed. The solution includes a personalized recommendation system that suggests recipes based on user preferences and dietary restrictions. Additionally, Foodify offers step-by-step cooking instructions, nutritional information, and the ability to add and share your own recipes with the community."
+            ],
+            links: [
+                { type: "figma", label: "Figma", url: 'https://www.figma.com/design/qe1nzudt3YFyMSUaj8gXFi/Foodify-%F0%9F%A5%A6?node-id=0-1&t=rZkngaf2rEApO21m-1' },
+                { type: "project", label: "Project", url: 'https://foodifyapp.vercel.app/' },
+            ],
+            mockupImages: [
+                ['/images/projects/foodify/landing.webp', '/images/projects/foodify/home.webp'],
+                ['/images/projects/foodify/recipe.webp', '/images/projects/foodify/add_recipe_1.webp'],
+                // ['/images/projects/foodify/add_recipe_2.webp', '/images/projects/foodify/shopping_list.webp'],
+                ['/images/projects/foodify/fridge.webp', '/images/projects/foodify/calendar.webp'],
+
+            ],
+            // competitorAnalysis: {
+            //     title: 'Competitor Analysis',
+            //     description: [
+            //         "While Google Maps remains the strongest competitor in navigation, its accessibility features are secondary and lack the detail required for wheelchair users. Other platforms primarily focus on rating accessible venues but rarely provide route-specific guidance.",
+            //         "None of the competitors analyzed offer detailed navigation based on physical features like ramps, lifts, or accessible routes, nor do they integrate an AR point-of-view experience. This gap highlights a strong opportunity to create a solution that goes beyond ratings and delivers truly inclusive navigation for people with physical disabilities."
+            //     ],
+            // },
+            // personas: {
+            //     title: 'User Personas',
+            //     images: [
+            //         '/images/projects/foodify/persona_1.webp',
+            //         '/images/projects/foodify/persona_2.webp'
+            //     ]
+            // }
+        },
     ];
 
     return (
@@ -61,7 +94,7 @@ export default function Projects() {
                     /> */}
                 </div>
             
-                <div className="divide-y divide-gray-800">
+                <div className="divide-y divide-zinc-400">
                     {projects.map((project) => (
                         <Project key={project.id} project={project} />
                     ))}

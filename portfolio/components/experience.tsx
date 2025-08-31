@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
+import type { Experience as ExperienceType } from '@/types/experience';
 
 
 const Experience = () => {
@@ -10,49 +11,62 @@ const Experience = () => {
     const [open, setOpen] = useState<number | null>(null);
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-    const experiences = [
+    const experiences: ExperienceType[] = [
         {
-            title: 'Frontend Engineer & UX/UI Designer',
+            title: 'UX/UI Designer',
+            type: 'Freelance',
             company: 'Cedrus Solutions',
-            date: 'Feb 2025 - Aug 2025',
+            date: 'Feb 2025 - Present',
             description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
-            stack: 'NextJS, TypeScript, Docker, Tailwind, Shadcn, NextAuth, Git, AWS, i18n, Figma'
         },
         {
-            title: 'Frontend Engineer & Product Designer',
+            title: 'Product Designer',
+            type: 'Freelance',
             company: 'Cypheme',
             date: 'Jan 2023 - Aug 2025',
             description: 'AI anti-counterfeit startup based in Station F.',
-            stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma, Webflow'
+            stack: 'Figma, Webflow, JavaScript, GSAP, Hubspot'
         },
         {
             title: 'Software Engineer',
-            company: 'Aila Consulting',
-            date: 'Aug 2024 - Aug 2025',
-            description: 'Emerging startup in visa solutions, work permits and translations.',
-            stack: 'NextJS, TypeScript, Tailwind, Shadcn, React-Email, Resend, Motion, Git, i18n, Figma, Vercel'
-        },
-        {
-            title: 'Software Engineer',
+            type: 'Freelance',
             company: 'Groupe BNSB',
             date: 'Feb 2022 - Aug 2025',
             description: 'Emerging consulting startup in textile and fashion industry.',
             stack: 'NextJS, TypeScript, Tailwind, Shadcn, MongoDB, Clerk, Stripe, React-Email, Resend, Motion, Git, Figma, Vercel'
         },
         {
-            title: 'Software Engineer Intern',
+            title: 'Frontend Engineer',
+            type: 'Freelance',
+            company: 'Cedrus Solutions',
+            date: 'Feb 2025 - Mar 2025',
+            description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
+            stack: 'NextJS, TypeScript, Docker, Tailwind, Shadcn, NextAuth, Git, AWS, i18n'
+        },
+        {
+            title: 'Software Engineer',
+            type: 'Freelance',
+            company: 'Aila Consulting',
+            date: 'Aug 2024 - Mar 2025',
+            description: 'Emerging startup in visa solutions, work permits and translations.',
+            stack: 'NextJS, TypeScript, Tailwind, Shadcn, React-Email, Resend, Motion, Git, i18n, Figma, Vercel'
+        },
+        {
+            title: 'Software Engineer ',
+            type: 'Internship',
             company: 'Capgemini',
             date: 'Feb 2024 - Aug 2024',
             description: 'Leader in engineering solutions and digital transformation.',
             stack: 'ReactJS, ReactNative, TypeScript, NestJS, Swift, SwiftUI, Jest, Nx, Git, Jira, Figma'
         },
         {
-            title: 'Frontend Engineer Intern',
+            title: 'Frontend Engineer',
+            type: 'Internship',
             company: 'Cypheme',
             date: 'Jul 2022 - Jan 2023',
             description: 'AI anti-counterfeit startup based in Station F.',
             stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma, Webflow'
-        },
+        }
     ];
 
     const openAccordion = (index: number) => {
@@ -72,9 +86,14 @@ const Experience = () => {
                         key={index}
                     >
                         <div 
-                            className="w-full flex flex-row gap-2 justify-between items-start py-8"
+                            className="w-full grid grid-cols-2 gap-x-2 justify-between items-start py-8"
                         >
-                            <h3 className="text-lg md:text-2xl font-medium">{experience.title}</h3>
+                            <div className="h-full flex flex-col justify-between items-start">
+                                <h3 className="text-lg md:text-2xl font-medium">{experience.title}</h3>
+                                <div className="px-2 py-1 md:px-3 text-sm md:text-lg font-normal bg-background/100 backdrop-blur-md text-white border border-zinc-700 rounded-full">
+                                    {experience.type}
+                                </div>
+                            </div>
                             <div className="flex flex-col gap-6 items-end">
                                 <p className="text-lg md:text-2xl font-medium text-right">{experience.company}</p>
                                 <motion.div 
@@ -85,7 +104,7 @@ const Experience = () => {
                                     transition={{ duration: 0.3, ease: "easeOut" }}
                                 >
 
-                                    <p className="text-sm md:text-lg font-normal text-zinc-400 text-right whitespace-nowrap">
+                                    <p className="text-sm md:text-lg leading-[30px] md:leading-[38px] font-normal text-zinc-400 text-right whitespace-nowrap">
                                         {experience.date}
                                     </p>
                                     

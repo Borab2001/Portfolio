@@ -24,8 +24,8 @@ export default function Navbar() {
                                 className={`
                                         w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out
                                     ${isActive 
-                                        ? 'text-white bg-white/05 shadow-lg' 
-                                        : 'text-white/70 hover:text-white'
+                                        ? 'text-background bg-white shadow-lg' 
+                                        : 'text-zinc-400 hover:text-white'
                                     }
                                 `}
                             >

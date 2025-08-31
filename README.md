@@ -2,8 +2,10 @@
 
 👋 Hey mate! I'm Bora
 
-🎓 French Software Engineer from @ISEP 🇫🇷 & @SydneyUni 🇦🇺
+🧑🏻‍💻 French Software Engineer & Product Designer from 
+
+🎓 ISEP 🇫🇷 & SydneyUni 🇦🇺
 
 👀 Website URL: https://www.borabalos.com/ 
 
-🧑🏻‍💻 Tech Stack used: NextJS, TypeScript, Tailwind, Motion & Lenis Scroll
+💻 Tech Stack: NextJS, TypeScript, TailwindCSS, GSAP, Motion & Lenis Scroll

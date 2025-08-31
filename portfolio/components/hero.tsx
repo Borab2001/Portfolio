@@ -14,10 +14,10 @@ const Hero = () => {
                     className=" h-24 w-24 sm:h-32 sm:w-32 rounded-full shadow-sm shadow-white ring-1 ring-white"
                     priority
                 />
-                <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-white text-center">
+                <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-zinc-100 text-center">
                     Bora Balos
                 </h1>
-                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-white max-w-96 md:max-w-lg text-center">
+                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-zinc-100 max-w-96 md:max-w-lg text-center">
                     A French software engineer & designer who finds emotion in design and crafts with a keen eye
                 </p>
             </div>

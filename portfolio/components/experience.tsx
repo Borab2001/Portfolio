@@ -90,7 +90,7 @@ const Experience = () => {
                         >
                             <div className="h-full flex flex-col justify-between items-start">
                                 <h3 className="text-lg md:text-2xl font-medium">{experience.title}</h3>
-                                <div className="px-2 py-1 md:px-3 text-sm md:text-lg font-normal bg-background/100 backdrop-blur-md text-white border border-zinc-700 rounded-full">
+                                <div className="px-2 py-1 md:px-3 text-sm md:text-lg font-normal bg-background backdrop-blur-md text-zinc-300 border border-zinc-800 rounded-full">
                                     {experience.type}
                                 </div>
                             </div>

@@ -9,11 +9,6 @@
   }
 }
 
-/* :root {
-  --background: #f7f7f7;
-  --foreground: #171717;
-} */
-
 :root {
   --background: #0a0a0a;
   --foreground: #ffffff;
@@ -22,7 +17,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ffffff;
+    --foreground: #f4f4f5; /* zinc-100 */
   }
 }
 
@@ -33,27 +28,27 @@ body {
 }
 
 *::selection {
-  background-color: #f1f1f1;
+  background-color: #f4f4f5;
   color: #0a0a0a;
 }
 
 *::-moz-selection {
-  background-color: #f1f1f1;
+  background-color: #f4f4f5;
   color: #0a0a0a;
 }
 
 *::-o-selection {
-  background-color: #f1f1f1;
+  background-color: #f4f4f5;
   color: #0a0a0a;
 }
 
 *::-ms-selection {
-  background-color: #f1f1f1;
+  background-color: #f4f4f5;
   color: #0a0a0a;
 }
 
 *::-webkit-selection {
-  background-color: #f1f1f1;
+  background-color: #f4f4f5;
   color: #0a0a0a;
 }
 

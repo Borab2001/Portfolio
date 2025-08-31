@@ -24,14 +24,14 @@ export default function Navbar() {
                                 className={`
                                         w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out
                                     ${isActive 
-                                        ? 'text-background bg-white shadow-lg' 
-                                        : 'text-zinc-400 hover:text-white'
+                                        ? 'text-zinc-100 bg-zinc-800 shadow-lg' 
+                                        : 'text-zinc-400 hover:text-zinc-100'
                                     }
                                 `}
                             >
                                 {item.name}
                                 {isActive && (
-                                    <div className="absolute inset-0 bg-white/10 rounded-full -z-10" />
+                                    <div className="absolute inset-0 bg-zinc-100/10 rounded-full -z-10" />
                                 )}
                             </Link>
                         );

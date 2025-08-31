@@ -11,10 +11,10 @@ interface ProjectProps {
 
 export default function Project({ project }: ProjectProps) {
     return (
-        <div className="w-full py-16 border-b border-gray-800 last:border-b-0">
+        <div className="w-full py-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
                 {project.mockupImages.map((group, groupIndex) => (
-                    <div key={groupIndex} className="p-[2vw] flex flex-row justify-center space-x-4 w-full h-auto max-h-[360px] md:h-full md:max-h-none aspect-[4/3] md:aspect-[5/5] lg:aspect-[6/5] bg-background border border-zinc-700 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
+                    <div key={groupIndex} className="p-[2vw] flex flex-row justify-center space-x-4 w-full h-auto max-h-[360px] md:h-full md:max-h-none aspect-[4/3] md:aspect-[5/5] lg:aspect-[6/5] bg-background border border-zinc-800 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
                         {group.map((image, imageIndex) => (
                             <div key={imageIndex}>
                                 <Image
@@ -32,7 +32,7 @@ export default function Project({ project }: ProjectProps) {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10 mb-16">
                 <div className="col-span-1 flex flex-col gap-6 items-start">
                     <div>
-                        <h2 className="text-xl md:text-2xl font-semibold text-white mb-1">{project.title}</h2>
+                        <h2 className="text-xl md:text-2xl font-semibold text-zinc-100 mb-1">{project.title}</h2>
                         <p className="text-zinc-400 text-base">{project.subtitle}</p>
                     </div>
 
@@ -60,7 +60,7 @@ export default function Project({ project }: ProjectProps) {
                 {project.competitorAnalysis && (
                     <>
                         <div className="col-span-1">
-                            <h3 className="text-lg font-medium text-white">
+                            <h3 className="text-lg font-medium text-zinc-100">
                                 {project.competitorAnalysis.title}
                             </h3>
                         </div>

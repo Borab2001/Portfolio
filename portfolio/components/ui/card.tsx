@@ -40,7 +40,8 @@ const Card: React.FC<CardProps> = ({
         <div className="h-screen p-4 flex items-center justify-center sticky top-0">
             
             <motion.div 
-                style={{ scale: cardScale, top: `calc(-6% + ${index * 28}px)` }} 
+                // style={{ scale: cardScale, top: `calc(-6% + ${index * 28}px)` }} 
+                style={{ scale: cardScale, top: "-6%" }} 
                 className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background dark:bg-background border border-zinc-700 rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4"
             >
                 <div

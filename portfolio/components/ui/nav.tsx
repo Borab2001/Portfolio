@@ -12,7 +12,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+        <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40">
             <div className="bg-background backdrop-blur-2xl border border-zinc-700 rounded-full p-1 shadow-2xl">
                 <div className="flex items-center space-x-1">
                     {navItems.map((item) => {
@@ -31,7 +31,7 @@ export default function Navbar() {
                             >
                                 {item.name}
                                 {isActive && (
-                                    <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-full -z-10" />
+                                    <div className="absolute inset-0 bg-white/10 rounded-full -z-10" />
                                 )}
                             </Link>
                         );

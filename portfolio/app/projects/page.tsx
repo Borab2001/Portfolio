@@ -1,5 +1,5 @@
 
-import CircularText from '@/components/ui/circular-text';
+// import CircularText from '@/components/ui/circular-text';
 import { Project as ProjectTypes } from '@/types/project';
 import Project from '@/components/project';
 import Footer from '@/components/footer';
@@ -54,11 +54,11 @@ export default function Projects() {
                         {/* A brief showcase of my works, each one a glimpse into how I merge creativity and user-centered design */}
                         A quick glimpse at how I blend creativity with user-focused design in my projects
                     </p>
-                    <CircularText
+                    {/* <CircularText
                         text="CHECK*OUT*MY*PROJECTS*"
                         spinDuration={20}
                         className="mt-16"
-                    />
+                    /> */}
                 </div>
             
                 <div className="divide-y divide-gray-800">

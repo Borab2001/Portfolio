@@ -33,7 +33,7 @@ const Cards = () => {
         },
         {
             title: 'Curious',
-            description: "Content search & visualisation platform using OpenAI's API",
+            description: "AI-powered content search and visualisation platform",
             src: '/images/curious.webp',
             alt: 'Curious project image',
             link: 'https://curious-gpt.vercel.app/',

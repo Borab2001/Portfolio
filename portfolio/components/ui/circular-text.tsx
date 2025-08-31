@@ -111,7 +111,7 @@ const CircularText: React.FC<CircularTextProps> = ({
         <div>
             <motion.div
                 initial={{ rotate: 0 }}
-                className={`relative mx-auto rounded-full w-[130px] h-[130px] text-zinc-100 font-semibold text-center origin-center ${className}`}
+                className={`relative mx-auto rounded-full w-[130px] h-[130px] text-primary font-semibold text-center origin-center ${className}`}
                 animate={controls}
                 onUpdate={(latest) => setCurrentRotation(Number(latest.rotate))}
                 onMouseEnter={handleHoverStart}

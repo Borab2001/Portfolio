@@ -157,7 +157,7 @@ export default function PolaroidStack({
                             sensitivity={sensitivity}
                         >
                             <motion.div
-                                className={`overflow-hidden bg-zinc-100 p-4 flex flex-col items-center justify-start ${index !== cards.length - 1 ? 'pointer-events-none' : ''}`}
+                                className={`overflow-hidden bg-surface p-4 flex flex-col items-center justify-start ${index !== cards.length - 1 ? 'pointer-events-none' : ''}`}
                                 onClick={() => sendToBackOnClick && sendToBack(card.id)}
                                 animate={{
                                     rotateZ: (cards.length - index - 1) * 4 + randomRotate,
@@ -184,8 +184,8 @@ export default function PolaroidStack({
                                     loading="lazy"
                                 />
                                 <div className={`w-full pt-4 flex flex-col gap-2 select-none pointer-events-none ${kalamFont.className}`}>
-                                    <h2 className="text-2xl text-background font-semibold">{card.imageTitle}</h2>
-                                    <p className="text-base text-zinc-600">{card.imageDate}</p>
+                                    <h2 className="text-2xl text-surface-text font-semibold">{card.imageTitle}</h2>
+                                    <p className="text-base text-surface-muted">{card.imageDate}</p>
                                 </div>
                             </motion.div>
                         </CardRotate>

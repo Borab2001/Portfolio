@@ -136,8 +136,8 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                             </defs>
                             <path
                                 d={position === 'left' 
-                                    ? "M 45 0 Q 15 45, 45 90" 
-                                    : "M 45 0 Q 75 45, 45 90"
+                                    ? "M 45 0 Q 75 45, 45 90"
+                                    : "M 45 0 Q 15 45, 45 90" 
                                 }
                                 stroke="#3f3f46"
                                 strokeWidth="2"

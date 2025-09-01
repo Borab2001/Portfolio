@@ -12,7 +12,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
   const { year, title, description, image, alt, imageTitle, date, position } = experience;
 
     return (
-        <div className="relative mb-24 md:mb-40">
+        <div className="relative md:mb-40">
             {/* Dashed line */}
             {!isLast && (
                 <div className="hidden md:block absolute top-3/4 left-0 w-full h-full z-0">
@@ -101,7 +101,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
 
                 {/* Text Content */}
                 <div className="flex flex-col items-start">
-                    <div className="inline-flex items-center gap-2 bg-foreground rounded-full px-4 py-2 shadow-lg mb-6">
+                    <div className="inline-flex items-center gap-2 bg-foreground rounded-full px-4 py-2 shadow-lg mb-6 border border-border-light">
                         <Calendar className='text-surface-text size-5' />
                         <span className="font-medium text-surface-text">{year}</span>
                     </div>
@@ -113,6 +113,41 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                         {description}
                     </p>
                 </div>
+
+                {/* Mobile dashed line */}
+                {!isLast && (
+                    <div className="flex md:hidden w-8 h-32 mb-10">
+                        <svg 
+                            width="100%" 
+                            height="100%" 
+                            viewBox="0 0 20 80" 
+                            preserveAspectRatio="xMidYMid meet"
+                        >
+                            <defs>
+                                <marker id="chevron-mobile" markerWidth="8" markerHeight="6" 
+                                    refX="4" refY="3" orient="auto">
+                                    <polyline points="2 1, 4 3, 2 5" 
+                                        stroke="#3f3f46" 
+                                        strokeWidth="1" 
+                                        fill="none" 
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round" />
+                                </marker>
+                            </defs>
+                            <path
+                                d="M 10 2 L 10 15 L 10 25 Q 18 35, 10 45 Q 2 55, 10 65 L 10 77"
+                                stroke="#3f3f46"
+                                strokeWidth="2"
+                                strokeDasharray="6,4"
+                                fill="none"
+                                strokeLinecap="round" 
+                                strokeLinejoin="round"
+                                opacity="0.7"
+                                markerEnd="url(#chevron-mobile)"
+                            />
+                        </svg>
+                    </div>
+                )}
             </div>
         </div>
     );

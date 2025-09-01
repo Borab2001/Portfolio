@@ -22,7 +22,7 @@ export default function PolaroidPhoto({ image, alt, imageTitle, date, position }
                 alt="Pin"
                 className={`
                     absolute -top-3 left-1/2 transform z-20 -translate-x-1/2
-                    ${position === 'left' ? 'scale-x-[1] -translate-x-full' : 'scale-x-[-1] -translate-x-0'}
+                    ${position === 'left' ? 'scale-x-[1] -translate-x-full' : 'scale-x-[-1] translate-x-0'}
                 `}
                 width={64}
                 height={64}

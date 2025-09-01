@@ -22,7 +22,7 @@ export default function PolaroidPhoto({ image, alt, imageTitle, date, position }
                 alt="Pin"
                 className={`
                     absolute -top-3 left-1/2 transform z-20 -translate-x-1/2
-                    ${position === 'left' ? 'sm:scale-x-[1] sm:-translate-x-full' : 'sm:scale-x-[-1] sm:-translate-x-0'}
+                    ${position === 'left' ? 'scale-x-[1] -translate-x-full' : 'scale-x-[-1] -translate-x-0'}
                 `}
                 width={64}
                 height={64}
@@ -30,8 +30,8 @@ export default function PolaroidPhoto({ image, alt, imageTitle, date, position }
 
             <div
                 className={`
-                    w-[320px] h-[400px] overflow-hidden bg-surface p-4 flex flex-col items-center justify-start pointer-events-none
-                    ${position === 'left' ? 'sm:rotate-[-6deg]' : 'sm:rotate-[6deg]'}
+                    w-[320px] h-[400px] overflow-hidden bg-surface p-4 flex flex-col items-center justify-start pointer-events-none shadow-xl shadow-[#0a0a0a]
+                    ${position === 'left' ? 'rotate-[-6deg]' : 'rotate-[6deg]'}
                 `}
             >
                 <Image

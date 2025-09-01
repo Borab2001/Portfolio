@@ -21,7 +21,7 @@ export default function PolaroidPhoto({ image, alt, imageTitle, date, position }
                 src="/images/polaroid/pin.svg"
                 alt="Pin"
                 className={`
-                    absolute -top-3 left-1/2 transform z-20 -translate-x-1/2 sm:-translate-x-full
+                    absolute -top-3 left-1/2 transform z-20 -translate-x-1/2
                     ${position === 'left' ? 'sm:scale-x-[1] sm:-translate-x-full' : 'sm:scale-x-[-1] sm:-translate-x-0'}
                 `}
                 width={64}

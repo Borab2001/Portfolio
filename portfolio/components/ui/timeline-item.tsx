@@ -33,7 +33,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                                 ? "M 10 5 Q 12 60, 40 45 Q 68 30, 90 85" 
                                 : "M 90 5 Q 88 60, 60 45 Q 32 30, 10 85"
                             }
-                            stroke="#333"
+                            stroke="#3f3f46"
                             strokeWidth="3"
                             strokeDasharray="12,8"
                             fill="none"
@@ -60,7 +60,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                             <marker id="chevron" markerWidth="12" markerHeight="10" 
                                 refX="3" refY="5" orient="auto">
                                 <polyline points="5 2, 8 5, 5 8" 
-                                    stroke="#333" 
+                                    stroke="#3f3f46" 
                                     strokeWidth="1" 
                                     fill="none" 
                                     strokeLinecap="round" 
@@ -72,7 +72,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                                 ? "M 10 5 Q 12 50, 90 45" 
                                 : "M 90 5 Q 88 50, 10 45"
                             }
-                            stroke="#333"
+                            stroke="#3f3f46"
                             strokeWidth="3"
                             strokeDasharray="12,8"
                             fill="none"

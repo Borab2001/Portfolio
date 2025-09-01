@@ -12,7 +12,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
   const { year, title, description, image, alt, imageTitle, date, position } = experience;
 
     return (
-        <div className="relative mb-24">
+        <div className="relative mb-24 md:mb-40">
             {/* Dashed line */}
             {!isLast && (
                 <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -44,10 +44,10 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                 </div>
             )}
 
-            <div className={`flex justify-between ${
-                position === 'right' ? 'flex-row-reverse' : ''
+            <div className={`flex flex-col items-start gap-y-10 md:justify-between ${
+                position === 'right' ? 'md:flex-row-reverse' : 'md:flex-row'
             }`}>
-                <div className="flex-shrink-0">
+                <div className="mx-auto md:mx-0 flex-shrink-0">
                     <PolaroidPhoto 
                         image={image}
                         alt={alt}
@@ -58,7 +58,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                 </div>
 
                 {/* Text Content */}
-                <div className="flex flex-col items-start">
+                <div className="mx-auto md:mx-0 flex flex-col items-start">
                     <div className="inline-flex items-center gap-2 bg-foreground rounded-full px-4 py-2 shadow-lg mb-6">
                         <Calendar className='text-surface-text size-5' />
                         <span className="font-medium text-surface-text">{year}</span>

@@ -16,13 +16,13 @@ const kalamFont = Kalam({
 
 export default function PolaroidPhoto({ image, alt, imageTitle, date, position }: PolaroidPhotoProps) {
     return (
-        <div className={`relative ${position === 'left' ? 'mr-8' : 'ml-8'}`}>
+        <div className={`relative pointer-events-none ${position === 'left' ? 'md:mr-8' : 'md:ml-8'}`}>
             <Image 
                 src="/images/polaroid/pin.svg"
                 alt="Pin"
                 className={`
-                    absolute -top-3 left-1/2 transform z-20
-                    ${position === 'left' ? 'scale-x-[1] -translate-x-[100%]' : 'scale-x-[-1] -translate-x-[0%]'}
+                    absolute -top-3 left-1/2 transform z-20 -translate-x-1/2 sm:-translate-x-full
+                    ${position === 'left' ? 'md:scale-x-[1] md:-translate-x-full' : 'md:scale-x-[-1] md:-translate-x-0'}
                 `}
                 width={64}
                 height={64}
@@ -31,7 +31,7 @@ export default function PolaroidPhoto({ image, alt, imageTitle, date, position }
             <div
                 className={`
                     w-[320px] h-[400px] overflow-hidden bg-surface p-4 flex flex-col items-center justify-start pointer-events-none
-                    ${position === 'left' ? 'rotate-[-8deg]' : 'rotate-[6deg]'}
+                    ${position === 'left' ? 'sm:rotate-[-6deg]' : 'sm:rotate-[6deg]'}
                 `}
             >
                 <Image

@@ -25,6 +25,7 @@ export default function Navbar() {
                                         w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out
                                     ${isActive 
                                         ? 'text-primary bg-backdrop border border-border shadow-lg' 
+                                        // ? 'text-surface-text bg-primary border border-border shadow-lg' 
                                         : 'text-muted hover:text-primary'
                                     }
                                 `}

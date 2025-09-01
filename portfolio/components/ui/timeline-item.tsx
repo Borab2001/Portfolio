@@ -30,8 +30,8 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                         </defs>
                         <path
                             d={position === 'left' 
-                                ? "M 10 5 Q 15 50, 40 45 Q 65 40, 90 85" 
-                                : "M 90 5 Q 85 50, 60 45 Q 35 40, 10 85"
+                                ? "M 10 5 Q 12 60, 40 45 Q 68 30, 90 85" 
+                                : "M 90 5 Q 88 60, 60 45 Q 32 30, 10 85"
                             }
                             stroke="#333"
                             strokeWidth="3"
@@ -39,6 +39,38 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                             fill="none"
                             opacity="1"
                             filter=""
+                            vectorEffect="non-scaling-stroke"
+                        />
+                    </svg>
+                </div>
+            )}
+
+            {isLast && (
+                <div className="hidden md:block absolute top-3/4 left-0 w-1/2 h-full z-0">
+                    <svg 
+                        width="100%" 
+                        height="100%" 
+                        viewBox="0 0 100 100" 
+                        className="absolute inset-0"
+                        preserveAspectRatio="none"
+                    >
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+                                refX="9" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+                            </marker>
+                        </defs>
+                        <path
+                            d={position === 'left' 
+                                ? "M 10 5 Q 12 50, 90 45" 
+                                : "M 90 5 Q 88 50, 10 45"
+                            }
+                            stroke="#333"
+                            strokeWidth="3"
+                            strokeDasharray="12,8"
+                            fill="none"
+                            opacity="1"
+                            markerEnd="url(#arrowhead)"
                             vectorEffect="non-scaling-stroke"
                         />
                     </svg>

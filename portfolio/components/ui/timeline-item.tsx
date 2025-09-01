@@ -116,16 +116,16 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
 
                 {/* Mobile dashed line */}
                 {!isLast && (
-                    <div className="flex md:hidden w-8 h-32 mb-10">
+                    <div className="flex md:hidden w-8 h-36 mb-10">
                         <svg 
                             width="100%" 
                             height="100%" 
-                            viewBox="0 0 20 80" 
+                            viewBox="0 0 20 96" 
                             preserveAspectRatio="xMidYMid meet"
                         >
                             <defs>
                                 <marker id="chevron-mobile" markerWidth="8" markerHeight="6" 
-                                    refX="4" refY="3" orient="auto">
+                                    refX="3" refY="3" orient="auto">
                                     <polyline points="2 1, 4 3, 2 5" 
                                         stroke="#3f3f46" 
                                         strokeWidth="1" 
@@ -135,14 +135,14 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                                 </marker>
                             </defs>
                             <path
-                                d="M 10 2 L 10 15 L 10 25 Q 18 35, 10 45 Q 2 55, 10 65 L 10 77"
+                                d="M 10 2 L 10 18 Q 10 22, 12 26 Q 18 38, 10 50 Q 2 62, 8 66 Q 10 70, 10 80 L 10 93"
                                 stroke="#3f3f46"
                                 strokeWidth="2"
                                 strokeDasharray="6,4"
                                 fill="none"
                                 strokeLinecap="round" 
                                 strokeLinejoin="round"
-                                opacity="0.7"
+                                opacity="1"
                                 markerEnd="url(#chevron-mobile)"
                             />
                         </svg>

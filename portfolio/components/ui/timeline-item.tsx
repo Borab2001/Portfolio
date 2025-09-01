@@ -58,7 +58,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                     >
                         <defs>
                             <marker id="chevron" markerWidth="12" markerHeight="10" 
-                                refX="8" refY="5" orient="auto">
+                                refX="3" refY="5" orient="auto">
                                 <polyline points="5 2, 8 5, 5 8" 
                                     stroke="#333" 
                                     strokeWidth="1" 

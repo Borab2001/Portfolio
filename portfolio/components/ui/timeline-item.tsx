@@ -116,11 +116,11 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
 
                 {/* Mobile dashed line */}
                 {!isLast && (
-                    <div className="flex md:hidden w-8 h-36 mb-10">
+                    <div className="flex md:hidden w-36 h-44 mb-10">
                         <svg 
                             width="100%" 
                             height="100%" 
-                            viewBox="0 0 20 96" 
+                            viewBox="0 0 90 96" 
                             preserveAspectRatio="xMidYMid meet"
                         >
                             <defs>
@@ -135,7 +135,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                                 </marker>
                             </defs>
                             <path
-                                d="M 10 2 L 10 18 Q 10 22, 12 26 Q 18 38, 10 50 Q 2 62, 8 66 Q 10 70, 10 80 L 10 93"
+                                d="M 45 8 Q 15 50, 45 96"
                                 stroke="#3f3f46"
                                 strokeWidth="2"
                                 strokeDasharray="6,4"

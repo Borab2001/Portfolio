@@ -120,7 +120,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                         <svg 
                             width="100%" 
                             height="100%" 
-                            viewBox="0 0 90 96" 
+                            viewBox="0 0 90 90" 
                             preserveAspectRatio="xMidYMid meet"
                         >
                             <defs>
@@ -135,7 +135,10 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                                 </marker>
                             </defs>
                             <path
-                                d="M 45 8 Q 15 50, 45 96"
+                                d={position === 'left' 
+                                    ? "M 45 0 Q 15 45, 45 90" 
+                                    : "M 45 0 Q 75 45, 45 90"
+                                }
                                 stroke="#3f3f46"
                                 strokeWidth="2"
                                 strokeDasharray="6,4"

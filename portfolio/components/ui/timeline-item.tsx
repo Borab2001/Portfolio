@@ -37,6 +37,8 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                             strokeWidth="3"
                             strokeDasharray="12,8"
                             fill="none"
+                            strokeLinecap="round" 
+                            strokeLinejoin="round"
                             opacity="1"
                             filter=""
                             vectorEffect="non-scaling-stroke"
@@ -55,9 +57,14 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                         preserveAspectRatio="none"
                     >
                         <defs>
-                            <marker id="arrowhead" markerWidth="10" markerHeight="7" 
-                                refX="9" refY="3.5" orient="auto">
-                                <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+                            <marker id="chevron" markerWidth="12" markerHeight="10" 
+                                refX="8" refY="5" orient="auto">
+                                <polyline points="5 2, 8 5, 5 8" 
+                                    stroke="#333" 
+                                    strokeWidth="1" 
+                                    fill="none" 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" />
                             </marker>
                         </defs>
                         <path
@@ -69,8 +76,10 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                             strokeWidth="3"
                             strokeDasharray="12,8"
                             fill="none"
+                            strokeLinecap="round" 
+                            strokeLinejoin="round"
                             opacity="1"
-                            markerEnd="url(#arrowhead)"
+                            markerEnd="url(#chevron)"
                             vectorEffect="non-scaling-stroke"
                         />
                     </svg>

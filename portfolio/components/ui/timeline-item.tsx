@@ -15,13 +15,13 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
         <div className="relative mb-24 md:mb-40">
             {/* Dashed line */}
             {!isLast && (
-                <div className="absolute top-0 left-0 w-full h-full z-0">
+                <div className="hidden md:block absolute top-3/4 left-0 w-full h-full z-0">
                     <svg 
                         width="100%" 
                         height="100%" 
-                        viewBox="0 0 1000 600" 
+                        viewBox="0 0 100 100" 
                         className="absolute inset-0"
-                        preserveAspectRatio="xMidYMid meet"
+                        preserveAspectRatio="none"
                     >
                         <defs>
                             <filter id="blur">
@@ -30,15 +30,16 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                         </defs>
                         <path
                             d={position === 'left' 
-                                ? "M 200 200 Q 400 100, 500 300 Q 600 500, 800 400" 
-                                : "M 800 200 Q 600 100, 500 300 Q 400 500, 200 400"
+                                ? "M 10 5 Q 15 50, 40 45 Q 65 40, 90 85" 
+                                : "M 90 5 Q 85 50, 60 45 Q 35 40, 10 85"
                             }
-                            stroke="#666"
+                            stroke="#333"
                             strokeWidth="3"
                             strokeDasharray="12,8"
                             fill="none"
-                            opacity="0.4"
-                            filter="url(#blur)"
+                            opacity="1"
+                            filter=""
+                            vectorEffect="non-scaling-stroke"
                         />
                     </svg>
                 </div>

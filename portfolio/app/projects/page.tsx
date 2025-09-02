@@ -128,6 +128,27 @@ export default function Projects() {
                         width={1000}
                         height={1000}
                     />
+                    <Image
+                        src="/images/projects/grid/flowfinity-1.avif"
+                        alt="Flowfinity 1"
+                        className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                        width={1000}
+                        height={1000}
+                    />
+                    <Image
+                        src="/images/projects/grid/flowfinity-2.avif"
+                        alt="Flowfinity 2"
+                        className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                        width={1000}
+                        height={1000}
+                    />
+                    <Image
+                        src="/images/projects/grid/flowfinity-3.avif"
+                        alt="Flowfinity 3"
+                        className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                        width={1000}
+                        height={1000}
+                    />
                 </div>
             </div>
             <Footer />

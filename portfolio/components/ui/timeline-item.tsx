@@ -92,7 +92,7 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
             <div className={`flex flex-col max-w-[480px] md:max-w-none items-center mx-auto md:mx-0 md:items-start gap-y-10 md:justify-between ${
                 position === 'right' ? 'md:flex-row-reverse' : 'md:flex-row'
             }`}>
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 mb-6 md:mb-0">
                     <PolaroidPhoto 
                         image={image}
                         alt={alt}

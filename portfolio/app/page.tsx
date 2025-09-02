@@ -10,33 +10,6 @@ import { TimelineExperience } from "@/types/timeline";
 
 export default function Home() {	
 	const timelineData: TimelineExperience[] = [
-		// {
-		// 	id: '1',
-		// 	year: 2020,
-		// 	title: 'Experience Name 1',
-		// 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-		// 	image: '/images/timeline/sydney-2020.jpg',
-		// 	location: 'Sydney',
-		// 	position: 'left'
-		// },
-		// {
-		// 	id: '2',
-		// 	year: 2022,
-		// 	title: 'Experience Name 2',
-		// 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-		// 	image: '/images/timeline/sydney-2022.jpg',
-		// 	location: 'Sydney',
-		// 	position: 'right'
-		// },
-		// {
-		// 	id: '3',
-		// 	year: 2024,
-		// 	title: 'Experience Name 3',
-		// 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-		// 	image: '/images/timeline/sydney-2024.jpg',
-		// 	location: 'Sydney',
-		// 	position: 'left'
-		// }
 		{
 			id: '1',
 			year: 2023,

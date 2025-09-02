@@ -58,13 +58,16 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
                     >
                         <defs>
                             <marker id="chevron" markerWidth="12" markerHeight="10" 
-                                refX="3" refY="5" orient="auto">
-                                <polyline points="5 2, 8 5, 5 8" 
+                                refX="3" refY="5" orient="auto"
+                            >
+                                <polyline 
+                                    points="5 2, 8 5, 5 8" 
                                     stroke="#3f3f46" 
                                     strokeWidth="1" 
                                     fill="none" 
                                     strokeLinecap="round" 
-                                    strokeLinejoin="round" />
+                                    strokeLinejoin="round" 
+                                />
                             </marker>
                         </defs>
                         <path
@@ -116,7 +119,9 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
 
                 {/* Mobile dashed line */}
                 {!isLast && (
-                    <div className="flex md:hidden w-36 h-44 mb-10">
+                    <div className={`flex md:hidden w-36 h-44 mb-10 transform 
+                        ${position === 'left' ? 'translate-x-16' : '-translate-x-16'}
+                    `}>
                         <svg 
                             width="100%" 
                             height="100%" 

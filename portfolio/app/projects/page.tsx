@@ -108,7 +108,7 @@ export default function Projects() {
                 </h2>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8'>
                     <Image
-                        src="/images/projects/grid/maestro-1.webp"
+                        src="/images/projects/grid/maestro_1.webp"
                         alt="Maestro 1"
                         className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                         width={1000}
@@ -122,29 +122,36 @@ export default function Projects() {
                         height={1000}
                     />
                     <Image
-                        src="/images/projects/grid/maestro-2.webp"
+                        src="/images/projects/grid/maestro_2.webp"
                         alt="Maestro 2"
                         className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                         width={1000}
                         height={1000}
                     />
                     <Image
-                        src="/images/projects/grid/flowfinity-1.avif"
+                        src="/images/projects/grid/flowfinity_1.avif"
                         alt="Flowfinity 1"
                         className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                         width={1000}
                         height={1000}
                     />
                     <Image
-                        src="/images/projects/grid/flowfinity-2.avif"
+                        src="/images/projects/grid/flowfinity_2.avif"
                         alt="Flowfinity 2"
                         className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                         width={1000}
                         height={1000}
                     />
                     <Image
-                        src="/images/projects/grid/flowfinity-3.avif"
+                        src="/images/projects/grid/flowfinity_3.avif"
                         alt="Flowfinity 3"
+                        className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                        width={1000}
+                        height={1000}
+                    />
+                    <Image
+                        src="/images/projects/ausvision/watch_notify_staff.webp"
+                        alt="AusVision Watch 1"
                         className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                         width={1000}
                         height={1000}

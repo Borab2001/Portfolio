@@ -3,6 +3,7 @@
 import { Project as ProjectTypes } from '@/types/project';
 import Project from '@/components/project';
 import Footer from '@/components/footer';
+import Image from 'next/image';
 
 export default function Projects() {	
     
@@ -99,6 +100,34 @@ export default function Projects() {
                     {projects.map((project) => (
                         <Project key={project.id} project={project} />
                     ))}
+                </div>
+            </div>
+            <div className='flex flex-col pt-4 px-4 sm:pt-8 sm:px-8 gap-8 sm:gap-10 md:gap-12'>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-primary text-center">
+                    Some Mockups
+                </h2>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8'>
+                    <Image
+                        src="/images/projects/grid/maestro-1.webp"
+                        alt="Maestro 1"
+                        className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                        width={1000}
+                        height={1000}
+                    />
+                    <Image
+                        src="/images/projects/grid/vrai.webp"
+                        alt="Vrai"
+                        className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                        width={1000}
+                        height={1000}
+                    />
+                    <Image
+                        src="/images/projects/grid/maestro-2.webp"
+                        alt="Maestro 2"
+                        className="w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                        width={1000}
+                        height={1000}
+                    />
                 </div>
             </div>
             <Footer />

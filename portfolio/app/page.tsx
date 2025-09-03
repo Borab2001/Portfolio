@@ -70,10 +70,10 @@ export default function Home() {
 			year: 2025,
 			title: 'Graduation',
 			description: 'In 2025, I earned my Master’s degree in Computer Science at ISEP, where I spent years honing my technical skills and diving deep into software engineering and design.',
-			image: '/images/polaroid/isep.webp',
+			image: '/images/polaroid/graduation.webp',
 			alt: 'ISEP Graduation',
 			imageTitle: 'ISEP Graduation',
-			date: 'May 2025 at 10:00AM',
+			date: 'May 2025 at 5:57PM',
 			position: 'right'
 		}
 	];

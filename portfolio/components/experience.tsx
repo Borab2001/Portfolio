@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { ChevronDown } from 'lucide-react';
+import { ArrowUpRight, ChevronDown } from 'lucide-react';
 import type { Experience as ExperienceType } from '@/types/experience';
+import Link from 'next/link';
+import TextHoverEnter from './ui/text-hover-enter';
 
 
 const Experience = () => {
@@ -24,7 +26,7 @@ const Experience = () => {
             type: 'Freelance',
             company: 'Cypheme',
             date: 'Jan 2023 - Aug 2025',
-            description: 'AI anti-counterfeit startup based in Station F.',
+            description: 'AI anti-counterfeit startup based in Station F. Applying for Y Combinator with VraiAI.',
             stack: 'Figma, Webflow, JavaScript, GSAP, Hubspot'
         },
         {
@@ -33,7 +35,8 @@ const Experience = () => {
             company: 'Groupe BNSB',
             date: 'Feb 2022 - Aug 2025',
             description: 'Emerging consulting startup in textile and fashion industry.',
-            stack: 'NextJS, TypeScript, Tailwind, Shadcn, MongoDB, Clerk, Stripe, React-Email, Resend, Motion, Git, Figma, Vercel'
+            stack: 'NextJS, TypeScript, Tailwind, Shadcn, MongoDB, Clerk, Stripe, React-Email, Resend, Motion, Git, Figma, Vercel',
+            referenceLetter: 'https://drive.google.com/file/d/16ku9X-nS0BYpBCEIUv-nwiGuAUWUPs-z/view?usp=sharing'
         },
         {
             title: 'Frontend Engineer',
@@ -41,7 +44,8 @@ const Experience = () => {
             company: 'Cedrus Solutions',
             date: 'Feb 2025 - Mar 2025',
             description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
-            stack: 'NextJS, TypeScript, Docker, Tailwind, Shadcn, NextAuth, Git, AWS, i18n'
+            stack: 'NextJS, TypeScript, Docker, Tailwind, Shadcn, NextAuth, Git, AWS, i18n',
+            referenceLetter: 'https://drive.google.com/file/d/1gC1N5EtIZV74-N75YUx9FmEXToHv4tsc/view?usp=sharing'
         },
         {
             title: 'Software Engineer',
@@ -57,7 +61,8 @@ const Experience = () => {
             company: 'Capgemini',
             date: 'Feb 2024 - Aug 2024',
             description: 'Leader in engineering solutions and digital transformation.',
-            stack: 'ReactJS, ReactNative, TypeScript, NestJS, Swift, SwiftUI, Jest, Nx, Git, Jira, Figma'
+            stack: 'ReactJS, ReactNative, TypeScript, NestJS, Swift, SwiftUI, Jest, Nx, Git, Jira, Figma',
+            referenceLetter: 'https://drive.google.com/file/d/1OjtPhuC1AK-oKuni7E__pdliLWIDYMTn/view?usp=sharing'
         },
         {
             title: 'Frontend Engineer',
@@ -65,7 +70,8 @@ const Experience = () => {
             company: 'Cypheme',
             date: 'Jul 2022 - Jan 2023',
             description: 'AI anti-counterfeit startup based in Station F.',
-            stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma, Webflow'
+            stack: 'VueJS, NodeJS, ExpressJS, HTML, CSS, JavaScript, GSAP, Git, Azure, Figma, Webflow',
+            referenceLetter: 'https://drive.google.com/file/d/12X45swBaqcS7x1nY64mFp0_N_1yqqV2z/view?usp=sharing'
         }
     ];
 
@@ -132,11 +138,23 @@ const Experience = () => {
                             transition={{ duration: 0.4 }}
                             className="w-full overflow-hidden flex flex-col gap-2"
                         >
-                            {/* CONTENT HERE */}
-                            <p className="text-sm md:text-lg font-normal text-muted">{experience.description}</p>
-                            <p className='text-sm md:text-lg font-normal italic text-muted mb-8'>
+                            <p className="text-sm md:text-lg font-normal text-muted">
+                                {experience.description}
+                            </p>
+                            <p className='text-sm md:text-lg font-normal italic text-muted mb-2'>
                                 {experience.stack}
                             </p>
+
+                            {experience.referenceLetter && (
+                                <Link href={experience.referenceLetter} className="text-sm md:text-base text-foreground" target="_blank" rel="noopener noreferrer" aria-label="Reference Letter">
+                                    <TextHoverEnter>
+                                        Reference Letter
+                                        <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
+                                    </TextHoverEnter>
+                                </Link>
+                            )}
+                            
+                            <div className='mb-8' />
                         </motion.div>
                     </div>
                 ))}

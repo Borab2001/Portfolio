@@ -137,7 +137,7 @@ export default function Projects() {
                             height={1000}
                         />
                         <Image
-                            src="/images/projects/grid/reveal_1.webp"
+                            src="/images/projects/grid/cedrus.webp"
                             alt="Reveal 1"
                             className="row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                             width={1000}
@@ -163,6 +163,38 @@ export default function Projects() {
                             src="/images/projects/grid/flowfinity_3.avif"
                             alt="Flowfinity 3"
                             className="col-span-1 w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                            width={1000}
+                            height={1000}
+                        />
+                    </div>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+                        <Image
+                            src="/images/projects/grid/reveal_1.webp"
+                            alt="Reveal 1"
+                            className="col-span-1 lg:row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl aspect-square lg:aspect-auto"
+                            width={1000}
+                            height={1000}
+                        />
+                        <div className='flex flex-col gap-8 sm:order-last lg:order-none col-span-1 sm:col-span-2 lg:col-span-1'>
+                            <Image
+                                src="/images/projects/grid/cedrus_2.webp"
+                                alt="Aila Consulting"
+                                className="col-span-1 w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                                width={1000}
+                                height={1000}
+                            />
+                            <Image
+                                src="/images/projects/grid/aila.webp"
+                                alt="Aila Consulting"
+                                className="col-span-1 w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                                width={1000}
+                                height={1000}
+                            />
+                        </div>
+                        <Image
+                            src="/images/projects/grid/reveal_2.webp"
+                            alt="Reveal 2"
+                            className="col-span-1 lg:row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl aspect-square lg:aspect-auto"
                             width={1000}
                             height={1000}
                         />

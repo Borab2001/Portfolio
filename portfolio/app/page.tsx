@@ -13,7 +13,7 @@ export default function Home() {
 		{
 			id: '1',
 			year: 2019,
-			title: 'Engineering School',
+			title: 'ISEP - Engineering School',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			image: '/images/polaroid/isep.webp',
 			alt: 'ISEP Campus',
@@ -24,16 +24,27 @@ export default function Home() {
 		{
 			id: '2',
 			year: 2023,
+			title: 'University of Sydney',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+			image: '/images/polaroid/usyd.webp',
+			alt: 'Sydney Uni Quadrangle',
+			imageTitle: 'Sydney Uni Quadrangle',
+			date: 'July 2023',
+			position: 'right'
+		},
+		{
+			id: '3',
+			year: 2023,
 			title: 'Experience Name 1',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			image: '/images/polaroid/opera_night.webp',
 			alt: 'Sydney Opera House view by night',
 			imageTitle: 'Opera House',
 			date: 'Aug 2023 at 8:17PM',
-			position: 'right'
+			position: 'left'
 		},
 		{
-			id: '3',
+			id: '4',
 			year: 2023,
 			title: 'Experience Name 2',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -41,10 +52,10 @@ export default function Home() {
 			alt: 'Women\'s World Cup Final in Sydney at ANZ Stadium',
 			imageTitle: 'Women\'s World Cup Final',
 			date: 'Aug 2023 at 7:39PM',
-			position: 'left'
+			position: 'right'
 		},
 		{
-			id: '4',
+			id: '5',
 			year: 2023,
 			title: 'Experience Name 3',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -52,7 +63,7 @@ export default function Home() {
 			alt: 'Sunrise in Bronte Beach in Sydney',
 			imageTitle: 'Bronte Beach',
 			date: 'Dec 2023 at 5:40AM',
-			position: 'right'
+			position: 'left'
 		}
 	];
 

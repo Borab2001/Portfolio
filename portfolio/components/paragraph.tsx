@@ -14,7 +14,7 @@ const Paragraph: React.FC = () => {
 
     const stickyProgress = useTransform(scrollYProgress, [0.1, 0.9], [0, 1]);
 
-    const text = `I earned my Master’s degree in Computer Science at ISEP Paris, where I spent years honing my technical skills and diving deep into software engineering and design. But one of the most defining chapters of my journey happened far from Paris—on the other side of the world, in Sydney.<br />Lorem ipsum dolor`;
+    const text = `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br />Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`;
 
     const words = text.split(/(\s+|<br \/>)/);
 

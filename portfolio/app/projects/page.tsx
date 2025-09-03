@@ -130,15 +130,15 @@ export default function Projects() {
                             height={1000}
                         />
                         <Image
-                            src="/images/projects/grid/watches.png"
-                            alt="AusVision Watch 1"
+                            src="/images/projects/grid/watches.webp"
+                            alt="AusVision Watch"
                             className="row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                             width={1000}
                             height={1000}
                         />
                         <Image
-                            src="/images/projects/grid/watches.png"
-                            alt="AusVision Watch 1"
+                            src="/images/projects/grid/watches.webp"
+                            alt=""
                             className="row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                             width={1000}
                             height={1000}

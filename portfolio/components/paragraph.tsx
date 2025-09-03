@@ -19,7 +19,7 @@ const Paragraph: React.FC = () => {
     const words = text.split(/(\s+|<br \/>)/);
 
     return (
-        <div ref={parentRef} className="relative h-auto mt-48">
+        <div ref={parentRef} className="relative h-auto my-48">
             <div className="w-full max-w-6xl mx-auto flex items-center justify-center h-auto px-4 pt-4 sm:px-10 md:px-12 lg:px-24 lg:pt-24">
                 <p className="flex flex-wrap justify-start gap-y-2 gap-x-1 md:gap-y-6 md:gap-x-1 text-xl md:text-3xl tracking-tight text-foreground">
                     {words.map((word, index) => {

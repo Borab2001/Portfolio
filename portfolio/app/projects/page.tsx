@@ -104,7 +104,7 @@ export default function Projects() {
             </div>
             <div className='max-w-[1600px] mx-auto flex flex-col pt-4 px-4 sm:pt-8 sm:px-8 gap-8 sm:gap-10 md:gap-12'>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-primary text-center">
-                    Some Mockups
+                    More Mockups
                 </h2>
                 <div className='flex flex-col gap-8'>
                     <div className='h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>

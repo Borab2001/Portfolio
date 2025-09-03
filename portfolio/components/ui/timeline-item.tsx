@@ -48,7 +48,9 @@ export default function TimelineItem({ experience, isLast = false }: TimelineIte
             )}
 
             {isLast && (
-                <div className="hidden md:block absolute top-3/4 left-0 w-1/2 h-full z-0">
+                <div className={`hidden md:block absolute top-3/4 w-1/2 h-full z-0
+                    ${position === 'left' ? 'left-0' : 'right-0'}
+                `}>
                     <svg 
                         width="100%" 
                         height="100%" 

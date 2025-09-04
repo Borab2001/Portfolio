@@ -4,6 +4,8 @@ import Link from "next/link";
 
 import { LinkIcon } from "./link-icon";
 import { FigmaIcon } from "./figma-icon";
+import TextHoverEnter from "./text-hover-enter";
+import { Component } from "lucide-react";
 
 
 interface CardProps {
@@ -37,8 +39,10 @@ const Card: React.FC<CardProps> = ({
     const cardScale = useTransform(progress, range, [1, targetScale]);
 
     return (
-        <div className="h-screen p-4 flex items-center justify-center sticky top-0">
-            
+        <div className="group h-screen p-4 flex flex-col items-center justify-center sticky top-9">
+            <div className="flex flex-col justify-center items-center gap-4 mb-9">
+                <h2 className="text-3xl font-semibold hidden group-first-of-type:block">Some of my work</h2>
+            </div>
             <motion.div 
                 // style={{ scale: cardScale, top: `calc(-6% + ${index * 28}px)` }} 
                 style={{ scale: cardScale, top: "0%" }} 
@@ -83,6 +87,15 @@ const Card: React.FC<CardProps> = ({
                     />
                 </div>
             </motion.div>
+            <div className="flex flex-col justify-center items-center mt-4">
+                <Link href="/projects" className="hidden group-last-of-type:block text-sm md:text-base text-foreground" target="_blank" rel="noopener noreferrer" aria-label="View more projects">
+                    <TextHoverEnter>
+                        <Component className="inline-block mr-2 w-4 h-4" />
+                        View more
+                        <Component className="inline-block ml-2 w-4 h-4" />
+                    </TextHoverEnter>
+                </Link>
+            </div>
         </div>
     );
 }

@@ -1,10 +1,10 @@
 import Hero from "@/components/hero";
-import Cards from "@/components/cards";
+// import Cards from "@/components/cards";
 import Paragraph from "@/components/paragraph";
-// import PolaroidStack from "@/components/polaroid-stack";
 import Experience from "@/components/experience";
 import Footer from "@/components/footer";
 import Timeline from "@/components/timeline";
+
 import { TimelineExperience } from "@/types/timeline";
 
 
@@ -94,8 +94,7 @@ export default function Home() {
 			<Hero />
 			<Paragraph />
 			<Timeline experiences={timelineData} />
-			<Cards />
-			{/* <PolaroidStack /> */}
+			{/* <Cards /> */}
 			<Experience />
 			<Footer />
 		</main>

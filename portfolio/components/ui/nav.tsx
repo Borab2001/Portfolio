@@ -66,7 +66,7 @@ export default function Navbar() {
                                 onClick={(e) => {
                                     e.preventDefault();
                                     router.push(item.href, {
-                                        onTransitionReady: pageAnimation
+                                        onTransitionReady: () => pageAnimation(pathname, item.href)
                                     });
                                 }}
                             >
@@ -84,7 +84,14 @@ export default function Navbar() {
     );
 }
 
-const pageAnimation = () => {
+const pageAnimation = (currentPath: string, targetPath: string) => {
+    // Si on va de home (/) vers projects (/projects)
+    const isGoingToProjects = currentPath === '/' && targetPath === '/projects';
+    
+    // Définir les valeurs qui changent selon la direction
+    const oldPageTranslateX = isGoingToProjects ? '-100px' : '100px';
+    const newPageTranslateX = isGoingToProjects ? '100%' : '-100%';
+    
     document.documentElement.animate(
         [
             {
@@ -95,7 +102,7 @@ const pageAnimation = () => {
             {
                 opacity: 0.5,
                 scale: 0.9,
-                transform: 'translateX(-100px)'
+                transform: `translateX(${oldPageTranslateX})`
             }
         ], {
             duration: 1000,
@@ -108,7 +115,7 @@ const pageAnimation = () => {
     document.documentElement.animate(
         [
             {
-                transform: 'translateX(100%)'
+                transform: `translateX(${newPageTranslateX})`
             },
             {
                 transform: 'translateX(0)'

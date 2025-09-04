@@ -55,7 +55,7 @@ export default function Navbar() {
                                 key={item.name}
                                 href={item.href}
                                 className={`
-                                        w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out
+                                        w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out cursor-pointer
                                     ${isActive 
                                         ? 'text-primary border border-[#f4f4f580]'
                                         : 'text-muted hover:text-primary'

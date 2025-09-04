@@ -50,6 +50,12 @@ export default function Navbar() {
                 className=""
             >
                 <div className="flex items-center gap-x-1 relative">
+                    <div 
+                        className={`absolute bg-[#f4f4f533] rounded-full border border-[#f4f4f580] transition-all duration-1000 w-24 h-9 ${
+                            pathname === '/' ? 'translate-x-0' : 'translate-x-[100px]'
+                        }`}
+                        style={{ transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)' }}
+                    />
                     {navItems.map((item) => {
                         const isActive = pathname === item.href;
                         return (
@@ -57,9 +63,9 @@ export default function Navbar() {
                                 key={item.name}
                                 href={item.href}
                                 className={`
-                                        w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out cursor-pointer
+                                        w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out cursor-pointer z-10
                                     ${isActive 
-                                        ? 'text-primary border border-[#f4f4f580]'
+                                        ? 'text-primary'
                                         : 'text-muted hover:text-primary'
                                     }
                                 `}
@@ -71,9 +77,6 @@ export default function Navbar() {
                                 }}
                             >
                                 {item.name}
-                                {isActive && (
-                                    <div className="absolute inset-0 bg-[#f4f4f533] rounded-full -z-10" />
-                                )}
                             </Link>
                         );
                     })}
@@ -98,8 +101,8 @@ const pageAnimation = (currentPath: string, targetPath: string) => {
                 transform: 'translateX(0)'
             },
             {
-                opacity: 0.5,
-                scale: 0.9,
+                opacity: 0,
+                scale: 1,
                 transform: `translateX(${oldPageTranslateX})`
             }
         ], {

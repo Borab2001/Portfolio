@@ -16,7 +16,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40">
+        <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 [view-transition-name:navbar]">
             {/* <div className="bg-background backdrop-blur-2xl border border-border-light rounded-full p-1 shadow-2xl">
                 <div className="flex items-center space-x-1">
                     {navItems.map((item) => {
@@ -85,10 +85,8 @@ export default function Navbar() {
 }
 
 const pageAnimation = (currentPath: string, targetPath: string) => {
-    // Si on va de home (/) vers projects (/projects)
     const isGoingToProjects = currentPath === '/' && targetPath === '/projects';
     
-    // Définir les valeurs qui changent selon la direction
     const oldPageTranslateX = isGoingToProjects ? '-100px' : '100px';
     const newPageTranslateX = isGoingToProjects ? '100%' : '-100%';
     

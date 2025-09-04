@@ -1,8 +1,10 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import GlassSurface from './glass';
+
+const GlassSurface = dynamic(() => import('./glass'), { ssr: false });
 
 export default function Navbar() {
     const pathname = usePathname();

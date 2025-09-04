@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef, useState, useId } from 'react';
 
 export interface GlassSurfaceProps {
@@ -159,20 +161,6 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
     yChannel,
     mixBlendMode
   ]);
-
-  useEffect(() => {
-    if (!containerRef.current) return;
-
-    const resizeObserver = new ResizeObserver(() => {
-      setTimeout(updateDisplacementMap, 0);
-    });
-
-    resizeObserver.observe(containerRef.current);
-
-    return () => {
-      resizeObserver.disconnect();
-    };
-  }, []);
 
   useEffect(() => {
     if (!containerRef.current) return;

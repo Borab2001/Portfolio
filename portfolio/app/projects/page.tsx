@@ -102,7 +102,7 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-            <div className='max-w-[1600px] mx-auto flex flex-col pt-4 px-4 sm:pt-8 sm:px-8 gap-8 sm:gap-10 md:gap-12'>
+            <div className='max-w-[1600px] mx-auto flex flex-col p-4 sm:p-8 pb-4 sm:pb-8 md:px-20 md:pb-20 gap-8 sm:gap-10 md:gap-12'>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-primary text-center">
                     More Mockups
                 </h2>

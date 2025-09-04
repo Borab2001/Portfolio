@@ -81,7 +81,10 @@ const Experience = () => {
 
     return (
         <div className="overflow-x-hidden w-full flex flex-col gap-4 max-w-6xl mx-auto px-4 pb-4 sm:px-8 sm:pb-8 md:px-20 md:pb-20">
-            <h2 className="text-3xl text-primary font-semibold">Experience</h2>
+            <h2 className="text-3xl text-primary font-semibold">
+                {/* Experience <span className="text-base text-subtle align-top">({experiences.length})</span> */}
+                Experience
+            </h2>
             <div className="flex flex-col">
                 {experiences.map((experience, index) => (
                     <div 

@@ -16,7 +16,7 @@ export default function Home() {
 			title: 'ISEP - Engineering School',
 			description: 'In 2019, after obtaining my French baccalaureate abroad, I moved to Paris to begin my five-year journey at ISEP. Over the years, I moved from the intensity of preparatory classes to the engineering cycle, gradually diving deeper into computer science. Along the way, I experienced the startup world through an internship at Station F, which gave me a firsthand look at innovation in action.',
 			image: '/images/polaroid/isep.webp',
-			alt: 'ISEP Campus',
+			alt: 'ISEP Paris',
 			imageTitle: 'ISEP Campus',
 			date: 'September 2019',
 			position: 'left'
@@ -57,16 +57,27 @@ export default function Home() {
 		{
 			id: '5',
 			year: 2023,
-			title: 'Sydney #3 - Golden Hours',
+			title: 'Sydney #3 – Wildlife',
+			description: 'One of the unforgettable parts of living in Australia was discovering its incredible wildlife. From seeing kangaroos up close to spotting colorful birds and walking through breathtaking landscapes, I felt constantly reminded that this country is unlike anywhere else. It wasn’t just the city, it was the raw beauty of nature that made the experience so special.',
+			image: '/images/polaroid/kangaroo.webp',
+			alt: 'Kangaroos in Sydney',
+			imageTitle: 'Kangaroos',
+			date: 'Sep 2023 at 9:46AM',
+			position: 'left'
+		},
+		{
+			id: '6',
+			year: 2023,
+			title: 'Sydney #4 - Golden Hours',
 			description: 'And then there were the beaches. Walking along the coast at sunrise, watching the city slow down as the waves kept rolling in, it was pure magic. Sydney became more than just a temporary stay; it became a place that felt like home. Leaving it was bittersweet, but it made me certain that I’ll return.',
 			image: '/images/polaroid/bronte_beach.webp',
 			alt: 'Sunrise in Bronte Beach in Sydney',
 			imageTitle: 'Bronte Beach',
 			date: 'Dec 2023 at 5:40AM',
-			position: 'left'
+			position: 'right'
 		},
 		{
-			id: '6',
+			id: '7',
 			year: 2025,
 			title: 'Graduation',
 			description: 'In 2025, I graduated with a Master’s degree in Computer Science from ISEP. After five intense and rewarding years, I left not only with strong skills in engineering and design, but also with unforgettable experiences and friendships. It was the closing of a chapter, and the start of something new.',
@@ -74,7 +85,7 @@ export default function Home() {
 			alt: 'ISEP Graduation',
 			imageTitle: 'ISEP Graduation',
 			date: 'May 2025 at 5:57PM',
-			position: 'right'
+			position: 'left'
 		}
 	];
 

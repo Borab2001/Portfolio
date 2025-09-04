@@ -181,20 +181,18 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
   }, [width, height]);
 
   const supportsSVGFilters = () => {
+    if (typeof document === 'undefined' || typeof navigator === 'undefined') return false;
     const isWebkit = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
     const isFirefox = /Firefox/.test(navigator.userAgent);
-
-    if (isWebkit || isFirefox) {
-      return false;
-    }
+    if (isWebkit || isFirefox) return false;
 
     const div = document.createElement('div');
-    div.style.backdropFilter = `url(#${filterId})`;
+    div.style.backdropFilter = 'url(#x)';
     return div.style.backdropFilter !== '';
   };
 
   const supportsBackdropFilter = () => {
-    if (typeof window === 'undefined') return false;
+    if (typeof CSS === 'undefined') return false;
     return CSS.supports('backdrop-filter', 'blur(10px)');
   };
 

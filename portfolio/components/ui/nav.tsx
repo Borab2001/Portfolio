@@ -1,5 +1,6 @@
 'use client';
 
+import { useTransitionRouter } from 'next-view-transitions';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -7,6 +8,7 @@ import { usePathname } from 'next/navigation';
 const GlassSurface = dynamic(() => import('./glass'), { ssr: false });
 
 export default function Navbar() {
+    const router = useTransitionRouter();
     const pathname = usePathname();
 
     const navItems = [
@@ -62,6 +64,12 @@ export default function Navbar() {
                                         : 'text-muted hover:text-primary'
                                     }
                                 `}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    router.push(item.href, {
+                                        onTransitionReady: pageAnimation
+                                    });
+                                }}
                             >
                                 {item.name}
                                 {isActive && (
@@ -74,5 +82,43 @@ export default function Navbar() {
             </GlassSurface>
             {/* <div className="fixed inset-0 bg-[#0a0a0a0d] backdrop-blur-[2px] -z-10 rounded-3xl" /> */}
         </nav>
+    );
+}
+
+const pageAnimation = () => {
+    document.documentElement.animate(
+        [
+            {
+                opacity: 1,
+                scale: 1,
+                transform: 'translateX(0)'
+            },
+            {
+                opacity: 0.5,
+                scale: 0.9,
+                transform: 'translateX(-100px)'
+            }
+        ], {
+            duration: 1000,
+            easing: "cubic-bezier(0.76, 0, 0.24, 1)",
+            fill: "forwards",
+            pseudoElement: "::view-transition-old(root)",
+        }
+    );
+
+    document.documentElement.animate(
+        [
+            {
+                transform: 'translateX(100%)'
+            },
+            {
+                transform: 'translateX(0)'
+            }
+        ], {
+            duration: 1000,
+            easing: "cubic-bezier(0.76, 0, 0.24, 1)",
+            fill: "forwards",
+            pseudoElement: "::view-transition-new(root)",
+        }
     );
 }

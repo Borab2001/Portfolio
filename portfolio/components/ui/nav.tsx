@@ -16,7 +16,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 [view-transition-name:navbar]">
+        <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40">
             {/* <div className="bg-background backdrop-blur-2xl border border-border-light rounded-full p-1 shadow-2xl">
                 <div className="flex items-center space-x-1">
                     {navItems.map((item) => {
@@ -47,7 +47,7 @@ export default function Navbar() {
                 width={204} 
                 height={44}
                 borderRadius={24}
-                className=""
+                className="[view-transition-name:navbar]"
             >
                 <div className="flex items-center gap-x-1 relative">
                     <div 

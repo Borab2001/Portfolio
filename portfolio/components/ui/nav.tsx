@@ -47,9 +47,9 @@ export default function Navbar() {
                 width={204} 
                 height={44}
                 borderRadius={24}
-                className="[view-transition-name:navbar]"
+                className=""
             >
-                <div className="flex items-center gap-x-1 relative">
+                <div className="flex items-center gap-x-1 relative [view-transition-name:navbar]">
                     <div 
                         className={`absolute bg-[#f4f4f533] rounded-full border border-[#f4f4f580] transition-all duration-1000 w-24 h-9 ${
                             pathname === '/' ? 'translate-x-0' : 'translate-x-[100px]'

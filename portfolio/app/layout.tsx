@@ -6,7 +6,8 @@ import "./globals.css";
 import ScrollProvider from "@/lib/scroll-provider";
 import SplashCursor from "@/components/splash-cursor";
 import Navbar from "@/components/ui/nav";
-import PageTransition from "@/components/page-transition";
+// import PageTransition from "@/components/page-transition";
+import { ViewTransitions } from "next-view-transitions";
 
 
 const geistSans = Geist({
@@ -55,61 +56,63 @@ export default function RootLayout({
   	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<head>
-				{/* <meta charSet={metadata.charset} />
-				<meta
-					httpEquiv={metadata.httpEquiv}
-					content={metadata.content}
-				/>
-				<meta name="viewport" content={metadata.viewport} />
-				<meta name="description" content={metadata.metaDescription} />
-				<meta name="keywords" content={metadata.keywords} />
-				<title>{metadata.title}</title>
-				<link
-					rel="apple-touch-icon"
-					sizes="180x180"
-					href="/apple-touch-icon.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="32x32"
-					href="/favicon-32x32.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="16x16"
-					href="/favicon-16x16.png"
-				/>
-				<link rel="manifest" href="/site.webmanifest" /> */}
+		<ViewTransitions>
+			<html lang="en">
+				<head>
+					{/* <meta charSet={metadata.charset} />
+					<meta
+						httpEquiv={metadata.httpEquiv}
+						content={metadata.content}
+					/>
+					<meta name="viewport" content={metadata.viewport} />
+					<meta name="description" content={metadata.metaDescription} />
+					<meta name="keywords" content={metadata.keywords} />
+					<title>{metadata.title}</title>
+					<link
+						rel="apple-touch-icon"
+						sizes="180x180"
+						href="/apple-touch-icon.png"
+					/>
+					<link
+						rel="icon"
+						type="image/png"
+						sizes="32x32"
+						href="/favicon-32x32.png"
+					/>
+					<link
+						rel="icon"
+						type="image/png"
+						sizes="16x16"
+						href="/favicon-16x16.png"
+					/>
+					<link rel="manifest" href="/site.webmanifest" /> */}
 
 
-				{/* <meta charSet="UTF-8" />
-				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-				<meta name="apple-mobile-web-app-title" content="Aila" />
-				<meta name="theme-color" content="#050505" />
-				<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-				<link rel="shortcut icon" href="/favicon.ico" />
-				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-				<link rel="manifest" href="/site.webmanifest" /> */}
-			</head>
-			<ScrollProvider>
-				<body
-					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-				>
-					<PageTransition>
+					{/* <meta charSet="UTF-8" />
+					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+					<meta name="apple-mobile-web-app-title" content="Aila" />
+					<meta name="theme-color" content="#050505" />
+					<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+					<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+					<link rel="shortcut icon" href="/favicon.ico" />
+					<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+					<link rel="manifest" href="/site.webmanifest" /> */}
+				</head>
+				<ScrollProvider>
+					<body
+						className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+					>
+						{/* <PageTransition> */}
 						<Navbar />
 						{children}
 						<div className="absolute -z-10">
 							<SplashCursor />
 						</div>
-					</PageTransition>
-					<Analytics />
-				</body>
-			</ScrollProvider>
-		</html>
+						{/* </PageTransition> */}
+						<Analytics />
+					</body>
+				</ScrollProvider>
+			</html>
+		</ViewTransitions>
 	);
 }

@@ -17,37 +17,37 @@ export default function Navbar() {
     return (
         <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40">
             <div className="flex items-center gap-x-1 relative rounded-3xl bg-[#27272ae6] p-1 [view-transition-name:navbar]">
-                    <div 
-                        className={`absolute bg-[#f4f4f533] rounded-full border border-[#f4f4f5] transition-all duration-1000 w-24 h-9 ${
-                            pathname === '/' ? 'translate-x-0' : 'translate-x-[100px]'
-                        }`}
-                        style={{ transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)' }}
-                    />
-                    {navItems.map((item) => {
-                        const isActive = pathname === item.href;
-                        return (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className={`
-                                        w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out cursor-pointer z-10
-                                    ${isActive 
-                                        ? 'text-primary'
-                                        : 'text-muted hover:text-primary'
-                                    }
-                                `}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    router.push(item.href, {
-                                        onTransitionReady: () => pageAnimation(pathname, item.href)
-                                    });
-                                }}
-                            >
-                                {item.name}
-                            </Link>
-                        );
-                    })}
-                </div>
+                <div 
+                    className={`absolute bg-[#f4f4f533] rounded-full border border-[#f4f4f5] transition-all duration-1000 w-24 h-9 ${
+                        pathname === '/' ? 'translate-x-0' : 'translate-x-[100px]'
+                    }`}
+                    style={{ transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)' }}
+                />
+                {navItems.map((item) => {
+                    const isActive = pathname === item.href;
+                    return (
+                        <Link
+                            key={item.name}
+                            href={item.href}
+                            className={`
+                                    w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out z-10
+                                ${isActive 
+                                    ? 'text-primary cursor-not-allowed pointer-events-none'
+                                    : 'text-muted hover:text-primary pointer-events-auto cursor-pointer'
+                                }
+                            `}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                router.push(item.href, {
+                                    onTransitionReady: () => pageAnimation(pathname, item.href)
+                                });
+                            }}
+                        >
+                            {item.name}
+                        </Link>
+                    );
+                })}
+            </div>
         </nav>
     );
 }

@@ -49,7 +49,7 @@ export default function Project({ project }: ProjectProps) {
                 </div>
                 <div className="col-span-2">
                     <div className="space-y-4">
-                        {project.description.map((paragraph, index) => (
+                        {project.context.description.map((paragraph, index) => (
                             <p key={index} className="text-muted leading-relaxed text-sm">
                                 {paragraph}
                             </p>

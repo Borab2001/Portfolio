@@ -75,6 +75,25 @@ export default function Project({ project }: ProjectProps) {
                         </div>
                     </>
                 )}
+                
+                {project.marketResearch && (
+                    <>
+                        <div className="col-span-1">
+                            <h3 className="text-lg font-medium text-primary">
+                                {project.marketResearch.title}
+                            </h3>
+                        </div>
+                        <div className="col-span-2">
+                            <div className="space-y-4">
+                                {project.marketResearch.description.map((paragraph, index) => (
+                                    <p key={index} className="text-muted text-sm leading-relaxed">
+                                        {paragraph}
+                                    </p>
+                                ))}
+                            </div>
+                        </div>
+                    </>
+                )}
             </div>
 
             {project.personas && (

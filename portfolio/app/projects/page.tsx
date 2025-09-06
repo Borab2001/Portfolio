@@ -49,7 +49,8 @@ export default function Projects() {
             context: {
                 title: 'Context',
                 description: [
-                    "Foodify is a recipe app designed to help users discover and share new recipes easily. The app features a user-friendly interface that allows users to browse through a wide variety of recipes, save their favorites, plan your meals in your calendar, filter with the ingredients in your fridge,and create shopping lists based on the ingredients needed. The solution includes a personalized recommendation system that suggests recipes based on user preferences and dietary restrictions. Additionally, Foodify offers step-by-step cooking instructions, nutritional information, and the ability to add and share your own recipes with the community."
+                    "Foodify is a concept recipe app designed to make discovering, cooking, and sharing meals easier and more engaging. Many existing platforms overwhelm users with cluttered interfaces, inconsistent recipe quality, or limited personalization. Users often struggle to filter recipes based on the ingredients they already have or adapt them to specific dietary needs, which makes everyday cooking less accessible and more time-consuming. Inspired by industry leaders like Airbnb, Foodify adopts a clean and intuitive design language that emphasizes clarity and ease of use. Our concept creates a streamlined, user-friendly experience that empowers users to simply look, save, and cook.",
+                    "The app combines a personalized recommendation system with practical tools such as ingredient-based filtering, meal planning with both built-in and external calendar integration, and auto-generated shopping lists. Recipes include step-by-step instructions, nutritional insights, and customizable options to suit dietary restrictions. Beyond discovery, Foodify fosters a sense of community by allowing users to add, share, and save recipes, making cooking both social and interactive."
                 ],
             },
             links: [
@@ -63,13 +64,12 @@ export default function Projects() {
                 ['/images/projects/foodify/fridge.webp', '/images/projects/foodify/calendar.webp'],
 
             ],
-            // competitorAnalysis: {
-            //     title: 'Competitor Analysis',
-            //     description: [
-            //         "While Google Maps remains the strongest competitor in navigation, its accessibility features are secondary and lack the detail required for wheelchair users. Other platforms primarily focus on rating accessible venues but rarely provide route-specific guidance.",
-            //         "None of the competitors analyzed offer detailed navigation based on physical features like ramps, lifts, or accessible routes, nor do they integrate an AR point-of-view experience. This gap highlights a strong opportunity to create a solution that goes beyond ratings and delivers truly inclusive navigation for people with physical disabilities."
-            //     ],
-            // },
+            marketResearch: {
+                title: 'Market Research',
+                description: [
+                    "To better understand potential users and their needs, we conducted a set of interviews and distributed a survey answered by over sixty participants. Despite differences in age, profession, and lifestyle, respondents shared common expectations: healthy recipe suggestions, meal planning with a built-in calendar, nutritional tracking, personalization based on dietary preferences, and smart shopping lists. The survey confirmed these priorities across a larger audience, showing a clear demand for an app that unifies everyday cooking, personalization, and nutrition into one seamless platform.",
+                ],
+            },
             // personas: {
             //     title: 'User Personas',
             //     images: [

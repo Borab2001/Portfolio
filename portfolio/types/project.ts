@@ -7,7 +7,10 @@ export interface Project {
         label: string;
         url: string;
     }[];
-    description: string[];
+    context: {
+        title: string;
+        description: string[];
+    }
     mockupImages: string[][];
     competitorAnalysis?: {
         title: string;

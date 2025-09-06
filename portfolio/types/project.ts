@@ -16,6 +16,10 @@ export interface Project {
         title: string;
         description: string[];
     };
+    marketResearch?: {
+        title: string;
+        description: string[];
+    };
     personas?: {
         title: string;
         images: string[];

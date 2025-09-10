@@ -34,13 +34,13 @@ export default function Projects() {
                     "None provide a comprehensive solution that merges immersive navigation with detailed accessibility information, covering step-free routes and mobility-friendly facilities, into a single cohesive experience. This underlines a clear opportunity to create a truly inclusive navigation tool tailored to the needs of people with physical disabilities."
                 ],
             },
-            // personas: {
-            //     title: 'User Personas',
-            //     images: [
-            //         '/images/projects/ausvision/persona_1.webp',
-            //         '/images/projects/ausvision/persona_2.webp'
-            //     ]
-            // }
+            personas: {
+                title: 'User Personas',
+                images: [
+                    '/images/projects/ausvision/persona_1.webp',
+                    '/images/projects/ausvision/persona_2.webp'
+                ]
+            }
         },
         {
             id: '2',

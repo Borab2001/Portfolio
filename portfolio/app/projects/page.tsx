@@ -203,6 +203,22 @@ export default function Projects() {
                             height={1000}
                         />
                     </div>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+                        <Image
+                            src="/images/projects/grid/paymate.webp"
+                            alt="Reveal 2"
+                            className="col-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                            width={1000}
+                            height={1000}
+                        />
+                        <Image
+                            src="/images/projects/grid/cpayant.webp"
+                            alt="Reveal 2"
+                            className="col-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
+                            width={1000}
+                            height={1000}
+                        />
+                    </div>
                 </div>
             </div>
             <Footer />

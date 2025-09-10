@@ -206,14 +206,14 @@ export default function Projects() {
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                         <Image
                             src="/images/projects/grid/paymate.webp"
-                            alt="Reveal 2"
+                            alt="Paymate"
                             className="col-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                             width={1000}
                             height={1000}
                         />
                         <Image
                             src="/images/projects/grid/cpayant.webp"
-                            alt="Reveal 2"
+                            alt="CPayant"
                             className="col-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
                             width={1000}
                             height={1000}

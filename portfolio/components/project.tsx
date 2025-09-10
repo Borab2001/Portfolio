@@ -103,9 +103,9 @@ export default function Project({ project }: ProjectProps) {
                             key={index}
                             src={image}
                             alt={`Persona ${index + 1}`}
-                            width={1000}
-                            height={1000}
-                            className="object-cover w-full aspect-auto bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
+                            width={800}
+                            height={800}
+                            className="w-full aspect-video bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
                         />
                     ))}
                 </div>

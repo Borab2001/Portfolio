@@ -15,7 +15,7 @@ const Footer = () => {
         },
         {
             name: 'Resume',
-            link: 'https://drive.google.com/file/d/1M4HbQc1KLAJaTWxh8_o3UbuFuZE2m8sy/view?usp=sharing',
+            link: 'https://drive.google.com/file/d/1aVIMv1yQJ8Bn_2jzpvFVLKz0fXKZ3Lfn/view?usp=sharing',
         },
         {
             name: 'X',

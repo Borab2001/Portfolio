@@ -18,11 +18,11 @@ const Experience = () => {
             title: 'UX/UI Designer',
             type: 'Freelance',
             company: 'Cedrus Solutions',
-            date: 'Feb 2025 - Present',
+            date: 'Apr 2025 - Present',
             description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
         },
         {
-            title: 'Product Designer',
+            title: 'Design Engineer',
             type: 'Freelance',
             company: 'Cypheme',
             date: 'Jan 2023 - Aug 2025',
@@ -30,7 +30,7 @@ const Experience = () => {
             stack: 'Figma, Webflow, JavaScript, GSAP, Hubspot'
         },
         {
-            title: 'Software Engineer',
+            title: 'Design Engineer',
             type: 'Freelance',
             company: 'Groupe BNSB',
             date: 'Feb 2022 - Aug 2025',
@@ -48,7 +48,7 @@ const Experience = () => {
             referenceLetter: 'https://drive.google.com/file/d/1gC1N5EtIZV74-N75YUx9FmEXToHv4tsc/view?usp=sharing'
         },
         {
-            title: 'Software Engineer',
+            title: 'Design Engineer',
             type: 'Freelance',
             company: 'Aila Consulting',
             date: 'Aug 2024 - Mar 2025',

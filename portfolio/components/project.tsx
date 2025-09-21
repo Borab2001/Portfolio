@@ -38,7 +38,7 @@ export default function Project({ project }: ProjectProps) {
 
                     <div className="flex flex-row items-center gap-2">
                         {project.links?.map((link, index) => (
-                            <Link key={index} href={link.url} className="text-sm md:text-base text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
+                            <Link key={index} href={link.url} className="text-sm text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
                                 <TextHoverEnter>
                                     {link.label} 
                                     <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />

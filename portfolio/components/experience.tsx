@@ -145,15 +145,19 @@ const Experience = () => {
                             <p className="text-sm md:text-lg font-normal text-muted">
                                 {experience.description}
                             </p>
-                            <p className='text-sm md:text-lg font-normal italic text-muted mb-2'>
-                                {experience.stack}
-                            </p>
-                            <p className='text-sm md:text-lg font-normal italic text-muted mb-2'>
-                                {experience.ux_process}
-                            </p>
+                            {experience.stack && (
+                                <p className='text-sm md:text-lg font-normal italic text-muted mb-2'>
+                                    {experience.stack}
+                                </p>
+                            )}
+                            {experience.ux_process && (
+                                <p className='text-sm md:text-lg font-normal italic text-muted mb-2'>
+                                    {experience.ux_process}
+                                </p>
+                            )}
 
                             {experience.referenceLetter && (
-                                <Link href={experience.referenceLetter} className="text-sm md:text-base text-foreground" target="_blank" rel="noopener noreferrer" aria-label="Reference Letter">
+                                <Link href={experience.referenceLetter} className="text-sm md:text-base text-foreground w-fit" target="_blank" rel="noopener noreferrer" aria-label="Reference Letter">
                                     <TextHoverEnter>
                                         Reference Letter
                                         <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />

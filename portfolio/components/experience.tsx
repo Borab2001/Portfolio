@@ -20,6 +20,7 @@ const Experience = () => {
             company: 'Cedrus Solutions',
             date: 'Apr 2025 - Present',
             description: 'SaaS platform assessing energy consumption and decarbonization strategies in real estate using LLMs.',
+            ux_process: 'Design thinking, design sprints, user research, wireframing, prototyping, usability testing, Figma',
         },
         {
             title: 'Design Engineer',
@@ -146,6 +147,9 @@ const Experience = () => {
                             </p>
                             <p className='text-sm md:text-lg font-normal italic text-muted mb-2'>
                                 {experience.stack}
+                            </p>
+                            <p className='text-sm md:text-lg font-normal italic text-muted mb-2'>
+                                {experience.ux_process}
                             </p>
 
                             {experience.referenceLetter && (

@@ -5,5 +5,6 @@ export interface Experience {
     date: string;
     description: string;
     stack?: string;
+    ux_process?: string;
     referenceLetter?: string;
 }

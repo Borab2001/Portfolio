@@ -1,10 +1,17 @@
-
-// import CircularText from '@/components/ui/circular-text';
+import { Metadata } from 'next';
+import type { MockupGridConfig } from '@/types/mockup-grid';
 import { Project as ProjectTypes } from '@/types/project';
+
 import Project from '@/components/project';
 import Footer from '@/components/footer';
 import MockupGrid from '@/components/mockup-grid';
-import type { MockupGridConfig } from '@/types/mockup-grid';
+// import CircularText from '@/components/ui/circular-text';
+
+
+export const metadata: Metadata = {
+    title: 'Projects',
+    description: 'A showcase of design projects made by Bora, blending creativity with user-focused design.',
+};
 
 export default function Projects() {
     // Configuration des grilles d'images

@@ -21,11 +21,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Bora Balos",
+	title: {
+		template: 'Bora Balos | %s',
+		default: 'Bora Balos',
+	},
 	description:
-		"Personal website of a French software engineer and designer from ISEP Paris & University of Sydney. Showcasing experiences, projects and memories from Sydney.",
+		"Personal website of a French design engineer, graduated from ISEP Paris & University of Sydney. Showcasing education, experiences, projects and memories from Sydney.",
 	keywords:
-		"software engineer, designer, frontend, ux/ui, computer science, isep, university of sydney, paris, france, australia",
+		"engineer, design, software, designer, frontend, ux/ui, computer science, isep, university of sydney, paris, sydney, france, australia",
 	openGraph: {
 		title: "Bora Balos",
 		description:
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-			url: "https://www.borabalos.com/og-image.jpg", // ← on va en parler juste après
+			url: "https://www.borabalos.com/og-image.jpg",
 			width: 1200,
 			height: 630,
 			alt: "Bora Balos Portfolio Preview",

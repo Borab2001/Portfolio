@@ -38,7 +38,7 @@ export default function Project({ project }: ProjectProps) {
 
                     <div className="flex flex-row items-center gap-2">
                         {project.links?.map((link, index) => (
-                            <Link key={index} href={link.url} className="text-sm text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
+                            <Link key={index} href={link.url} className="text-sm md:text-base text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
                                 <TextHoverEnter>
                                     {link.label} 
                                     <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
@@ -48,9 +48,9 @@ export default function Project({ project }: ProjectProps) {
                     </div>
                 </div>
                 <div className="col-span-2">
-                    <div className="space-y-4">
+                    <div className="space-y-4 md:space-y-6">
                         {project.context.description.map((paragraph, index) => (
-                            <p key={index} className="text-muted leading-relaxed text-sm">
+                            <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
                                 {paragraph}
                             </p>
                         ))}
@@ -65,9 +65,9 @@ export default function Project({ project }: ProjectProps) {
                             </h3>
                         </div>
                         <div className="col-span-2">
-                            <div className="space-y-4">
+                            <div className="space-y-4 md:space-y-6">
                                 {project.competitorAnalysis.description.map((paragraph, index) => (
-                                    <p key={index} className="text-muted text-sm leading-relaxed">
+                                    <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
                                         {paragraph}
                                     </p>
                                 ))}
@@ -84,9 +84,9 @@ export default function Project({ project }: ProjectProps) {
                             </h3>
                         </div>
                         <div className="col-span-2">
-                            <div className="space-y-4">
+                            <div className="space-y-4 md:space-y-6">
                                 {project.marketResearch.description.map((paragraph, index) => (
-                                    <p key={index} className="text-muted text-sm leading-relaxed">
+                                    <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
                                         {paragraph}
                                     </p>
                                 ))}

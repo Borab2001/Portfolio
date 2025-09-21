@@ -16,9 +16,9 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40">
-            <div className="flex items-center gap-x-1 relative rounded-3xl bg-[#27272ae6] p-1 [view-transition-name:navbar]">
+            <div className="flex items-center gap-x-1 relative rounded-3xl bg-background border border-border p-1 shadow-lg shadow-background [view-transition-name:navbar]">
                 <div 
-                    className={`absolute bg-[#f4f4f533] rounded-full border border-[#f4f4f5] transition-all duration-1000 w-24 h-9 ${
+                    className={`absolute bg-[#27272ae6] rounded-full border border-[#f4f4f533] transition-all duration-1000 w-24 h-9 ${
                         pathname === '/' ? 'translate-x-0' : 'translate-x-[100px]'
                     }`}
                     style={{ transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)' }}

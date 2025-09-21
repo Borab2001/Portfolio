@@ -3,9 +3,64 @@
 import { Project as ProjectTypes } from '@/types/project';
 import Project from '@/components/project';
 import Footer from '@/components/footer';
-import Image from 'next/image';
+import MockupGrid from '@/components/mockup-grid';
+import type { MockupGridConfig } from '@/types/mockup-grid';
 
-export default function Projects() {	
+export default function Projects() {
+    // Configuration des grilles d'images
+    const mockupGrids: MockupGridConfig[] = [
+        {
+            className: 'h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8',
+            images: [
+                { src: "/images/projects/grid/maestro_1.webp", alt: "Maestro 1", className: "row-span-1 h-full" },
+                { src: "/images/projects/grid/vrai.webp", alt: "Vrai", className: "row-span-2 h-full" },
+                { src: "/images/projects/grid/maestro_2.webp", alt: "Maestro 2", className: "row-span-1 h-full" },
+                { src: "/images/projects/grid/watches.webp", alt: "AusVision Watch", className: "row-span-1 h-full" },
+                { src: "/images/projects/grid/cedrus.webp", alt: "Reveal 1", className: "row-span-1 h-full" },
+            ]
+        },
+        {
+            className: 'grid grid-cols-1 lg:grid-cols-3 gap-8',
+            images: [
+                { src: "/images/projects/grid/flowfinity_1.avif", alt: "Flowfinity 1", className: "col-span-1" },
+                { src: "/images/projects/grid/flowfinity_2.avif", alt: "Flowfinity 2", className: "col-span-1" },
+                { src: "/images/projects/grid/flowfinity_3.avif", alt: "Flowfinity 3", className: "col-span-1" },
+            ]
+        },
+        {
+            className: 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8',
+            customLayout: true,
+            content: [
+                { 
+                    type: 'image', 
+                    src: "/images/projects/grid/reveal_1.webp", 
+                    alt: "Reveal 1", 
+                    className: "col-span-1 lg:row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl aspect-square lg:aspect-auto" 
+                },
+                { 
+                    type: 'container', 
+                    className: 'flex flex-col gap-8 sm:order-last lg:order-none col-span-1 sm:col-span-2 lg:col-span-1',
+                    images: [
+                        { src: "/images/projects/grid/cedrus_2.webp", alt: "Aila Consulting" },
+                        { src: "/images/projects/grid/aila.webp", alt: "Aila Consulting" },
+                    ]
+                },
+                { 
+                    type: 'image', 
+                    src: "/images/projects/grid/reveal_2.webp", 
+                    alt: "Reveal 2", 
+                    className: "col-span-1 lg:row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl aspect-square lg:aspect-auto" 
+                },
+            ]
+        },
+        {
+            className: 'grid grid-cols-1 lg:grid-cols-2 gap-8',
+            images: [
+                { src: "/images/projects/grid/paymate.webp", alt: "Paymate", className: "col-span-1" },
+                { src: "/images/projects/grid/cpayant.webp", alt: "CPayant", className: "col-span-1" },
+            ]
+        }
+    ];
     
     const projects: ProjectTypes[] = [
         {
@@ -106,120 +161,11 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-            <div className='max-w-[1600px] mx-auto flex flex-col p-4 sm:p-8 pb-4 sm:pb-8 md:px-20 md:pb-20 gap-8 sm:gap-10 md:gap-12'>
+            <div className='max-w-[1600px] mx-auto flex flex-col p-4 sm:p-8 pb-4 sm:pb-8 md:pb-20 gap-8 sm:gap-10 md:gap-12'>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-primary text-center">
                     More Mockups
                 </h2>
-                <div className='flex flex-col gap-8'>
-                    <div className='h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
-                        <Image
-                            src="/images/projects/grid/maestro_1.webp"
-                            alt="Maestro 1"
-                            className="row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                        <Image
-                            src="/images/projects/grid/vrai.webp"
-                            alt="Vrai"
-                            className="row-span-2 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                        <Image
-                            src="/images/projects/grid/maestro_2.webp"
-                            alt="Maestro 2"
-                            className="row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                        <Image
-                            src="/images/projects/grid/watches.webp"
-                            alt="AusVision Watch"
-                            className="row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                        <Image
-                            src="/images/projects/grid/cedrus.webp"
-                            alt="Reveal 1"
-                            className="row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                    </div>
-                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
-                        <Image
-                            src="/images/projects/grid/flowfinity_1.avif"
-                            alt="Flowfinity 1"
-                            className="col-span-1 w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                        <Image
-                            src="/images/projects/grid/flowfinity_2.avif"
-                            alt="Flowfinity 2"
-                            className="col-span-1 w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                        <Image
-                            src="/images/projects/grid/flowfinity_3.avif"
-                            alt="Flowfinity 3"
-                            className="col-span-1 w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                    </div>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
-                        <Image
-                            src="/images/projects/grid/reveal_1.webp"
-                            alt="Reveal 1"
-                            className="col-span-1 lg:row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl aspect-square lg:aspect-auto"
-                            width={1000}
-                            height={1000}
-                        />
-                        <div className='flex flex-col gap-8 sm:order-last lg:order-none col-span-1 sm:col-span-2 lg:col-span-1'>
-                            <Image
-                                src="/images/projects/grid/cedrus_2.webp"
-                                alt="Aila Consulting"
-                                className="col-span-1 w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                                width={1000}
-                                height={1000}
-                            />
-                            <Image
-                                src="/images/projects/grid/aila.webp"
-                                alt="Aila Consulting"
-                                className="col-span-1 w-full h-auto object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                        <Image
-                            src="/images/projects/grid/reveal_2.webp"
-                            alt="Reveal 2"
-                            className="col-span-1 lg:row-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl aspect-square lg:aspect-auto"
-                            width={1000}
-                            height={1000}
-                        />
-                    </div>
-                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-                        <Image
-                            src="/images/projects/grid/paymate.webp"
-                            alt="Paymate"
-                            className="col-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                        <Image
-                            src="/images/projects/grid/cpayant.webp"
-                            alt="CPayant"
-                            className="col-span-1 w-full h-full object-cover border border-border rounded-lg sm:rounded-xl md:rounded-2xl"
-                            width={1000}
-                            height={1000}
-                        />
-                    </div>
-                </div>
+                <MockupGrid grids={mockupGrids} />
             </div>
             <Footer />
 		</main>

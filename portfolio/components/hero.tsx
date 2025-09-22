@@ -18,7 +18,7 @@ const Hero = () => {
                     Bora Balos
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-secondary max-w-96 md:max-w-lg text-center">
-                    A French software engineer & designer who finds emotion in design and crafts with a keen eye
+                    A French engineer & designer who finds emotion in design and crafts with a keen eye
                 </p>
             </div>
         

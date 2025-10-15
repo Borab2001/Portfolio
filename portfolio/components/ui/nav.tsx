@@ -10,7 +10,6 @@ export default function Navbar() {
     const router = useTransitionRouter();
     const pathname = usePathname();
     
-    // Initialisation immédiate pour éviter la transition au rechargement
     const getInitialProjectState = () => {
         const projectMatch = pathname.match(/^\/projects\/(.+)$/);
         if (projectMatch) {
@@ -47,9 +46,9 @@ export default function Navbar() {
     }, [pathname]);
 
     const baseNavItems = [
-        { name: 'Home', href: '/' },
-        { name: 'Projects', href: '/projects' },
-        { name: projectName, href: pathname } // Toujours présent dans le DOM
+        { id: 'home', name: 'Home', href: '/' },
+        { id: 'projects', name: 'Projects', href: '/projects' },
+        { id: 'project-detail', name: projectName, href: pathname } // Toujours présent dans le DOM
     ];
 
     const navItems = baseNavItems;
@@ -90,7 +89,7 @@ export default function Navbar() {
                     
                     return (
                         <div
-                            key={item.href}
+                            key={item.id}
                             className="transition-all duration-1000 overflow-hidden"
                             style={{ 
                                 width: isProjectItem 

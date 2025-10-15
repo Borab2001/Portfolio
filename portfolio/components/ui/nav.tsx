@@ -3,48 +3,130 @@
 import { useTransitionRouter } from 'next-view-transitions';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
+import { useState, useEffect } from 'react';
+import projectsData from '@/data/projects.json';
 
 export default function Navbar() {
     const router = useTransitionRouter();
     const pathname = usePathname();
+    
+    // Initialisation immédiate pour éviter la transition au rechargement
+    const getInitialProjectState = () => {
+        const projectMatch = pathname.match(/^\/projects\/(.+)$/);
+        if (projectMatch) {
+            const projectId = projectMatch[1];
+            const project = projectsData.find(p => p.id === projectId);
+            return {
+                isProjectPage: !!project,
+                projectName: project?.navTitle || ''
+            };
+        }
+        return { isProjectPage: false, projectName: '' };
+    };
+    
+    const initialState = getInitialProjectState();
+    const [isProjectPage, setIsProjectPage] = useState(initialState.isProjectPage);
+    const [projectName, setProjectName] = useState(initialState.projectName);
 
-    const navItems = [
+    // Détection si on est sur une page projet
+    useEffect(() => {
+        const projectMatch = pathname.match(/^\/projects\/(.+)$/);
+        const newIsProjectPage = !!projectMatch;
+        
+        if (newIsProjectPage && projectMatch) {
+            const projectId = projectMatch[1];
+            const project = projectsData.find(p => p.id === projectId);
+            if (project) {
+                setProjectName(project.navTitle);
+                setIsProjectPage(true);
+            }
+        } else {
+            setIsProjectPage(false);
+            setProjectName('');
+        }
+    }, [pathname]);
+
+    const baseNavItems = [
         { name: 'Home', href: '/' },
         { name: 'Projects', href: '/projects' },
+        { name: projectName, href: pathname } // Toujours présent dans le DOM
     ];
+
+    const navItems = baseNavItems;
+
+    const getActiveIndex = () => {
+        if (pathname === '/') return 0;
+        if (pathname === '/projects') return 1;
+        if (pathname.startsWith('/projects/')) return 2;
+        return -1;
+    };
+
+    const activeIndex = getActiveIndex();
+    const navWidth = isProjectPage ? '306px' : '206px'; // 204px pour 2 éléments, 304px pour 3 éléments
+    const indicatorTranslateX = activeIndex >= 0 ? `${activeIndex * 100}px` : '0px';
 
     return (
         <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40">
-            <div className="flex items-center gap-x-1 relative rounded-3xl bg-background border border-border p-1 shadow-lg shadow-background [view-transition-name:navbar]">
+            <div 
+                className="flex items-center gap-x-1 relative rounded-3xl bg-background border border-border p-1 shadow-lg shadow-background [view-transition-name:navbar] transition-all duration-1000"
+                style={{ 
+                    width: navWidth,
+                    transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)'
+                }}
+            >
+                {/* Indicateur actif */}
                 <div 
-                    className={`absolute bg-[#27272ae6] rounded-full border border-[#f4f4f533] transition-all duration-1000 w-24 h-9 ${
-                        pathname === '/' ? 'translate-x-0' : 'translate-x-[100px]'
-                    }`}
-                    style={{ transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)' }}
+                    className="absolute bg-[#27272ae6] rounded-full border border-[#f4f4f533] transition-all duration-1000 w-24 h-9"
+                    style={{ 
+                        transform: `translateX(${indicatorTranslateX})`,
+                        transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)',
+                        opacity: activeIndex >= 0 ? 1 : 0
+                    }}
                 />
-                {navItems.map((item) => {
-                    const isActive = pathname === item.href;
+                
+                {navItems.map((item, index) => {
+                    const isActive = activeIndex === index;
+                    const isProjectItem = index === 2;
+                    
                     return (
-                        <Link
-                            key={item.name}
-                            href={item.href}
-                            className={`
-                                    w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out z-10
-                                ${isActive 
-                                    ? 'text-primary cursor-not-allowed pointer-events-none'
-                                    : 'text-muted hover:text-primary pointer-events-auto cursor-pointer'
-                                }
-                            `}
-                            onClick={(e) => {
-                                e.preventDefault();
-                                router.push(item.href, {
-                                    onTransitionReady: () => pageAnimation(pathname, item.href)
-                                });
+                        <div
+                            key={item.href}
+                            className="transition-all duration-1000 overflow-hidden"
+                            style={{ 
+                                width: isProjectItem 
+                                    ? (isProjectPage ? '96px' : '0px')
+                                    : '96px',
+                                opacity: isProjectItem 
+                                    ? (isProjectPage ? 1 : 0)
+                                    : 1,
+                                transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)'
                             }}
                         >
-                            {item.name}
-                        </Link>
+                            <Link
+                                href={item.href}
+                                className={`
+                                    w-24 h-9 flex items-center justify-center relative rounded-full text-sm font-medium transition-all duration-200 ease-out z-10 whitespace-nowrap overflow-hidden text-ellipsis
+                                    ${isActive 
+                                        ? 'text-primary cursor-not-allowed pointer-events-none'
+                                        : 'text-muted hover:text-primary pointer-events-auto cursor-pointer'
+                                    }
+                                `}
+                                style={{
+                                    transitionDelay: isProjectItem 
+                                        ? (isProjectPage ? '1000ms' : '0ms')
+                                        : '0ms'
+                                }}
+                                onClick={(e) => {
+                                    if (isActive) return;
+                                    e.preventDefault();
+                                    router.push(item.href, {
+                                        onTransitionReady: () => pageAnimation(pathname, item.href)
+                                    });
+                                }}
+                            >
+                                {item.name}
+                            </Link>
+                        </div>
                     );
                 })}
             </div>
@@ -54,9 +136,24 @@ export default function Navbar() {
 
 const pageAnimation = (currentPath: string, targetPath: string) => {
     const isGoingToProjects = currentPath === '/' && targetPath === '/projects';
+    const isGoingHome = targetPath === '/';
+    const isGoingToProjectDetail = targetPath.startsWith('/projects/') && targetPath !== '/projects';
     
-    const oldPageTranslateX = isGoingToProjects ? '-100px' : '100px';
-    const newPageTranslateX = isGoingToProjects ? '100%' : '-100%';
+    let oldPageTranslateX, newPageTranslateX;
+    
+    if (isGoingHome) {
+        oldPageTranslateX = '100px';
+        newPageTranslateX = '-100%';
+    } else if (isGoingToProjects && currentPath === '/') {
+        oldPageTranslateX = '-100px';
+        newPageTranslateX = '100%';
+    } else if (isGoingToProjectDetail) {
+        oldPageTranslateX = '-100px';
+        newPageTranslateX = '100%';
+    } else {
+        oldPageTranslateX = '100px';
+        newPageTranslateX = '-100%';
+    }
     
     document.documentElement.animate(
         [

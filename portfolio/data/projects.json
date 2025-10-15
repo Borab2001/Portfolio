@@ -1,6 +1,7 @@
 [
     {
         "id": "ausvision",
+        "navTitle": "AusVision",
         "title": "2032 Brisbane Olympics",
         "subtitle": "2023 ~ Sydney Uni",
         "context": {
@@ -39,6 +40,7 @@
     },
     {
         "id": "foodify",
+        "navTitle": "Foodify",
         "title": "Foodify",
         "subtitle": "2023 ~ Recipe App",
         "context": {

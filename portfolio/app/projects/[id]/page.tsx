@@ -9,7 +9,6 @@ import projectsData from '@/data/projects.json';
 import { ArrowUpRight } from 'lucide-react';
 import TextHoverEnter from '@/components/ui/text-hover-enter';
 import Footer from '@/components/footer';
-// import Footer from '@/components/footer';
 
 
 const Project = () => {

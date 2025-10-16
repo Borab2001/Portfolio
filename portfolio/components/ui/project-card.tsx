@@ -66,22 +66,22 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
     return (
         <div
-            className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200 cursor-pointer"
+            className="bg-background border border-border hover:bg-[#27272ae6] hover:border-[#f4f4f533] transition-colors duration-500 p-2 rounded-xl sm:rounded-2xl md:rounded-3xl group flex flex-col gap-4 overflow-hidden cursor-pointer"
             onClick={handleClick}
         >
+            <div className="flex flex-col p-2 sm:p-4 md:p-6">
+                <h2 className="text-xl md:text-3xl font-medium text-primary">
+                    {project.navTitle}
+               </h2>
+            </div>
             <div
                 style={{
                     backgroundImage: `url(${project.coverImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
-                className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+                className="h-[450px] w-[450px] rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-non select-none"
             />
-            <div className="absolute inset-0 z-10 grid place-content-center">
-                <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-                    {project.title}
-                </p>
-            </div>
         </div>
     );
 };

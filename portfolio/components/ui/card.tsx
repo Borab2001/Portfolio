@@ -44,7 +44,6 @@ const Card: React.FC<CardProps> = ({
                 <h2 className="text-3xl font-semibold hidden group-first-of-type:block">Some of my work</h2>
             </div>
             <motion.div 
-                // style={{ scale: cardScale, top: `calc(-6% + ${index * 28}px)` }} 
                 style={{ scale: cardScale, top: "0%" }} 
                 className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-border rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4"
             >

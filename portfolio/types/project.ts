@@ -2,6 +2,7 @@ export interface Project {
     id: string;
     title: string;
     subtitle: string;
+    coverImage: string;
     links: {
         type: string;
         label: string;

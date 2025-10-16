@@ -34,7 +34,6 @@ const Card: React.FC<CardProps> = ({
     const pathname = usePathname();
     const cardScale = useTransform(progress, range, [1, targetScale]);
 
-    // Fonction de transition pour la navigation
     const pageAnimation = (currentPath: string, targetPath: string) => {
         const isGoingFromProjectsToProject = currentPath === '/projects' && targetPath.startsWith('/projects/') && targetPath !== '/projects';
         
@@ -64,7 +63,7 @@ const Card: React.FC<CardProps> = ({
         }
     };
 
-    const handleImageClick = () => {
+    const handleCardClick = () => {
         if (projectId) {
             const targetPath = `/projects/${projectId}`;
             router.push(targetPath, {
@@ -80,7 +79,8 @@ const Card: React.FC<CardProps> = ({
             </div> */}
             <motion.div 
                 style={{ scale: cardScale, top: "0%" }} 
-                className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-border rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4"
+                className={`relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-border rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4 ${projectId ? 'cursor-pointer transition-colors' : ''}`}
+                onClick={handleCardClick}
             >
                 <div
                     className="w-full h-full flex flex-col gap-6 p-2 sm:p-4 md:p-6 bg-background rounded-lg sm:rounded-xl md:rounded-2xl"
@@ -101,11 +101,10 @@ const Card: React.FC<CardProps> = ({
                     <Image 
                         src={src} 
                         alt={alt}
-                        width={800}
-                        height={800}
-                        className={`aspect-[12/7] object-cover object-center w-full rounded-lg sm:rounded-xl md:rounded-2xl select-none border border-border ${projectId ? 'cursor-pointer hover:opacity-90 transition-opacity' : 'pointer-events-none'}`}
+                        width={1200}
+                        height={1200}
+                        className="aspect-[12/7] object-cover object-center w-full rounded-lg sm:rounded-xl md:rounded-2xl pointer-events-none select-none border border-border"
                         loading={index === 0 ? "eager" : "lazy"}
-                        onClick={handleImageClick}
                     />
                 </div>
             </motion.div>

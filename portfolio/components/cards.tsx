@@ -23,6 +23,7 @@ const Cards = ({ projects }: CardsProps) => {
             description: project.subtitle,
             src: project.coverImage,
             alt: `${project.title} project image`,
+            projectId: project.id
         };
     };
 

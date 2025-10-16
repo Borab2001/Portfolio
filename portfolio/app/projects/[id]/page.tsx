@@ -53,7 +53,7 @@ const Project = () => {
                                     ${mockupConfig.hasPadding ? 'p-[2vw]' : ''} 
                                     flex flex-row justify-center space-x-4 w-full h-auto 
                                     max-h-[${mockupConfig.maxHeightMobile}px] 
-                                    md:h-full md:max-h-none 
+                                    md:max-h-none 
                                     aspect-[${mockupConfig.aspectRatio.mobile}] 
                                     md:aspect-[${mockupConfig.aspectRatio.md}] 
                                     lg:aspect-[${mockupConfig.aspectRatio.lg}] 
@@ -61,7 +61,7 @@ const Project = () => {
                                 `}
                             >
                                 {group.map((image, imageIndex) => (
-                                    <div key={imageIndex}>
+                                    <div className='w-full h-full' key={imageIndex}>
                                         <Image
                                             src={image}
                                             alt={`${project.title} mockup group ${groupIndex + 1} image ${imageIndex + 1}`}

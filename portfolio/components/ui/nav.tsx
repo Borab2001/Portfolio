@@ -61,12 +61,18 @@ export default function Navbar() {
 
     const activeIndex = getActiveIndex();
     const navWidth = isProjectPage ? '306px' : '206px';
-    const indicatorTranslateX = activeIndex >= 0 ? `${activeIndex * 100}px` : '0px';
+    const getIndicatorPosition = () => {
+        if (activeIndex === 0) return '0px';
+        if (activeIndex === 1) return '100px';
+        if (activeIndex === 2) return '200px';
+        return '0px';
+    };
+    const indicatorTranslateX = getIndicatorPosition();
 
     return (
         <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40">
             <div 
-                className="flex items-center gap-x-1 relative rounded-3xl bg-background border border-border p-1 shadow-lg shadow-background [view-transition-name:navbar] transition-all duration-1000"
+                className="flex items-center relative rounded-3xl bg-background border border-border p-1 shadow-lg shadow-background [view-transition-name:navbar] transition-all duration-1000"
                 style={{ 
                     width: navWidth,
                     transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)'
@@ -84,11 +90,12 @@ export default function Navbar() {
                 {navItems.map((item, index) => {
                     const isActive = activeIndex === index;
                     const isProjectItem = index === 2;
+                    const showGap = index !== 0 && (!isProjectItem || (isProjectItem && isProjectPage));
                     
                     return (
                         <div
                             key={item.id}
-                            className="transition-all duration-1000 overflow-hidden"
+                            className="transition-all duration-1000 overflow-hidden flex items-center"
                             style={{ 
                                 width: isProjectItem 
                                     ? (isProjectPage ? '96px' : '0px')
@@ -96,6 +103,7 @@ export default function Navbar() {
                                 opacity: isProjectItem 
                                     ? (isProjectPage ? 1 : 0)
                                     : 1,
+                                marginLeft: showGap ? '4px' : '0px',
                                 transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)'
                             }}
                         >

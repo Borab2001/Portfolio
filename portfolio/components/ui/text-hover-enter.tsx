@@ -15,12 +15,10 @@ function TextHoverEnter({ children, className }: TextGlitchProps) {
         
         React.Children.forEach(children, (child) => {
             if (typeof child === "string") {
-                // Traiter les chaînes caractère par caractère
                 child.split("").forEach((letter) => {
                     elements.push(letter === " " ? "\u00A0" : letter);
                 });
             } else {
-                // Ajouter les éléments React (comme les icônes) directement
                 elements.push(child);
             }
         });

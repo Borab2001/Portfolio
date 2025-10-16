@@ -1,30 +1,16 @@
 import { Metadata } from 'next';
-import { Project as ProjectTypes } from '@/types/project';
 import type { MockupGridConfig } from '@/types/mockup-grid';
-
-import projectsData from '@/data/projects.json';
 
 import Footer from '@/components/footer';
 import MockupGrid from '@/components/mockup-grid';
 import ProjectList from '@/components/project-list';
+import { getProjects } from '@/lib/projects';
 
 
 export const metadata: Metadata = {
     title: 'Projects',
     description: 'A showcase of design projects made by Bora, blending creativity with user-focused design.',
 };
-
-export function getProjects(): ProjectTypes[] {
-  return projectsData as ProjectTypes[];
-}
-
-export function getProjectById(id: string): ProjectTypes | undefined {
-  return projectsData.find(project => project.id === id) as ProjectTypes | undefined;
-}
-
-export function getProjectsCount(): number {
-  return projectsData.length;
-}
 
 export default function Projects() {
     const mockupGrids: MockupGridConfig[] = [

@@ -32,7 +32,7 @@
   /* Interactive colors */
   --selection-bg: #f4f4f5; /* zinc-100 */
   --selection-text: #0a0a0a; /* zinc-900 */
-  --backdrop: #27272a; /* zinc-800 - for nav, overlays */
+  --backdrop: #141415; /* for nav, overlays */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,7 +59,7 @@
     /* Interactive colors */
     --selection-bg: #f4f4f5; /* zinc-100 */
     --selection-text: #0a0a0a; /* zinc-900 */
-    --backdrop: #27272a; /* zinc-800 - for nav, overlays */
+    --backdrop: #141415; /* for nav, overlays */
   }
 }
 

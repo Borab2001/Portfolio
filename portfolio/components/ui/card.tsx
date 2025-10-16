@@ -1,6 +1,5 @@
 import { motion, useTransform, MotionValue } from "motion/react";
 import Image from "next/image";
-// import Link from "next/link";
 import { useTransitionRouter } from 'next-view-transitions';
 import { usePathname } from 'next/navigation';
 
@@ -12,7 +11,7 @@ interface CardProps {
     description: string;
     src: string;
     alt: string;
-    projectId?: string;
+    projectId: string;
     index: number;
     progress: MotionValue<number>;
     range: number[];
@@ -73,17 +72,17 @@ const Card: React.FC<CardProps> = ({
     };
 
     return (
-        <div className="group h-screen p-4 flex flex-col items-center justify-center sticky top-9">
+        <div className="h-screen p-4 flex flex-col items-center justify-center sticky top-9">
             {/* <div className="flex flex-col justify-center items-center gap-4 mb-9">
                 <h2 className="text-3xl font-semibold hidden group-first-of-type:block">Some of my work</h2>
             </div> */}
             <motion.div 
                 style={{ scale: cardScale, top: "0%" }} 
-                className={`relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-border rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4 ${projectId ? 'cursor-pointer transition-colors' : ''}`}
+                className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-border rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4 cursor-pointer hover:border-primary transition-colors duration-300 ease-[cubic-bezier(0.76, 0, 0.24, 1)]"
                 onClick={handleCardClick}
             >
                 <div
-                    className="w-full h-full flex flex-col gap-6 p-2 sm:p-4 md:p-6 bg-background rounded-lg sm:rounded-xl md:rounded-2xl"
+                    className="w-full h-full flex flex-col gap-6 p-2 sm:p-4 md:p-6 rounded-lg sm:rounded-xl md:rounded-2xl"
                 >
                     <div className="flex flex-col justify-between gap-4">
                         <div className="flex flex-col gap-2.5">

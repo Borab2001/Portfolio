@@ -3,8 +3,6 @@ import Image from "next/image";
 import { useTransitionRouter } from 'next-view-transitions';
 import { usePathname } from 'next/navigation';
 
-import TextHoverEnter from "./text-hover-enter";
-
 
 interface CardProps {
     title: string;
@@ -78,7 +76,7 @@ const Card: React.FC<CardProps> = ({
             </div> */}
             <motion.div 
                 style={{ scale: cardScale, top: "0%" }} 
-                className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-border rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4 cursor-pointer hover:border-primary transition-colors duration-300 ease-[cubic-bezier(0.76, 0, 0.24, 1)]"
+                className="relative -top-[10%] w-full max-w-4xl h-auto p-2 bg-background border border-border rounded-xl sm:rounded-2xl md:rounded-3xl flex flex-col gap-4 cursor-pointer hover:bg-backdrop transition-colors duration-150"
                 onClick={handleCardClick}
             >
                 <div
@@ -88,11 +86,9 @@ const Card: React.FC<CardProps> = ({
                         <div className="flex flex-col gap-2.5">
                             <div className="flex flex-row items-center justify-between gap-2">
                                 <h2 className="text-xl md:text-3xl font-medium text-primary">{title}</h2>
-                                <div className="flex flex-row items-center gap-2">
-                                    <TextHoverEnter>
-                                        View more
-                                    </TextHoverEnter>
-                                </div>
+                                {/* <div className="flex flex-row items-center gap-2">
+                                    Badge here
+                                </div> */}
                             </div>
                             <p className="text-xs sm:text-sm md:text-base text-muted">{description}</p>
                         </div>

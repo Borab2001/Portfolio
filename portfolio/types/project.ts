@@ -1,5 +1,6 @@
 export interface Project {
     id: string;
+    navTitle: string;
     title: string;
     subtitle: string;
     coverImage: string;

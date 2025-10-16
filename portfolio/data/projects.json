@@ -144,7 +144,9 @@
             }
         ],
         "mockupImages": [
-            ["/images/projects/foodify/landing.webp", "/images/projects/foodify/home.webp"]
+            ["/images/projects/qonto.png"],
+            ["/images/projects/qonto.png"]
+
 
         ],
         "marketResearch": {

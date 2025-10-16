@@ -192,12 +192,12 @@
             "maxHeightMobile": 420,
             "aspectRatio": {
                 "mobile": "4/3",
-                "md": "16/9",
-                "lg": "16/9"
+                "md": "4/3",
+                "lg": "4/3"
             },
             "hasPadding": false,
             "objectFit": "cover",
-            "imageText": "Foodify app screens showing the recipe discovery flow"
+            "imageText": "Original vs My Concept"
         },
         "marketResearch": {
             "title": "",

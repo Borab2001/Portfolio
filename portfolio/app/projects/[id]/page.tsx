@@ -25,16 +25,11 @@ const Project = () => {
                     <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-primary text-center">
                         {project.title}
                     </h1>
-                    <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-secondary max-w-96 md:max-w-lg text-center">
+                    {/* <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-secondary max-w-96 md:max-w-lg text-center"> */}
                         {/* Step into my creative space. Here, every project is a blend of modern design and real-world problem solving */}
                         {/* A brief showcase of my works, each one a glimpse into how I merge creativity and user-centered design */}
-                        A quick glimpse at how I blend creativity with user-focused design in my projects
-                    </p>
-                    {/* <CircularText
-                        text="CHECK*OUT*MY*PROJECTS*"
-                        spinDuration={20}
-                        className="mt-16"
-                    /> */}
+                        {/* A quick glimpse at how I blend creativity with user-focused design in my projects */}
+                    {/* </p> */}
                 </div>
                 <div className="w-full py-16">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">

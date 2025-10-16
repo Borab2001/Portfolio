@@ -18,6 +18,19 @@ const Project = () => {
     if (!project) {
         return notFound();
     }
+
+    // Configuration par défaut pour les mockups
+    const mockupConfig = project.mockupConfig || {
+        columns: 3,
+        maxHeightMobile: 360,
+        aspectRatio: {
+            mobile: "4/3",
+            md: "5/5",
+            lg: "6/5"
+        },
+        hasPadding: true,
+        objectFit: "contain" as const
+    };
     return (
         <main className="backdrop-blur-lg flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
             <div className="min-h-dvh max-w-[1600px] mx-auto w-full pt-4 px-4 sm:pt-8 sm:px-8 flex flex-col smooth-height">
@@ -32,9 +45,21 @@ const Project = () => {
                     {/* </p> */}
                 </div>
                 <div className="w-full py-16">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                    <div className={`grid grid-cols-1 md:grid-cols-${mockupConfig.columns} gap-4 mb-16`}>
                         {project.mockupImages.map((group, groupIndex) => (
-                            <div key={groupIndex} className="p-[2vw] flex flex-row justify-center space-x-4 w-full h-auto max-h-[360px] md:h-full md:max-h-none aspect-[4/3] md:aspect-[5/5] lg:aspect-[6/5] bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
+                            <div 
+                                key={groupIndex} 
+                                className={`
+                                    ${mockupConfig.hasPadding ? 'p-[2vw]' : ''} 
+                                    flex flex-row justify-center space-x-4 w-full h-auto 
+                                    max-h-[${mockupConfig.maxHeightMobile}px] 
+                                    md:h-full md:max-h-none 
+                                    aspect-[${mockupConfig.aspectRatio.mobile}] 
+                                    md:aspect-[${mockupConfig.aspectRatio.md}] 
+                                    lg:aspect-[${mockupConfig.aspectRatio.lg}] 
+                                    bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden
+                                `}
+                            >
                                 {group.map((image, imageIndex) => (
                                     <div key={imageIndex}>
                                         <Image
@@ -42,13 +67,18 @@ const Project = () => {
                                             alt={`${project.title} mockup group ${groupIndex + 1} image ${imageIndex + 1}`}
                                             width={1000}
                                             height={1000}
-                                            className="w-full h-full object-contain"
+                                            className={`w-full h-full object-${mockupConfig.objectFit}`}
                                         />
                                     </div>
                                 ))}
                             </div>
                         ))}
                     </div>
+                    {mockupConfig.imageText && (
+                        <p className="text-center text-sm text-muted mb-16 -mt-12">
+                            {mockupConfig.imageText}
+                        </p>
+                    )}
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10 mb-16">
                         <div className="col-span-1 flex flex-col gap-6 items-start">
                             <div>

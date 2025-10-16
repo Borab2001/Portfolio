@@ -21,8 +21,18 @@
         ],
         "mockupImages": [
             ["/images/projects/foodify/landing.webp", "/images/projects/foodify/home.webp"]
-
         ],
+        "mockupConfig": {
+            "columns": 3,
+            "maxHeightMobile": 360,
+            "aspectRatio": {
+                "mobile": "4/3",
+                "md": "5/5",
+                "lg": "6/5"
+            },
+            "hasPadding": true,
+            "objectFit": "contain"
+        },
         "marketResearch": {
             "title": "",
             "description": [
@@ -146,9 +156,18 @@
         "mockupImages": [
             ["/images/projects/qonto.png"],
             ["/images/projects/qonto.png"]
-
-
         ],
+        "mockupConfig": {
+            "columns": 3,
+            "maxHeightMobile": 360,
+            "aspectRatio": {
+                "mobile": "4/3",
+                "md": "5/5",
+                "lg": "6/5"
+            },
+            "hasPadding": true,
+            "objectFit": "contain"
+        },
         "marketResearch": {
             "title": "",
             "description": [
@@ -212,6 +231,17 @@
             ["/images/projects/ausvision/transport_selection.webp", "/images/projects/ausvision/route_view.webp"],
             ["/images/projects/ausvision/ar_view.webp", "/images/projects/ausvision/ar_warning.webp"]
         ],
+        "mockupConfig": {
+            "columns": 3,
+            "maxHeightMobile": 360,
+            "aspectRatio": {
+                "mobile": "4/3",
+                "md": "5/5",
+                "lg": "6/5"
+            },
+            "hasPadding": true,
+            "objectFit": "contain"
+        },
         "competitorAnalysis": {
             "title": "Competitor Analysis",
             "description": [
@@ -257,6 +287,18 @@
             ["/images/projects/foodify/recipe.webp", "/images/projects/foodify/add_recipe_1.webp"],
             ["/images/projects/foodify/fridge.webp", "/images/projects/foodify/calendar.webp"]
         ],
+        "mockupConfig": {
+            "columns": 3,
+            "maxHeightMobile": 360,
+            "aspectRatio": {
+                "mobile": "4/3",
+                "md": "5/5",
+                "lg": "6/5"
+            },
+            "hasPadding": true,
+            "objectFit": "contain",
+            "imageText": "Foodify app screens showing the recipe discovery flow"
+        },
         "marketResearch": {
             "title": "Market Research",
             "description": [

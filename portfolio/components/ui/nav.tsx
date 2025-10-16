@@ -73,7 +73,7 @@ export default function Navbar() {
                 }}
             >
                 <div 
-                    className="absolute bg-[#27272ae6] rounded-full border border-[#f4f4f533] transition-all duration-1000 delay-[15ms] w-24 h-9"
+                    className="absolute bg-backdrop rounded-full border border-border transition-all duration-1000 delay-[15ms] w-24 h-9"
                     style={{ 
                         transform: `translateX(${indicatorTranslateX})`,
                         transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)',

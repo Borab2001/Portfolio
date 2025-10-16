@@ -18,12 +18,10 @@ export function getProjects(): ProjectTypes[] {
   return projectsData as ProjectTypes[];
 }
 
-// Fonction pour récupérer un projet spécifique par ID
 export function getProjectById(id: string): ProjectTypes | undefined {
   return projectsData.find(project => project.id === id) as ProjectTypes | undefined;
 }
 
-// Fonction pour récupérer le nombre total de projets
 export function getProjectsCount(): number {
   return projectsData.length;
 }

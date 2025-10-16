@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import type { MockupGridConfig } from '@/types/mockup-grid';
 import { getProjects } from '@/lib/projects';
 
-import Footer from '@/components/footer';
-import MockupGrid from '@/components/mockup-grid';
 import Cards from '@/components/cards';
+import MockupGrid from '@/components/mockup-grid';
+import Footer from '@/components/footer';
 
 
 export const metadata: Metadata = {

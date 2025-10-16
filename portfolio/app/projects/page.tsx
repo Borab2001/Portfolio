@@ -3,9 +3,8 @@ import type { MockupGridConfig } from '@/types/mockup-grid';
 
 import Footer from '@/components/footer';
 import MockupGrid from '@/components/mockup-grid';
-// import ProjectList from '@/components/project-list';
 import { getProjects } from '@/lib/projects';
-import ProjectSection from '@/components/project-section';
+import Cards from '@/components/cards';
 
 
 export const metadata: Metadata = {
@@ -84,7 +83,7 @@ export default function Projects() {
                     </p>
                 </div>
             
-                <ProjectSection projects={projects} />
+                <Cards projects={projects} />
                 {/* <ProjectList projects={projects} /> */}
             </div>
             <div className='max-w-[1600px] mx-auto flex flex-col p-4 sm:p-8 pb-4 sm:pb-8 md:pb-20 gap-8 sm:gap-10 md:gap-12'>

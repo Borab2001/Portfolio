@@ -47,7 +47,7 @@ export default function Navbar() {
     const baseNavItems = [
         { id: 'home', name: 'Home', href: '/' },
         { id: 'projects', name: 'Projects', href: '/projects' },
-        { id: 'project-detail', name: projectName, href: pathname } // Toujours présent dans le DOM
+        { id: 'project-detail', name: projectName, href: pathname }
     ];
 
     const navItems = baseNavItems;
@@ -60,7 +60,7 @@ export default function Navbar() {
     };
 
     const activeIndex = getActiveIndex();
-    const navWidth = isProjectPage ? '306px' : '206px'; // 204px pour 2 éléments, 304px pour 3 éléments
+    const navWidth = isProjectPage ? '306px' : '206px';
     const indicatorTranslateX = activeIndex >= 0 ? `${activeIndex * 100}px` : '0px';
 
     return (
@@ -73,7 +73,7 @@ export default function Navbar() {
                 }}
             >
                 <div 
-                    className="absolute bg-[#27272ae6] rounded-full border border-[#f4f4f533] transition-all duration-1000 w-24 h-9"
+                    className="absolute bg-[#27272ae6] rounded-full border border-[#f4f4f533] transition-all duration-1000 delay-[15ms] w-24 h-9"
                     style={{ 
                         transform: `translateX(${indicatorTranslateX})`,
                         transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)',

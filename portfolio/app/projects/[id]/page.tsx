@@ -8,6 +8,7 @@ import projectsData from '@/data/projects.json';
 
 import { ArrowUpRight } from 'lucide-react';
 import TextHoverEnter from '@/components/ui/text-hover-enter';
+import Footer from '@/components/footer';
 // import Footer from '@/components/footer';
 
 
@@ -52,7 +53,7 @@ const Project = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10 mb-16">
                         <div className="col-span-1 flex flex-col gap-6 items-start">
                             <div>
-                                <h2 className="text-xl md:text-2xl font-semibold text-primary mb-1">{project.title}</h2>
+                                <h2 className="text-xl md:text-2xl font-semibold text-primary mb-1">{project.context.title}</h2>
                                 <p className="text-muted text-base">{project.subtitle}</p>
                             </div>
 
@@ -132,6 +133,7 @@ const Project = () => {
                     )}
                 </div>
             </div>
+            <Footer />
         </main>
     );
 }

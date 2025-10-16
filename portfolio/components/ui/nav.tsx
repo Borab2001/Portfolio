@@ -27,7 +27,6 @@ export default function Navbar() {
     const [isProjectPage, setIsProjectPage] = useState(initialState.isProjectPage);
     const [projectName, setProjectName] = useState(initialState.projectName);
 
-    // Détection si on est sur une page projet
     useEffect(() => {
         const projectMatch = pathname.match(/^\/projects\/(.+)$/);
         const newIsProjectPage = !!projectMatch;
@@ -73,7 +72,6 @@ export default function Navbar() {
                     transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)'
                 }}
             >
-                {/* Indicateur actif */}
                 <div 
                     className="absolute bg-[#27272ae6] rounded-full border border-[#f4f4f533] transition-all duration-1000 w-24 h-9"
                     style={{ 
@@ -137,6 +135,8 @@ const pageAnimation = (currentPath: string, targetPath: string) => {
     const isGoingToProjects = currentPath === '/' && targetPath === '/projects';
     const isGoingHome = targetPath === '/';
     const isGoingToProjectDetail = targetPath.startsWith('/projects/') && targetPath !== '/projects';
+    const isGoingFromProjectsToProject = currentPath === '/projects' && targetPath.startsWith('/projects/') && targetPath !== '/projects';
+    const isGoingFromProjectToProjects = currentPath.startsWith('/projects/') && currentPath !== '/projects' && targetPath === '/projects';
     
     let oldPageTranslateX, newPageTranslateX;
     
@@ -146,10 +146,14 @@ const pageAnimation = (currentPath: string, targetPath: string) => {
     } else if (isGoingToProjects && currentPath === '/') {
         oldPageTranslateX = '-100px';
         newPageTranslateX = '100%';
-    } else if (isGoingToProjectDetail) {
+    } else if (isGoingToProjectDetail || isGoingFromProjectsToProject) {
         oldPageTranslateX = '-100px';
         newPageTranslateX = '100%';
+    } else if (isGoingFromProjectToProjects) {
+        oldPageTranslateX = '100px';
+        newPageTranslateX = '-100%';
     } else {
+        // Cas par défaut
         oldPageTranslateX = '100px';
         newPageTranslateX = '-100%';
     }

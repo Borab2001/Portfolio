@@ -35,7 +35,7 @@ const Project = () => {
         <main className="backdrop-blur-lg flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
             <div className="min-h-dvh max-w-[1600px] mx-auto w-full pt-4 px-4 sm:pt-8 sm:px-8 flex flex-col smooth-height">
                 <div className="flex-1 h-full flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8 pt-[24vh] pb-16">
-                    <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium text-primary text-center">
+                    <h1 className="text-5xl sm:text-7xl md:text-8xl font-normal text-primary text-center">
                         {project.title}
                     </h1>
                     {/* <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-secondary max-w-96 md:max-w-lg text-center"> */}

@@ -84,9 +84,9 @@
     {
         "id": "maestro",
         "navTitle": "Maestro",
-        "title": "Maestro Concerts",
+        "title": "Maestro",
         "subtitle": "Website design",
-        "coverImage": "/images/projects/flowfinity.webp",
+        "coverImage": "/images/projects/maestro.webp",
         "context": {
             "title": "Context",
             "description": [
@@ -102,18 +102,19 @@
             }
         ],
         "mockupImages": [
-            ["/images/projects/foodify/landing.webp", "/images/projects/foodify/home.webp"]
+            ["/images/projects/grid/maestro_1.webp"],
+            ["/images/projects/grid/maestro_2.webp"]
         ],
         "mockupConfig": {
-            "columns": 3,
-            "maxHeightMobile": 360,
+            "columns": 2,
+            "maxHeightMobile": 480,
             "aspectRatio": {
                 "mobile": "4/3",
                 "md": "5/5",
-                "lg": "6/5"
+                "lg": "16/5"
             },
-            "hasPadding": true,
-            "objectFit": "contain"
+            "hasPadding": false,
+            "objectFit": "cover"
         },
         "marketResearch": {
             "title": "",
@@ -241,7 +242,7 @@
         "navTitle": "Olympics",
         "title": "Olympics",
         "subtitle": "2023 ~ Sydney Uni",
-        "coverImage": "/images/projects/flowfinity.webp",
+        "coverImage": "/images/projects/ausvision.webp",
         "context": {
             "title": "Context",
             "description": [

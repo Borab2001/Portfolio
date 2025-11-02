@@ -239,7 +239,8 @@
                 "context": {
                     "title": "Context",
                     "description": [
-                        "Free Mobile is one of France's major telecom operators, known for its disruptive approach to mobile services. The existing Careers's interface showed signs of outdated design patterns, and could benefit from a more modern, user-friendly approach. This redesign concept focuses on improving the user experience while maintaining the brand's distinctive identity, replacing the images that take too much attention over the content."
+                        "Free Mobile is one of France's major telecom operators, known for its disruptive approach to mobile services. The existing Careers's interface showed signs of outdated design patterns, and could benefit from a more modern, user-friendly approach.",
+                        "This redesign concept focuses on improving the user experience while maintaining the brand's distinctive identity, replacing the images that take too much attention over the content. turned the different buttons into primary and secondary buttons, turned the filter into airbnb-like (top-notch design system) search bar with filters. tuned down the badges to make it softer and make the job titles more prominent. Used more modern icons while keeping the same style for the fonts and colors."
                     ]
                 },
                 "links": [

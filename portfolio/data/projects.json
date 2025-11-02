@@ -206,7 +206,8 @@
                 "context": {
                     "title": "Context",
                     "description": [
-                        "Qonto is a neobank tailored for freelancers and SMEs, offering a range of financial services through an intuitive digital platform. As part of the job application, one of the exercices was to review the overall website design. The existing pricing page presented several usability issues, including a cluttered layout, unclear navigation, and insufficient information hierarchy. My redesign aimed to address these challenges by creating a more organized and user-friendly interface that facilitates easy access to support resources."
+                        "Qonto is a neobank tailored for freelancers and SMEs, offering a range of financial services through an intuitive digital platform. As part of the job application, one of the exercices was to review the overall website design. The existing pricing page presented several usability issues, including a cluttered layout, unclear navigation, and insufficient information hierarchy. My redesign aimed to address these challenges by creating a more organized and user-friendly interface that facilitates easy access to support resources.",
+                        "Qonto's design is already good, after analyzing their entire website, I stepped on the pricing page, which I felt like it wasn't showing the popular option as much and the company type was taking too much space. So I decided to slightly redesign the page by turn the pricings into cards, highlighting the popular option, reducing the company type section to a simpler tabs and turning the monthly/yearly tab into a more visible toggle. This way, the primary colors are more centered and leads more to the popular option."
                     ]
                 },
                 "links": [
@@ -217,8 +218,8 @@
                     }
                 ],
                 "mockupImages": [
-                    ["/images/projects/qonto.png"],
-                    ["/images/projects/qonto.png"]
+                    ["/images/projects/redesigns/qonto_old.webp"],
+                    ["/images/projects/redesigns/qonto.png"]
                 ],
                 "mockupConfig": {
                     "columns": 2,
@@ -249,8 +250,8 @@
                     }
                 ],
                 "mockupImages": [
-                    ["/images/projects/grid/free.webp"],
-                    ["/images/projects/grid/free.webp"]
+                    ["/images/projects/redesigns/free_old.webp"],
+                    ["/images/projects/redesigns/free.webp"]
                 ],
                 "mockupConfig": {
                     "columns": 2,
@@ -281,8 +282,8 @@
                     }
                 ],
                 "mockupImages": [
-                    ["/images/projects/grid/stancer_new_1.webp"],
-                    ["/images/projects/grid/stancer_new_1.webp"]
+                    ["/images/projects/redesigns/stancer_old.webp"],
+                    ["/images/projects/redesigns/stancer_new_1.webp"]
                 ],
                 "mockupConfig": {
                     "columns": 2,

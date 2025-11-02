@@ -51,7 +51,7 @@
             }
         ],
         "mockupImages": [
-            ["/images/projects/foodify/landing.webp", "/images/projects/foodify/home.webp"]
+            ["/images/projects/cedrus/cedrus_2.webp", "/images/projects/cedrus/cedrus_3.webp"]
         ],
         "mockupConfig": {
             "columns": 3,
@@ -119,6 +119,47 @@
         "title": "Cypheme",
         "subtitle": "App Redesign",
         "coverImage": "/images/projects/flowfinity.webp",
+        "context": {
+            "title": "Context",
+            "description": [
+                "",
+                ""
+            ]
+        },
+        "links": [
+            {
+                "type": "figma",
+                "label": "Figma",
+                "url": ""
+            }
+        ],
+         "mockupImages": [
+            ["/images/projects/foodify/landing.webp", "/images/projects/foodify/home.webp"]
+        ],
+        "mockupConfig": {
+            "columns": 3,
+            "maxHeightMobile": 360,
+            "aspectRatio": {
+                "mobile": "4/3",
+                "md": "5/5",
+                "lg": "6/5"
+            },
+            "hasPadding": true,
+            "objectFit": "contain"
+        },
+        "marketResearch": {
+            "title": "",
+            "description": [
+                ""
+            ]
+        }
+    },
+    {
+        "id": "groupe-bnsb",
+        "navTitle": "Groupe BNSB",
+        "title": "Groupe BNSB",
+        "subtitle": "Website design",
+        "coverImage": "/images/projects/groupebnsb.webp",
         "context": {
             "title": "Context",
             "description": [

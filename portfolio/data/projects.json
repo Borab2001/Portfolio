@@ -4,7 +4,7 @@
         "navTitle": "Vrai AI",
         "title": "Vrai AI",
         "subtitle": "Landing Page Design",
-        "coverImage": "/images/projects/flowfinity.webp",
+        "coverImage": "/images/projects/vrai/vrai_v2.webp",
         "context": {
             "title": "Context",
             "description": [
@@ -12,32 +12,22 @@
                 ""
             ]
         },
-        "links": [
-            {
-                "type": "figma",
-                "label": "Figma",
-                "url": ""
-            }
-        ],
+        "links": [],
         "mockupImages": [
-            ["/images/projects/foodify/landing.webp", "/images/projects/foodify/home.webp"]
+            ["/images/projects/vrai/vrai_v1.webp"],
+            ["/images/projects/vrai/vrai_v2.webp"]
         ],
         "mockupConfig": {
-            "columns": 3,
-            "maxHeightMobile": 360,
+            "columns": 2,
+            "maxHeightMobile": 420,
             "aspectRatio": {
                 "mobile": "4/3",
-                "md": "5/5",
-                "lg": "6/5"
+                "md": "4/3",
+                "lg": "4/3"
             },
-            "hasPadding": true,
-            "objectFit": "contain"
-        },
-        "marketResearch": {
-            "title": "",
-            "description": [
-                ""
-            ]
+            "hasPadding": false,
+            "objectFit": "cover",
+            "imageText": "Dark and Light Iterations"
         }
     },
     {

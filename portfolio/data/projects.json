@@ -158,37 +158,105 @@
         "id": "redesigns",
         "navTitle": "Redesigns",
         "title": "Redesigns",
-        "subtitle": "Qonto's Pricing Page",
         "coverImage": "/images/projects/flowfinity.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "Qonto is a neobank tailored for freelancers and SMEs, offering a range of financial services through an intuitive digital platform. As part of the job application, one of the exercices was to review the overall website design. The existing pricing page presented several usability issues, including a cluttered layout, unclear navigation, and insufficient information hierarchy. My redesign aimed to address these challenges by creating a more organized and user-friendly interface that facilitates easy access to support resources."
-            ]
-        },
-        "links": [],
-        "mockupImages": [
-            ["/images/projects/qonto.png"],
-            ["/images/projects/qonto.png"]
-        ],
-        "mockupConfig": {
-            "columns": 2,
-            "maxHeightMobile": 420,
-            "aspectRatio": {
-                "mobile": "4/3",
-                "md": "4/3",
-                "lg": "4/3"
+        "redesigns": [
+            {
+                "subtitle": "Qonto's Pricing Page",
+                "context": {
+                    "title": "Context",
+                    "description": [
+                        "Qonto is a neobank tailored for freelancers and SMEs, offering a range of financial services through an intuitive digital platform. As part of the job application, one of the exercices was to review the overall website design. The existing pricing page presented several usability issues, including a cluttered layout, unclear navigation, and insufficient information hierarchy. My redesign aimed to address these challenges by creating a more organized and user-friendly interface that facilitates easy access to support resources."
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "website",
+                        "label": "Website",
+                        "url": "https://qonto.com/fr/pricing?select-toggle=solo&periodicity=annual&website_addon_period=annual"
+                    }
+                ],
+                "mockupImages": [
+                    ["/images/projects/qonto.png"],
+                    ["/images/projects/qonto.png"]
+                ],
+                "mockupConfig": {
+                    "columns": 2,
+                    "maxHeightMobile": 420,
+                    "aspectRatio": {
+                        "mobile": "4/3",
+                        "md": "4/3",
+                        "lg": "4/3"
+                    },
+                    "hasPadding": false,
+                    "objectFit": "cover",
+                    "imageText": "Original vs My Concept"
+                }
             },
-            "hasPadding": false,
-            "objectFit": "cover",
-            "imageText": "Original vs My Concept"
-        },
-        "marketResearch": {
-            "title": "",
-            "description": [
-                ""
-            ]
-        }
+            {
+                "subtitle": "Free's Careers Page",
+                "context": {
+                    "title": "Context",
+                    "description": [
+                        "Free Mobile is one of France's major telecom operators, known for its disruptive approach to mobile services. The existing Careers's interface showed signs of outdated design patterns, and could benefit from a more modern, user-friendly approach. This redesign concept focuses on improving the user experience while maintaining the brand's distinctive identity, replacing the images that take too much attention over the content."
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "website",
+                        "label": "Website",
+                        "url": "https://iliad_career.beekome.com/"
+                    }
+                ],
+                "mockupImages": [
+                    ["/images/projects/grid/free.webp"],
+                    ["/images/projects/grid/free.webp"]
+                ],
+                "mockupConfig": {
+                    "columns": 2,
+                    "maxHeightMobile": 420,
+                    "aspectRatio": {
+                        "mobile": "4/3",
+                        "md": "4/3",
+                        "lg": "4/3"
+                    },
+                    "hasPadding": false,
+                    "objectFit": "cover",
+                    "imageText": "Original vs My Concept"
+                }
+            },
+            {
+                "subtitle": "Stancer's Blog Page",
+                "context": {
+                    "title": "Context",
+                    "description": [
+                        "Stancer is a French payment service provider offering online payment solutions for businesses. The original dashboard interface could be enhanced to provide better data visualization and a more intuitive workflow for merchants managing their transactions and analytics."
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "website",
+                        "label": "Website",
+                        "url": "https://stancer.com/fr/blog"
+                    }
+                ],
+                "mockupImages": [
+                    ["/images/projects/grid/stancer_new_1.webp"],
+                    ["/images/projects/grid/stancer_new_1.webp"]
+                ],
+                "mockupConfig": {
+                    "columns": 2,
+                    "maxHeightMobile": 420,
+                    "aspectRatio": {
+                        "mobile": "4/3",
+                        "md": "4/3",
+                        "lg": "4/3"
+                    },
+                    "hasPadding": false,
+                    "objectFit": "cover",
+                    "imageText": "Original vs My Concept"
+                }
+            }
+        ]
     },
     {
         "id": "flowfinity",

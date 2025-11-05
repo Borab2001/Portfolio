@@ -35,11 +35,11 @@ export interface Project {
         label: string;
         url: string;
     }[];
-    context?: {
+    context: {
         title: string;
         description: string[];
     }
-    mockupImages?: string[][];
+    mockupImages: string[][];
     mockupConfig?: {
         columns: 1 | 2 | 3;
         maxHeightMobile: 360 | 420 | 480;

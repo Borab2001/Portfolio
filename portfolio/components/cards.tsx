@@ -20,7 +20,7 @@ const Cards = ({ projects }: CardsProps) => {
     const mapProjectToCardProps = (project: Project) => {
         return {
             title: project.title,
-            description: project.subtitle,
+            description: project.subtitle || "",
             src: project.coverImage,
             alt: `${project.title} project image`,
             projectId: project.id

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { notFound, useParams } from "next/navigation";
 
 import projectsData from '@/data/projects.json';
+import type { Project } from '@/types/project';
 
 import { ArrowUpRight } from 'lucide-react';
 import TextHoverEnter from '@/components/ui/text-hover-enter';
@@ -13,7 +14,7 @@ import Footer from '@/components/footer';
 
 const Project = () => {
     const params = useParams();
-    const project = projectsData.find((p) => p.id === params.id);
+    const project = (projectsData as Project[]).find((p) => p.id === params.id);
 
     if (!project) {
         return notFound();
@@ -83,32 +84,54 @@ const Project = () => {
                                             {mockupConfig.imageText}
                                         </p>
                                     )}
-                                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10 mb-16">
-                                        <div className="col-span-1 flex flex-col gap-6 items-start">
-                                            <div>
-                                                <h3 className="text-xl md:text-2xl font-semibold text-primary mb-1">{redesign.context.title}</h3>
+                                    
+                                    <div className="space-y-16 mb-16">
+                                        {redesign.content.map((section, sectionIndex) => (
+                                            <div key={sectionIndex} className="group grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10">
+                                                <div className="col-span-1 flex flex-col gap-6 items-start">
+                                                    <div>
+                                                        <h3 className="group-first-of-type:text-xl text-base md:group-first-of-type:text-2xl md:text-xl font-semibold text-primary mb-1">
+                                                            {section.title}
+                                                        </h3>
+                                                    </div>
+                                                    {sectionIndex === 0 && (
+                                                        <div className="flex flex-row items-center gap-2">
+                                                            {redesign.links && redesign.links.map((link, index) => (
+                                                                <Link key={index} href={link.url} className="text-sm text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
+                                                                    <TextHoverEnter>
+                                                                        {link.label} 
+                                                                        <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
+                                                                    </TextHoverEnter>
+                                                                </Link>
+                                                            ))}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                                <div className="col-span-2">
+                                                    <div className="space-y-4 md:space-y-6">
+                                                        {section.description.map((paragraph, index) => (
+                                                            <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
+                                                                {paragraph}
+                                                            </p>
+                                                        ))}
+                                                    </div>
+                                                    {section.images && section.images.length > 0 && (
+                                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                                                            {section.images.map((image, imgIndex) => (
+                                                                <Image
+                                                                    key={imgIndex}
+                                                                    src={image}
+                                                                    alt={`${section.title} image ${imgIndex + 1}`}
+                                                                    width={800}
+                                                                    height={800}
+                                                                    className="w-full aspect-video object-cover bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
+                                                                />
+                                                            ))}
+                                                        </div>
+                                                    )}
+                                                </div>
                                             </div>
-
-                                            <div className="flex flex-row items-center gap-2">
-                                                {redesign.links && redesign.links.map((link, index) => (
-                                                    <Link key={index} href={link.url} className="text-sm text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
-                                                        <TextHoverEnter>
-                                                            {link.label} 
-                                                            <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
-                                                        </TextHoverEnter>
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        </div>
-                                        <div className="col-span-2">
-                                            <div className="space-y-4 md:space-y-6">
-                                                {redesign.context.description.map((paragraph, index) => (
-                                                    <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
-                                                        {paragraph}
-                                                    </p>
-                                                ))}
-                                            </div>
-                                        </div>
+                                        ))}
                                     </div>
                                 </div>
                             );
@@ -177,74 +200,61 @@ const Project = () => {
                             {mockupConfig.imageText}
                         </p>
                     )}
-                    {project.context && (
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10 mb-16">
-                            <div className="col-span-1 flex flex-col gap-6 items-start">
-                                <div>
-                                    <h2 className="text-xl md:text-2xl font-semibold text-primary mb-1">{project.context.title}</h2>
-                                    {project.subtitle && <p className="text-muted text-base">{project.subtitle}</p>}
-                                </div>
-
-                                <div className="flex flex-row items-center gap-2">
-                                    {project.links && project.links.map((link, index) => (
-                                        <Link key={index} href={link.url} className="text-sm text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
-                                            <TextHoverEnter>
-                                                {link.label} 
-                                                <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
-                                            </TextHoverEnter>
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="col-span-2">
-                                <div className="space-y-4 md:space-y-6">
-                                    {project.context.description.map((paragraph, index) => (
-                                        <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
-                                            {paragraph}
-                                        </p>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {project.competitorAnalysis && (
-                                <>
-                                    <div className="col-span-1">
-                                        <h3 className="text-lg font-medium text-primary">
-                                            {project.competitorAnalysis.title}
-                                        </h3>
+                    
+                    {/* Nouvelle structure content */}
+                    {project.content ? (
+                        <div className="space-y-16 mb-16 ">
+                            {project.content.map((section, sectionIndex) => (
+                                <div key={sectionIndex} className="group grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10">
+                                    <div className="col-span-1 flex flex-col gap-6 items-start">
+                                        <div>
+                                            <h2 className="group-first-of-type:text-xl text-base md:group-first-of-type:text-2xl md:text-xl font-semibold text-primary mb-1">
+                                                {section.title}
+                                            </h2>
+                                            {sectionIndex === 0 && project.subtitle && (
+                                                <p className="text-muted text-base">{project.subtitle}</p>
+                                            )}
+                                        </div>
+                                        {sectionIndex === 0 && (
+                                            <div className="flex flex-row items-center gap-2">
+                                                {project.links && project.links.map((link, index) => (
+                                                    <Link key={index} href={link.url} className="text-sm text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
+                                                        <TextHoverEnter>
+                                                            {link.label} 
+                                                            <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
+                                                        </TextHoverEnter>
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        )}
                                     </div>
                                     <div className="col-span-2">
                                         <div className="space-y-4 md:space-y-6">
-                                            {project.competitorAnalysis.description.map((paragraph, index) => (
+                                            {section.description.map((paragraph, index) => (
                                                 <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
                                                     {paragraph}
                                                 </p>
                                             ))}
                                         </div>
+                                        {section.images && section.images.length > 0 && (
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                                                {section.images.map((image, imgIndex) => (
+                                                    <Image
+                                                        key={imgIndex}
+                                                        src={image}
+                                                        alt={`${section.title} image ${imgIndex + 1}`}
+                                                        width={800}
+                                                        height={800}
+                                                        className="w-full aspect-video object-cover bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
+                                                    />
+                                                ))}
+                                            </div>
+                                        )}
                                     </div>
-                                </>
-                            )}
-                            
-                            {project.marketResearch && (
-                                <>
-                                    <div className="col-span-1">
-                                        <h3 className="text-lg font-medium text-primary">
-                                            {project.marketResearch.title}
-                                        </h3>
-                                    </div>
-                                    <div className="col-span-2">
-                                        <div className="space-y-4 md:space-y-6">
-                                            {project.marketResearch.description.map((paragraph, index) => (
-                                                <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
-                                                    {paragraph}
-                                                </p>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </>
-                            )}
+                                </div>
+                            ))}
                         </div>
-                    )}
+                    ) : null}
 
                     {project.personas && (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center">

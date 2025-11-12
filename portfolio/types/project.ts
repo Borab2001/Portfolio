@@ -1,9 +1,12 @@
+export interface ContentSection {
+    title: string;
+    description: string[];
+    images?: string[]; // Images optionnelles pour chaque section
+}
+
 export interface RedesignItem {
     subtitle: string;
-    context: {
-        title: string;
-        description: string[];
-    }
+    content: ContentSection[];
     links: {
         type: string;
         label: string;
@@ -35,11 +38,8 @@ export interface Project {
         label: string;
         url: string;
     }[];
-    context: {
-        title: string;
-        description: string[];
-    }
-    mockupImages: string[][];
+    content?: ContentSection[];
+    mockupImages?: string[][];
     mockupConfig?: {
         columns: 1 | 2 | 3;
         maxHeightMobile: 360 | 420 | 480;
@@ -53,14 +53,6 @@ export interface Project {
         imageText?: string;
     };
     redesigns?: RedesignItem[];
-    competitorAnalysis?: {
-        title: string;
-        description: string[];
-    };
-    marketResearch?: {
-        title: string;
-        description: string[];
-    };
     personas?: {
         title: string;
         images: string[];

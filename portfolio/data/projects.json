@@ -5,13 +5,15 @@
         "title": "Vrai AI",
         "subtitle": "Landing Page Design",
         "coverImage": "/images/projects/vrai/vrai_v2.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "",
-                ""
-            ]
-        },
+        "content": [
+            {
+                "title": "Context",
+                "description": [
+                    "",
+                    ""
+                ]
+            }
+        ],
         "links": [],
         "mockupImages": [
             ["/images/projects/vrai/vrai_v1.webp"],
@@ -36,13 +38,15 @@
         "title": "Cedrus Solutions",
         "subtitle": "Dashboard Design",
         "coverImage": "/images/projects/flowfinity.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "",
-                ""
-            ]
-        },
+        "content": [
+            {
+                "title": "Context",
+                "description": [
+                    "",
+                    ""
+                ]
+            }
+        ],
         "links": [
             {
                 "type": "figma",
@@ -63,12 +67,6 @@
             },
             "hasPadding": true,
             "objectFit": "contain"
-        },
-        "marketResearch": {
-            "title": "",
-            "description": [
-                ""
-            ]
         }
     },
     {
@@ -77,13 +75,15 @@
         "title": "Maestro",
         "subtitle": "Website design",
         "coverImage": "/images/projects/maestro.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "",
-                ""
-            ]
-        },
+        "content": [
+            {
+                "title": "Context",
+                "description": [
+                    "",
+                    ""
+                ]
+            }
+        ],
         "links": [
             {
                 "type": "figma",
@@ -105,12 +105,6 @@
             },
             "hasPadding": false,
             "objectFit": "cover"
-        },
-        "marketResearch": {
-            "title": "",
-            "description": [
-                ""
-            ]
         }
     },
     {
@@ -119,13 +113,15 @@
         "title": "Cypheme",
         "subtitle": "App Redesign",
         "coverImage": "/images/projects/flowfinity.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "",
-                ""
-            ]
-        },
+        "content": [
+            {
+                "title": "Context",
+                "description": [
+                    "",
+                    ""
+                ]
+            }
+        ],
         "links": [
             {
                 "type": "figma",
@@ -146,12 +142,6 @@
             },
             "hasPadding": true,
             "objectFit": "contain"
-        },
-        "marketResearch": {
-            "title": "",
-            "description": [
-                ""
-            ]
         }
     },
     {
@@ -160,13 +150,15 @@
         "title": "Groupe BNSB",
         "subtitle": "Website design",
         "coverImage": "/images/projects/groupebnsb.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "",
-                ""
-            ]
-        },
+        "content": [
+            {
+                "title": "Context",
+                "description": [
+                    "",
+                    ""
+                ]
+            }
+        ],
         "links": [
             {
                 "type": "figma",
@@ -187,12 +179,6 @@
             },
             "hasPadding": true,
             "objectFit": "contain"
-        },
-        "marketResearch": {
-            "title": "",
-            "description": [
-                ""
-            ]
         }
     },
     {
@@ -203,13 +189,34 @@
         "redesigns": [
             {
                 "subtitle": "Qonto's Pricing Page",
-                "context": {
-                    "title": "Context",
-                    "description": [
-                        "Qonto is a French fintech company offering an all-in-one banking solution tailored for entrepreneurs, freelancers, and SMEs. While exploring their product as part of a design challenge for a Product Designer position, I noticed that their website was already strong in branding and clarity. However, one page in particular — the Pricing page — felt like it could better guide users toward a confident plan choice.",
-                        "The goal of my redesign wasn’t to reinvent their system, but to improve clarity, hierarchy, and decision flow, while remaining entirely consistent with Qonto’s visual identity and design system."
-                    ]
-                },
+                "content": [
+                    {
+                        "title": "Context",
+                        "description": [
+                            "Qonto is a French fintech company offering an all-in-one banking solution tailored for entrepreneurs, freelancers, and SMEs. While exploring their product as part of a design challenge for a Product Designer position, I noticed that their website was already strong in branding and clarity. However, one page in particular — the Pricing page — felt like it could better guide users toward a confident plan choice.",
+                            "The goal of my redesign wasn't to reinvent their system, but to improve clarity, hierarchy, and decision flow, while remaining entirely consistent with Qonto's visual identity and design system."
+                        ]
+                    },
+                    {
+                        "title": "Analysis",
+                        "description": [
+                            "The original pricing page had several usability challenges: the information hierarchy wasn't clear enough, making it difficult for users to quickly compare plans. The CTAs weren't prominent enough, and the overall layout felt cluttered with too much information presented at once.",
+                            "Users needed a clearer path to decision-making, with better visual separation between plan tiers and more prominent feature comparisons."
+                        ],
+                        "images": [
+                            "/images/projects/flowfinity.webp",
+                            "/images/projects/flowfinity.webp"
+
+                        ]
+                    },
+                    {
+                        "title": "Solution",
+                        "description": [
+                            "I restructured the page with a clearer visual hierarchy, using Qonto's existing design system. The new layout emphasizes the most popular plan while maintaining equal visibility for all options. I introduced better spacing, clearer typography hierarchy, and more prominent CTAs.",
+                            "The feature comparison was redesigned to be more scannable, with visual icons and better grouping of similar features."
+                        ]
+                    }
+                ],
                 "links": [
                     {
                         "type": "website",
@@ -236,13 +243,15 @@
             },
             {
                 "subtitle": "Free's Careers Page",
-                "context": {
-                    "title": "Context",
-                    "description": [
-                        "Free Mobile is one of France's major telecom operators, known for its disruptive approach to mobile services. The existing Careers's interface showed signs of outdated design patterns, and could benefit from a more modern, user-friendly approach.",
-                        "This redesign concept focuses on improving the user experience while maintaining the brand's distinctive identity, replacing the images that take too much attention over the content. turned the different buttons into primary and secondary buttons, turned the filter into airbnb-like (top-notch design system) search bar with filters. tuned down the badges to make it softer and make the job titles more prominent. Used more modern icons while keeping the same style for the fonts and colors."
-                    ]
-                },
+                "content": [
+                    {
+                        "title": "Context",
+                        "description": [
+                            "Free Mobile is one of France's major telecom operators, known for its disruptive approach to mobile services. The existing Careers's interface showed signs of outdated design patterns, and could benefit from a more modern, user-friendly approach.",
+                            "This redesign concept focuses on improving the user experience while maintaining the brand's distinctive identity, replacing the images that take too much attention over the content. turned the different buttons into primary and secondary buttons, turned the filter into airbnb-like (top-notch design system) search bar with filters. tuned down the badges to make it softer and make the job titles more prominent. Used more modern icons while keeping the same style for the fonts and colors."
+                        ]
+                    }
+                ],
                 "links": [
                     {
                         "type": "website",
@@ -269,12 +278,14 @@
             },
             {
                 "subtitle": "Stancer's Blog Page",
-                "context": {
-                    "title": "Context",
-                    "description": [
-                        "Stancer is a French payment service provider offering online payment solutions for businesses. The original dashboard interface could be enhanced to provide better data visualization and a more intuitive workflow for merchants managing their transactions and analytics."
-                    ]
-                },
+                "content": [
+                    {
+                        "title": "Context",
+                        "description": [
+                            "Stancer is a French payment service provider offering online payment solutions for businesses. The original dashboard interface could be enhanced to provide better data visualization and a more intuitive workflow for merchants managing their transactions and analytics."
+                        ]
+                    }
+                ],
                 "links": [
                     {
                         "type": "website",
@@ -307,13 +318,15 @@
         "title": "Flowfinity",
         "subtitle": "Financial Management Platform for Student Associations",
         "coverImage": "/images/projects/flowfinity.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "Flowfinity is a financial management platform designed specifically for student associations, providing a suite of tools to streamline budgeting, expense tracking, and financial reporting. The platform aims to address the unique financial challenges faced by student organizations, such as limited budgets, complex funding sources, and the need for transparent financial practices.",
-                ""
-            ]
-        },
+        "content": [
+            {
+                "title": "Context",
+                "description": [
+                    "Flowfinity is a financial management platform designed specifically for student associations, providing a suite of tools to streamline budgeting, expense tracking, and financial reporting. The platform aims to address the unique financial challenges faced by student organizations, such as limited budgets, complex funding sources, and the need for transparent financial practices.",
+                    ""
+                ]
+            }
+        ],
         "links": [
             {
                 "type": "figma",
@@ -323,13 +336,7 @@
         ],
         "mockupImages": [
             ["/images/projects/foodify/landing.webp", "/images/projects/foodify/home.webp"]
-        ],
-        "marketResearch": {
-            "title": "",
-            "description": [
-                ""
-            ]
-        }
+        ]
     },
     {
         "id": "olympics",
@@ -337,13 +344,22 @@
         "title": "Olympics",
         "subtitle": "2023 ~ Sydney Uni",
         "coverImage": "/images/projects/ausvision.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "This project was a concept application for the Brisbane 2032 Olympics, designed to integrate navigation and accessibility into one seamless experience. Feedback from previous Olympic Games consistently revealed that venues often lacked accessibility-friendly pathways and facilities, forcing people with physical disabilities to face repeated challenges. Existing navigation tools remain generic, rarely accounting for essential features like ramps, elevators, lifts, or accessible toilets. Our concept aimed to close this gap and provide a smoother, more inclusive event experience.",
-                "The solution introduces a navigation platform that combines detailed accessibility data and an immersive AR view mode available on both iPhone and Apple Watch devices. Users can visualize accessible routes in real time, while safety features such as customizable action buttons, gesture recognition, and a dedicated Help function provide instant contact with staff, emergency services, or trusted contacts. By uniting navigation and accessibility in one integrated system, the app empowers users with greater independence, confidence, and safety."
-            ]
-        },
+        "content": [
+            {
+                "title": "Context",
+                "description": [
+                    "This project was a concept application for the Brisbane 2032 Olympics, designed to integrate navigation and accessibility into one seamless experience. Feedback from previous Olympic Games consistently revealed that venues often lacked accessibility-friendly pathways and facilities, forcing people with physical disabilities to face repeated challenges. Existing navigation tools remain generic, rarely accounting for essential features like ramps, elevators, lifts, or accessible toilets. Our concept aimed to close this gap and provide a smoother, more inclusive event experience.",
+                    "The solution introduces a navigation platform that combines detailed accessibility data and an immersive AR view mode available on both iPhone and Apple Watch devices. Users can visualize accessible routes in real time, while safety features such as customizable action buttons, gesture recognition, and a dedicated Help function provide instant contact with staff, emergency services, or trusted contacts. By uniting navigation and accessibility in one integrated system, the app empowers users with greater independence, confidence, and safety."
+                ]
+            },
+            {
+                "title": "Competitor Analysis",
+                "description": [
+                    "While Google Maps and Apple Maps offer AR navigation, their accessibility support is secondary and lacks the granularity needed for wheelchair users. Other competitors focus mainly on venue ratings rather than route-specific guidance, leaving critical gaps.",
+                    "None provide a comprehensive solution that merges immersive navigation with detailed accessibility information, covering step-free routes and mobility-friendly facilities, into a single cohesive experience. This underlines a clear opportunity to create a truly inclusive navigation tool tailored to the needs of people with physical disabilities."
+                ]
+            }
+        ],
         "links": [
             {
                 "type": "figma",
@@ -367,13 +383,6 @@
             "hasPadding": true,
             "objectFit": "contain"
         },
-        "competitorAnalysis": {
-            "title": "Competitor Analysis",
-            "description": [
-                "While Google Maps and Apple Maps offer AR navigation, their accessibility support is secondary and lacks the granularity needed for wheelchair users. Other competitors focus mainly on venue ratings rather than route-specific guidance, leaving critical gaps.",
-                "None provide a comprehensive solution that merges immersive navigation with detailed accessibility information, covering step-free routes and mobility-friendly facilities, into a single cohesive experience. This underlines a clear opportunity to create a truly inclusive navigation tool tailored to the needs of people with physical disabilities."
-            ]
-        },
         "personas": {
             "title": "User Personas",
             "images": [
@@ -388,13 +397,21 @@
         "title": "Foodify",
         "subtitle": "2023 ~ Recipe App",
         "coverImage": "/images/projects/flowfinity.webp",
-        "context": {
-            "title": "Context",
-            "description": [
-                "Foodify is a concept recipe app designed to make discovering, cooking, and sharing meals easier and more engaging. Many existing platforms overwhelm users with cluttered interfaces, inconsistent recipe quality, or limited personalization. Users often struggle to filter recipes based on the ingredients they already have or adapt them to specific dietary needs, which makes everyday cooking less accessible and more time-consuming. Inspired by industry leaders like Airbnb, Foodify adopts a clean and intuitive design language that emphasizes clarity and ease of use. Our concept creates a streamlined, user-friendly experience that empowers users to simply look, save, and cook.",
-                "The app combines a personalized recommendation system with practical tools such as ingredient-based filtering, meal planning with both built-in and external calendar integration, and auto-generated shopping lists. Recipes include step-by-step instructions, nutritional insights, and customizable options to suit dietary restrictions. Beyond discovery, Foodify fosters a sense of community by allowing users to add, share, and save recipes, making cooking both social and interactive."
-            ]
-        },
+        "content": [
+            {
+                "title": "Context",
+                "description": [
+                    "Foodify is a concept recipe app designed to make discovering, cooking, and sharing meals easier and more engaging. Many existing platforms overwhelm users with cluttered interfaces, inconsistent recipe quality, or limited personalization. Users often struggle to filter recipes based on the ingredients they already have or adapt them to specific dietary needs, which makes everyday cooking less accessible and more time-consuming. Inspired by industry leaders like Airbnb, Foodify adopts a clean and intuitive design language that emphasizes clarity and ease of use. Our concept creates a streamlined, user-friendly experience that empowers users to simply look, save, and cook.",
+                    "The app combines a personalized recommendation system with practical tools such as ingredient-based filtering, meal planning with both built-in and external calendar integration, and auto-generated shopping lists. Recipes include step-by-step instructions, nutritional insights, and customizable options to suit dietary restrictions. Beyond discovery, Foodify fosters a sense of community by allowing users to add, share, and save recipes, making cooking both social and interactive."
+                ]
+            },
+            {
+                "title": "Market Research",
+                "description": [
+                    "To better understand potential users and their needs, we conducted a set of interviews and distributed a survey answered by over sixty participants. Despite differences in age, profession, and lifestyle, respondents shared common expectations: healthy recipe suggestions, meal planning with a built-in calendar, nutritional tracking, personalization based on dietary preferences, and smart shopping lists. The survey confirmed these priorities across a larger audience, showing a clear demand for an app that unifies everyday cooking, personalization, and nutrition into one seamless platform."
+                ]
+            }
+        ],
         "links": [
             {
                 "type": "figma",
@@ -423,12 +440,6 @@
             "hasPadding": true,
             "objectFit": "contain",
             "imageText": "Foodify app screens showing the recipe discovery flow"
-        },
-        "marketResearch": {
-            "title": "Market Research",
-            "description": [
-                "To better understand potential users and their needs, we conducted a set of interviews and distributed a survey answered by over sixty participants. Despite differences in age, profession, and lifestyle, respondents shared common expectations: healthy recipe suggestions, meal planning with a built-in calendar, nutritional tracking, personalization based on dietary preferences, and smart shopping lists. The survey confirmed these priorities across a larger audience, showing a clear demand for an app that unifies everyday cooking, personalization, and nutrition into one seamless platform."
-            ]
         }
     }
 ]

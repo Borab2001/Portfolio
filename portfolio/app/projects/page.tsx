@@ -154,6 +154,7 @@ export default function Projects() {
                         {/* A brief showcase of my works, each one a glimpse into how I merge creativity and user-centered design */}
                         A quick glimpse at how I blend creativity with user-focused design in my projects
                     </p>
+                    <span className=' text-center italic text-white/50'>(More detailed project descriptions are coming soon)</span>
                     {/* <CircularText
                         text="CHECK*OUT*MY*PROJECTS*"
                         spinDuration={20}

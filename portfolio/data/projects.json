@@ -37,7 +37,7 @@
         "navTitle": "Cedrus",
         "title": "Cedrus Solutions",
         "subtitle": "Dashboard Design",
-        "coverImage": "/images/projects/flowfinity.webp",
+        "coverImage": "/images/projects/flowfinity/flowfinity.webp",
         "content": [
             {
                 "title": "Context",
@@ -130,7 +130,7 @@
         "navTitle": "Cypheme",
         "title": "Cypheme",
         "subtitle": "App Redesign",
-        "coverImage": "/images/projects/flowfinity.webp",
+        "coverImage": "/images/projects/flowfinity/flowfinity.webp",
         "content": [
             {
                 "title": "Context",
@@ -203,7 +203,7 @@
         "id": "redesigns",
         "navTitle": "Redesigns",
         "title": "Redesigns",
-        "coverImage": "/images/projects/flowfinity.webp",
+        "coverImage": "/images/projects/flowfinity/flowfinity.webp",
         "redesigns": [
             {
                 "subtitle": "Qonto",
@@ -398,7 +398,7 @@
         "navTitle": "Flowfinity",
         "title": "Flowfinity",
         "subtitle": "Financial Management Platform for Student Associations",
-        "coverImage": "/images/projects/flowfinity.webp",
+        "coverImage": "/images/projects/flowfinity/flowfinity.webp",
         "content": [
             {
                 "title": "Context",
@@ -424,7 +424,7 @@
         "navTitle": "Olympics",
         "title": "Olympics",
         "subtitle": "2023 ~ Sydney Uni",
-        "coverImage": "/images/projects/ausvision.webp",
+        "coverImage": "/images/projects/ausvision/ausvision.webp",
         "content": [
             {
                 "title": "Context",
@@ -477,7 +477,7 @@
         "navTitle": "Foodify",
         "title": "Foodify",
         "subtitle": "2023 ~ Recipe App",
-        "coverImage": "/images/projects/flowfinity.webp",
+        "coverImage": "/images/projects/foodify/foodify.webp",
         "content": [
             {
                 "title": "Context",

@@ -74,16 +74,34 @@
         "navTitle": "Maestro",
         "title": "Maestro",
         "subtitle": "Website design",
-        "coverImage": "/images/projects/maestro.webp",
+        "coverImage": "/images/projects/maestro/maestro.webp",
         "content": [
-            {
-                "title": "Context",
-                "description": [
-                    "",
-                    ""
-                ]
-            }
-        ],
+                    {
+                        "title": "Context",
+                        "description": [
+                            " Maestro "
+                        ]
+                    },
+                    {
+                        "title": "Brand Identity",
+                        "description": [
+                            "",
+                            ""
+                        ],
+                        "images": [
+                            "/images/projects/maestro/colors.svg",
+                            "/images/projects/maestro/typeface1.svg",
+                            "/images/projects/maestro/typeface2.svg"
+
+                        ]
+                    },
+                    {
+                        "title": "Prototyping",
+                        "description": [
+                            ""
+                        ]
+                    }
+                ],
         "links": [
             {
                 "type": "figma",
@@ -92,8 +110,8 @@
             }
         ],
         "mockupImages": [
-            ["/images/projects/grid/maestro_1.webp"],
-            ["/images/projects/grid/maestro_2.webp"]
+            ["/images/projects/maestro/maestro_1.webp"],
+            ["/images/projects/maestro/maestro_2.webp"]
         ],
         "mockupConfig": {
             "columns": 2,
@@ -188,32 +206,39 @@
         "coverImage": "/images/projects/flowfinity.webp",
         "redesigns": [
             {
-                "subtitle": "Qonto's Pricing Page",
+                "subtitle": "Qonto",
                 "content": [
                     {
                         "title": "Context",
                         "description": [
-                            "Qonto is a French fintech company offering an all-in-one banking solution tailored for entrepreneurs, freelancers, and SMEs. While exploring their product as part of a design challenge for a Product Designer position, I noticed that their website was already strong in branding and clarity. However, one page in particular — the Pricing page — felt like it could better guide users toward a confident plan choice.",
-                            "The goal of my redesign wasn't to reinvent their system, but to improve clarity, hierarchy, and decision flow, while remaining entirely consistent with Qonto's visual identity and design system."
+                            "Qonto is a French fintech company offering an all-in-one banking solution tailored for entrepreneurs, freelancers, and SMEs. While exploring their product as part of a design challenge for a Product Designer position, I noticed that their website was already strong in branding and clarity. However, the Pricing page felt like it could better guide users toward a confident plan choice.",
+                            "The goal of this small redesign wasn't to reinvent their system, but to improve clarity, hierarchy, and decision flow, while remaining entirely consistent with Qonto's visual identity and design system."
                         ]
                     },
                     {
-                        "title": "Analysis",
+                        "title": "¨Problem",
                         "description": [
-                            "The original pricing page had several usability challenges: the information hierarchy wasn't clear enough, making it difficult for users to quickly compare plans. The CTAs weren't prominent enough, and the overall layout felt cluttered with too much information presented at once.",
-                            "Users needed a clearer path to decision-making, with better visual separation between plan tiers and more prominent feature comparisons."
-                        ],
-                        "images": [
-                            "/images/projects/flowfinity.webp",
-                            "/images/projects/flowfinity.webp"
-
+                            "While exploring the existing page, several friction points appeared. The layout gives too much visual weight to navigation elements, making it harder to immediately focus on what users actually want to compare: pricing and features. The structure also spreads attention across multiple controls, which slows the decision-making process.",
+                            "Key issues I identified:",
+                            "• The company type selector occupies too much space and competes visually with the plan cards.",
+                            "• The monthly/annual switch appears as a secondary tab pattern, creating unnecessary redundancy.",
+                            "• The “Popular” plan isn’t visually highlighted enough, even though it should naturally draw attention first."
                         ]
                     },
                     {
                         "title": "Solution",
                         "description": [
-                            "I restructured the page with a clearer visual hierarchy, using Qonto's existing design system. The new layout emphasizes the most popular plan while maintaining equal visibility for all options. I introduced better spacing, clearer typography hierarchy, and more prominent CTAs.",
-                            "The feature comparison was redesigned to be more scannable, with visual icons and better grouping of similar features."
+                            "To improve clarity and reduce cognitive load, I reorganized the page so the pricing cards become the main entry point. The idea was to make comparisons faster, highlight the recommended option, and keep every change fully aligned with Qonto’s design system.",
+                            "Main improvements I made:",
+                            "• I turned the pricing table into three clean, card-based blocks that structure information more clearly.",
+                            "• I highlighted the Popular plan using Qonto’s accent color, a larger card, and a more visible label.",
+                            "• I condensed the company type selector into a lighter tab bar, and replaced the monthly/annual tabs with a toggle paired with a clear “–20% annual badge”."
+                        ]
+                    },
+                    {
+                        "title": "Outcome",
+                        "description": [
+                            "The redesigned layout puts the focus back on what matters: plan comparison and value perception. Users can understand differences faster, identify the recommended option instantly, and switch billing modes with better clarity. The hierarchy feels more balanced, and overall the flow supports quicker, more confident decisions—all while staying entirely consistent with Qonto’s visual identity."
                         ]
                     }
                 ],
@@ -242,13 +267,40 @@
                 }
             },
             {
-                "subtitle": "Free's Careers Page",
+                "subtitle": "Free",
                 "content": [
                     {
                         "title": "Context",
                         "description": [
-                            "Free Mobile is one of France's major telecom operators, known for its disruptive approach to mobile services. The existing Careers's interface showed signs of outdated design patterns, and could benefit from a more modern, user-friendly approach.",
-                            "This redesign concept focuses on improving the user experience while maintaining the brand's distinctive identity, replacing the images that take too much attention over the content. turned the different buttons into primary and secondary buttons, turned the filter into airbnb-like (top-notch design system) search bar with filters. tuned down the badges to make it softer and make the job titles more prominent. Used more modern icons while keeping the same style for the fonts and colors."
+                            "Free Mobile is one of France’s major telecom operators, known for its disruptive positioning and bold visual identity. While browsing their Careers website, I noticed that the job listing page relied heavily on large, crowded photos that overshadowed the actual job information. Combined with several inconsistent button styles and outdated UI patterns, the experience felt visually noisy and harder to scan than it should be.",
+                            "My goal was to create a cleaner, more modern interface that keeps Free’s bold energy while improving readability and navigation."
+                        ]
+                    },
+                    {
+                        "title": "Problem",
+                        "description": [
+                            "In the existing layout, attention is immediately drawn to the job images rather than the essential content—titles, locations, contract types. The hierarchy feels inverted, and the abundance of visual elements creates unnecessary distraction. The filter system also lacks clarity and feels disconnected from modern UX standards.",
+                            "Key issues identified:",
+                            "• Overcrowded photos pull focus away from job information.",
+                            "• Multiple button styles create visual inconsistency and dilute hierarchy.",
+                            "• The filter bar is rigid and outdated, making search interactions less intuitive."
+                        ]
+                    },
+{
+                        "title": "Solution",
+                        "description": [
+                            "I chose to simplify the visual environment and give more prominence to the information candidates actually seek. The core idea was to reduce noise while preserving Free’s vibrant identity through color, typography, and minimal graphic accents.",
+                            "Main improvements implemented:",
+                            "• Replaced crowded job images with soft abstract backgrounds, allowing job titles and details to stand out.",
+                            "• Unified all button styles into clear primary and secondary actions, improving consistency.",
+                            "• Redesigned the search and filter system into an Airbnb-like search bar, modern, compact, and easier to interact with.",
+                            "• Softened category badges and introduced updated icons that feel more contemporary but still align with Free’s brand cues."
+                        ]
+                    },
+                    {
+                        "title": "Outcome",
+                        "description": [
+                            "The redesigned layout is calmer, cleaner, and far easier to scan. Job cards highlight meaningful information first, search tools are more intuitive, and the overall UI feels more aligned with current UX standards while staying true to Free’s distinctive red-driven identity. This makes the experience both more modern and more efficient for candidates navigating dozens of job offers."
                         ]
                     }
                 ],
@@ -277,12 +329,41 @@
                 }
             },
             {
-                "subtitle": "Stancer's Blog Page",
+                "subtitle": "Stancer",
                 "content": [
                     {
                         "title": "Context",
                         "description": [
-                            "Stancer is a French payment service provider offering online payment solutions for businesses. The original dashboard interface could be enhanced to provide better data visualization and a more intuitive workflow for merchants managing their transactions and analytics."
+                            "Stancer is a French payment service provider offering online payment solutions for businesses. As part of a Product Designer application, I explored their website and identified several opportunities to improve the structure and readability of their blog page. While the page was functional, it lacked visual hierarchy and clarity, making it harder to browse and understand the content.",
+                            "My goal was to refine the layout and bring more detail and depth to the articles, while keeping Stancer’s clean and modern visual identity."
+                        ]
+                    },
+                    {
+                        "title": "Problem",
+                        "description": [
+                            "Upon reviewing the existing blog page, the first issue that stood out was the hero section. The main article image was almost entirely hidden behind a heavy blue overlay, which created a large, uniform block of color and diminished the value of the image itself. This made the hero lack depth and visual interest.",
+                            "Inside each category, the cards felt underdeveloped: they only displayed a grey label and a short title, without any description or hierarchy, making them difficult to differentiate or scan. Additionally, the full-width layout stretched text across long lines, reducing readability and creating an unbalanced composition.",
+                            "Key issues identified:",
+                            "• The hero image is obscured by a solid blue overlay, resulting in a flat, unreadable visual.",
+                            "• Secondary cards lack structure—no description, weak labels, minimal hierarchy.",
+                            "• Text spans the entire width of the container, reducing readability and visual rhythm."                            
+                        ]
+                    },
+                    {
+                        "title": "Solution",
+                        "description": [
+                            "To address these issues, I redesigned the blog page around a clearer and more detailed content structure. The hero section now features a visible, abstract image with a lighter overlay, allowing the visual to play its role without overpowering the text. I also introduced card-based layouts with space for descriptions, category badges, and a more balanced image-to-text ratio.",
+                            "Line lengths were adjusted for better readability, and contrast and font weights were refined to improve hierarchy throughout the page.",
+                            "Main improvements implemented:",
+                            "• Reworked the hero card with a visible abstract image, reduced overlay, and a shorter text width for better balance.",
+                            "• Introduced richer content cards including badges, titles, and a short description to improve scannability.",
+                            "• Adjusted spacing, contrast, and typography weights to create a more readable, structured, and modern editorial layout."
+                        ]
+                    },
+                    {
+                        "title": "Outcome",
+                        "description": [
+                            "This new concept layout makes the blog far easier to explore. Articles have clearer identity, the hero stands out, and the page feels more polished and editorial. With improved structure and readability, users can navigate categories more intuitively and engage more naturally with the content."
                         ]
                     }
                 ],

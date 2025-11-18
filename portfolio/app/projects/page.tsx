@@ -77,8 +77,6 @@ export default function Projects() {
                         Projects
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl leading-relaxed tracking-tight text-secondary max-w-96 md:max-w-lg text-center">
-                        {/* Step into my creative space. Here, every project is a blend of modern design and real-world problem solving */}
-                        {/* A brief showcase of my works, each one a glimpse into how I merge creativity and user-centered design */}
                         A quick glimpse at how I blend creativity with user-focused design in my projects
                     </p>
                 </div>

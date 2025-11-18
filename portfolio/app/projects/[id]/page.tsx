@@ -1,18 +1,15 @@
 "use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
 import { notFound, useParams } from "next/navigation";
 
 import projectsData from '@/data/projects.json';
 import type { Project } from '@/types/project';
 
-import { ArrowUpRight } from 'lucide-react';
-import TextHoverEnter from '@/components/ui/text-hover-enter';
 import Footer from '@/components/footer';
+import ProjectContent, { MockupGrid, ContentSections } from '@/components/project';
 
 
-const Project = () => {
+const ProjectPage = () => {
     const params = useParams();
     const project = (projectsData as Project[]).find((p) => p.id === params.id);
 
@@ -50,89 +47,16 @@ const Project = () => {
                                             {redesign.subtitle}
                                         </h2>
                                     </div>
-                                    <div className={`grid grid-cols-1 md:grid-cols-${mockupConfig.columns} gap-4 mb-16`}>
-                                        {redesign.mockupImages.map((group, groupIndex) => (
-                                            <div 
-                                                key={groupIndex} 
-                                                className={`
-                                                    ${mockupConfig.hasPadding ? 'p-[2vw]' : ''} 
-                                                    flex flex-row justify-center space-x-4 w-full h-auto 
-                                                    max-h-[${mockupConfig.maxHeightMobile}px] 
-                                                    md:max-h-none 
-                                                    aspect-[${mockupConfig.aspectRatio.mobile}] 
-                                                    md:aspect-[${mockupConfig.aspectRatio.md}] 
-                                                    lg:aspect-[${mockupConfig.aspectRatio.lg}] 
-                                                    bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden
-                                                `}
-                                            >
-                                                {group.map((image, imageIndex) => (
-                                                    <div className='w-full h-full' key={imageIndex}>
-                                                        <Image
-                                                            src={image}
-                                                            alt={`${redesign.subtitle} mockup group ${groupIndex + 1} image ${imageIndex + 1}`}
-                                                            width={1000}
-                                                            height={1000}
-                                                            className={`w-full h-full object-${mockupConfig.objectFit}`}
-                                                        />
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        ))}
-                                    </div>
-                                    {mockupConfig.imageText && (
-                                        <p className="text-center text-sm text-muted mb-16 -mt-12">
-                                            {mockupConfig.imageText}
-                                        </p>
-                                    )}
-                                    
-                                    <div className="space-y-16 mb-16">
-                                        {redesign.content.map((section, sectionIndex) => (
-                                            <div key={sectionIndex} className="group grid grid-cols-1 sm:grid-cols-3 gap-4">
-                                                <div className="col-span-1 flex flex-col gap-6 items-start">
-                                                    <div>
-                                                        <h2 className="text-xl font-semibold text-primary">
-                                                            {section.title}
-                                                        </h2>
-                                                    </div>
-                                                    {sectionIndex === 0 && (
-                                                        <div className="flex flex-row items-center gap-2">
-                                                            {redesign.links && redesign.links.map((link, index) => (
-                                                                <Link key={index} href={link.url} className="text-sm text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
-                                                                    <TextHoverEnter>
-                                                                        {link.label} 
-                                                                        <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
-                                                                    </TextHoverEnter>
-                                                                </Link>
-                                                            ))}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                                <div className="col-span-2">
-                                                    <div>
-                                                        {section.description.map((paragraph, index) => (
-                                                            <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${index === 0 || paragraph.trim().startsWith('•') ? '' : 'mt-4 md:mt-6'}`}>
-                                                                {paragraph}
-                                                            </p>
-                                                        ))}
-                                                    </div>
-                                                    {section.images && section.images.length > 0 && (
-                                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                                                            {section.images.map((image, imgIndex) => (
-                                                                <Image
-                                                                    key={imgIndex}
-                                                                    src={image}
-                                                                    alt={`${section.title} image ${imgIndex + 1}`}
-                                                                    width={800}
-                                                                    height={800}
-                                                                    className="w-full aspect-video object-cover bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
-                                                                />
-                                                            ))}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
+                                    <MockupGrid 
+                                        mockupImages={redesign.mockupImages}
+                                        mockupConfig={mockupConfig}
+                                        title={redesign.subtitle}
+                                    />
+                                    <ContentSections 
+                                        content={redesign.content}
+                                        showSubtitle={false}
+                                        links={redesign.links}
+                                    />
                                 </div>
                             );
                         })}
@@ -143,17 +67,6 @@ const Project = () => {
         );
     }
 
-    const mockupConfig = project.mockupConfig || {
-        columns: 3,
-        maxHeightMobile: 360,
-        aspectRatio: {
-            mobile: "4/3",
-            md: "5/5",
-            lg: "6/5"
-        },
-        hasPadding: true,
-        objectFit: "contain" as const
-    };
     return (
         <main className="backdrop-blur-lg flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
             <div className="min-h-dvh max-w-[1600px] mx-auto w-full pt-4 px-4 sm:pt-8 sm:px-8 flex flex-col smooth-height">
@@ -162,117 +75,11 @@ const Project = () => {
                         {project.title}
                     </h1>
                 </div>
-                <div className="w-full py-16">
-                    {project.mockupImages && (
-                        <div className={`grid grid-cols-1 md:grid-cols-${mockupConfig.columns} gap-4 mb-16`}>
-                            {project.mockupImages.map((group, groupIndex) => (
-                                <div 
-                                    key={groupIndex} 
-                                    className={`
-                                        ${mockupConfig.hasPadding ? 'p-[2vw]' : ''} 
-                                        flex flex-row justify-center space-x-4 w-full h-auto 
-                                        max-h-[${mockupConfig.maxHeightMobile}px] 
-                                        md:max-h-none 
-                                        aspect-[${mockupConfig.aspectRatio.mobile}] 
-                                        md:aspect-[${mockupConfig.aspectRatio.md}] 
-                                        lg:aspect-[${mockupConfig.aspectRatio.lg}] 
-                                        bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden
-                                    `}
-                                >
-                                    {group.map((image, imageIndex) => (
-                                        <div className='w-full h-full' key={imageIndex}>
-                                            <Image
-                                                src={image}
-                                                alt={`${project.title} mockup group ${groupIndex + 1} image ${imageIndex + 1}`}
-                                                width={1000}
-                                                height={1000}
-                                                className={`w-full h-full object-${mockupConfig.objectFit}`}
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                    {mockupConfig.imageText && (
-                        <p className="text-center text-sm text-muted mb-16 -mt-12">
-                            {mockupConfig.imageText}
-                        </p>
-                    )}
-                    
-                    {project.content ? (
-                        <div className="space-y-16 mb-16 ">
-                            {project.content.map((section, sectionIndex) => (
-                                <div key={sectionIndex} className="group grid grid-cols-1 sm:grid-cols-3 gap-4">
-                                    <div className="col-span-1 flex flex-col gap-6 items-start">
-                                        <div>
-                                            <h2 className="text-xl font-semibold text-primary">
-                                                {section.title}
-                                            </h2>
-                                            {sectionIndex === 0 && project.subtitle && (
-                                                <p className="mt-1 text-muted text-base">{project.subtitle}</p>
-                                            )}
-                                        </div>
-                                        {sectionIndex === 0 && (
-                                            <div className="flex flex-row items-center gap-2">
-                                                {project.links && project.links.map((link, index) => (
-                                                    <Link key={index} href={link.url} className="text-sm text-foreground" target="_blank" rel="noopener noreferrer" aria-label={`Link to ${link.type}`}>
-                                                        <TextHoverEnter>
-                                                            {link.label} 
-                                                            <ArrowUpRight className="inline-block ml-0.5 w-4 h-4" />
-                                                        </TextHoverEnter>
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        )}
-                                    </div>
-                                    <div className="col-span-2">
-                                        <div className="space-y-4 md:space-y-6">
-                                            {section.description.map((paragraph, index) => (
-                                                <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${index === 0 || paragraph.trim().startsWith('•') ? '' : 'mt-4 md:mt-6'}`}>
-                                                    {paragraph}
-                                                </p>
-                                            ))}
-                                        </div>
-                                        {section.images && section.images.length > 0 && (
-                                            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-6">
-                                                {section.images.map((image, imgIndex) => (
-                                                    <Image
-                                                        key={imgIndex}
-                                                        src={image}
-                                                        alt={`${section.title} image ${imgIndex + 1}`}
-                                                        width={800}
-                                                        height={800}
-                                                        className="w-full aspect-auto object-cover bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
-                                                    />
-                                                ))}
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    ) : null}
-
-                    {project.personas && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center">
-                            {project.personas.images.map((image, index) => (
-                                <Image
-                                    key={index}
-                                    src={image}
-                                    alt={`Persona ${index + 1}`}
-                                    width={800}
-                                    height={800}
-                                    className="w-full aspect-video bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
-                                />
-                            ))}
-                        </div>
-                    )}
-                </div>
+                <ProjectContent project={project} />
             </div>
             <Footer />
         </main>
     );
 }
 
-export default Project;
+export default ProjectPage;

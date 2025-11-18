@@ -4,6 +4,19 @@ export interface ContentSection {
     images?: string[]; // Images optionnelles pour chaque section
 }
 
+export interface MockupConfig {
+    columns: 1 | 2 | 3;
+    maxHeightMobile: 360 | 420 | 480;
+    aspectRatio: {
+        mobile: string;
+        md: string;
+        lg: string;
+    };
+    hasPadding: boolean;
+    objectFit: "contain" | "cover";
+    imageText?: string;
+}
+
 export interface RedesignItem {
     subtitle: string;
     content: ContentSection[];
@@ -13,18 +26,7 @@ export interface RedesignItem {
         url: string;
     }[];
     mockupImages: string[][];
-    mockupConfig?: {
-        columns: 1 | 2 | 3;
-        maxHeightMobile: 360 | 420 | 480;
-        aspectRatio: {
-            mobile: string;
-            md: string;
-            lg: string;
-        };
-        hasPadding: boolean;
-        objectFit: "contain" | "cover";
-        imageText?: string;
-    };
+    mockupConfig?: MockupConfig;
 }
 
 export interface Project {
@@ -40,18 +42,7 @@ export interface Project {
     }[];
     content?: ContentSection[];
     mockupImages?: string[][];
-    mockupConfig?: {
-        columns: 1 | 2 | 3;
-        maxHeightMobile: 360 | 420 | 480;
-        aspectRatio: {
-            mobile: string; // ex: "4/3"
-            md: string; // ex: "5/5"
-            lg: string; // ex: "6/5"
-        };
-        hasPadding: boolean;
-        objectFit: "contain" | "cover";
-        imageText?: string;
-    };
+    mockupConfig?: MockupConfig;
     redesigns?: RedesignItem[];
     personas?: {
         title: string;

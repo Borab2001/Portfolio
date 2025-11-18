@@ -108,9 +108,9 @@ const Project = () => {
                                                     )}
                                                 </div>
                                                 <div className="col-span-2">
-                                                    <div className="">
+                                                    <div>
                                                         {section.description.map((paragraph, index) => (
-                                                            <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${paragraph.trim().startsWith('•') ? '' : 'mt-4 md:mt-6'}`}>
+                                                            <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${index === 0 || paragraph.trim().startsWith('•') ? '' : 'mt-4 md:mt-6'}`}>
                                                                 {paragraph}
                                                             </p>
                                                         ))}
@@ -143,7 +143,6 @@ const Project = () => {
         );
     }
 
-    // Configuration par défaut pour les mockups (projets normaux)
     const mockupConfig = project.mockupConfig || {
         columns: 3,
         maxHeightMobile: 360,
@@ -230,7 +229,7 @@ const Project = () => {
                                     <div className="col-span-2">
                                         <div className="space-y-4 md:space-y-6">
                                             {section.description.map((paragraph, index) => (
-                                                <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${paragraph.trim().startsWith('•') ? '-mt-4 md:-mt-6' : ''}`}>
+                                                <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${index === 0 || paragraph.trim().startsWith('•') ? '' : 'mt-4 md:mt-6'}`}>
                                                     {paragraph}
                                                 </p>
                                             ))}

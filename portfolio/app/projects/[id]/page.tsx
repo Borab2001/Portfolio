@@ -87,12 +87,12 @@ const Project = () => {
                                     
                                     <div className="space-y-16 mb-16">
                                         {redesign.content.map((section, sectionIndex) => (
-                                            <div key={sectionIndex} className="group grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10">
+                                            <div key={sectionIndex} className="group grid grid-cols-1 sm:grid-cols-3 gap-4">
                                                 <div className="col-span-1 flex flex-col gap-6 items-start">
                                                     <div>
-                                                        <h3 className="group-first-of-type:text-xl text-base md:group-first-of-type:text-2xl md:text-xl font-semibold text-primary mb-1">
+                                                        <h2 className="text-xl font-semibold text-primary">
                                                             {section.title}
-                                                        </h3>
+                                                        </h2>
                                                     </div>
                                                     {sectionIndex === 0 && (
                                                         <div className="flex flex-row items-center gap-2">
@@ -108,9 +108,9 @@ const Project = () => {
                                                     )}
                                                 </div>
                                                 <div className="col-span-2">
-                                                    <div className="space-y-4 md:space-y-6">
+                                                    <div className="">
                                                         {section.description.map((paragraph, index) => (
-                                                            <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
+                                                            <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${paragraph.trim().startsWith('•') ? '' : 'mt-4 md:mt-6'}`}>
                                                                 {paragraph}
                                                             </p>
                                                         ))}
@@ -201,18 +201,17 @@ const Project = () => {
                         </p>
                     )}
                     
-                    {/* Nouvelle structure content */}
                     {project.content ? (
                         <div className="space-y-16 mb-16 ">
                             {project.content.map((section, sectionIndex) => (
-                                <div key={sectionIndex} className="group grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10">
+                                <div key={sectionIndex} className="group grid grid-cols-1 sm:grid-cols-3 gap-4">
                                     <div className="col-span-1 flex flex-col gap-6 items-start">
                                         <div>
-                                            <h2 className="group-first-of-type:text-xl text-base md:group-first-of-type:text-2xl md:text-xl font-semibold text-primary mb-1">
+                                            <h2 className="text-xl font-semibold text-primary">
                                                 {section.title}
                                             </h2>
                                             {sectionIndex === 0 && project.subtitle && (
-                                                <p className="text-muted text-base">{project.subtitle}</p>
+                                                <p className="mt-1 text-muted text-base">{project.subtitle}</p>
                                             )}
                                         </div>
                                         {sectionIndex === 0 && (
@@ -231,13 +230,13 @@ const Project = () => {
                                     <div className="col-span-2">
                                         <div className="space-y-4 md:space-y-6">
                                             {section.description.map((paragraph, index) => (
-                                                <p key={index} className="text-muted text-sm md:text-base leading-relaxed md:leading-relaxed">
+                                                <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${paragraph.trim().startsWith('•') ? '-mt-4 md:-mt-6' : ''}`}>
                                                     {paragraph}
                                                 </p>
                                             ))}
                                         </div>
                                         {section.images && section.images.length > 0 && (
-                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                                            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-6">
                                                 {section.images.map((image, imgIndex) => (
                                                     <Image
                                                         key={imgIndex}
@@ -245,7 +244,7 @@ const Project = () => {
                                                         alt={`${section.title} image ${imgIndex + 1}`}
                                                         width={800}
                                                         height={800}
-                                                        className="w-full aspect-video object-cover bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
+                                                        className="w-full aspect-auto object-cover bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
                                                     />
                                                 ))}
                                             </div>

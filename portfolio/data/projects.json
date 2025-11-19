@@ -73,7 +73,7 @@
         "id": "maestro",
         "navTitle": "Maestro",
         "title": "Maestro",
-        "subtitle": "Website design",
+        "subtitle": "Branding and Website Design",
         "coverImage": "/images/projects/maestro/maestro.webp",
         "content": [
                     {
@@ -84,10 +84,6 @@
                     },
                     {
                         "title": "Brand Identity",
-                        "description": [
-                            "",
-                            ""
-                        ],
                         "images": [
                             "/images/projects/maestro/colors.svg",
                             "/images/projects/maestro/typeface1.svg",
@@ -99,14 +95,19 @@
                         "title": "Prototyping",
                         "description": [
                             ""
+                        ],
+                        "images": [
+                            "/images/projects/maestro/maestro_hero.svg",
+                            "/images/projects/maestro/artists.svg"
+
                         ]
                     }
                 ],
         "links": [
             {
-                "type": "figma",
-                "label": "Figma",
-                "url": ""
+                "type": "website",
+                "label": "Website",
+                "url": "https://maestroconcerts.com/"
             }
         ],
         "mockupImages": [
@@ -166,7 +167,7 @@
         "id": "groupe-bnsb",
         "navTitle": "Groupe BNSB",
         "title": "Groupe BNSB",
-        "subtitle": "Website design",
+        "subtitle": "Website Design",
         "coverImage": "/images/projects/groupebnsb.webp",
         "content": [
             {

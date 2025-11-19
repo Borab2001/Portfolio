@@ -21,7 +21,6 @@ interface ContentSectionsProps {
     links?: { url: string; label: string; type: string }[];
 }
 
-// Composant pour afficher la grille de mockups
 function MockupGrid({ mockupImages, mockupConfig, title }: MockupGridProps) {
     return (
         <>
@@ -63,7 +62,6 @@ function MockupGrid({ mockupImages, mockupConfig, title }: MockupGridProps) {
     );
 }
 
-// Composant pour afficher les sections de contenu
 function ContentSections({ content, showSubtitle, subtitle, links }: ContentSectionsProps) {
     return (
         <div className="space-y-16 mb-16">
@@ -93,14 +91,14 @@ function ContentSections({ content, showSubtitle, subtitle, links }: ContentSect
                     </div>
                     <div className="col-span-2">
                         <div>
-                            {section.description.map((paragraph, index) => (
+                            {section.description?.map((paragraph, index) => (
                                 <p key={index} className={`text-muted text-sm md:text-base leading-relaxed md:leading-relaxed ${index === 0 || paragraph.trim().startsWith('•') ? '' : 'mt-4 md:mt-6'}`}>
                                     {paragraph}
                                 </p>
                             ))}
                         </div>
                         {section.images && section.images.length > 0 && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                            <div className="grid grid-cols-1 gap-4">
                                 {section.images.map((image, imgIndex) => (
                                     <Image
                                         key={imgIndex}
@@ -108,7 +106,7 @@ function ContentSections({ content, showSubtitle, subtitle, links }: ContentSect
                                         alt={`${section.title} image ${imgIndex + 1}`}
                                         width={800}
                                         height={800}
-                                        className="w-full aspect-video object-cover bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
+                                        className="w-full aspect-auto object-cover bg-background border border-border rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden"
                                     />
                                 ))}
                             </div>

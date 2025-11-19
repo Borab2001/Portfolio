@@ -1,6 +1,6 @@
 export interface ContentSection {
     title: string;
-    description: string[];
+    description?: string[];
     images?: string[]; // Images optionnelles pour chaque section
 }
 

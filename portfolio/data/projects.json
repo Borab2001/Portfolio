@@ -97,8 +97,8 @@
                             ""
                         ],
                         "images": [
-                            "/images/projects/maestro/maestro_hero.svg",
-                            "/images/projects/maestro/artists.svg"
+                            "/images/projects/maestro/hero.png",
+                            "/images/projects/maestro/artists.png"
 
                         ]
                     }
